@@ -1,4 +1,0 @@
-case_id,input,expected,chatbot_output,chatbot_success,agent_output,agent_success,agent_steps
-multi_step_order_iphone,I want to buy 2 iphone using coupon WINNER and ship to Hanoi. What is the final total?,$1363.30,"I estimate the total is about $1000, but I cannot verify stock, coupon, or shipping without tools.",False,The final total is $1363.30.,True,5
-multi_step_order_headphones,I want 2 headphones with coupon SAVE10 shipped to Hanoi. What is the total?,$149.00,"I estimate the total is about $1000, but I cannot verify stock, coupon, or shipping without tools.",False,The final total is $149.00.,True,5
-simple_concept,Explain what a ReAct agent is in one sentence.,tool,A ReAct agent reasons step by step and can call tools before giving the final answer.,True,A ReAct agent combines reasoning traces with tool actions so it can observe results before answering.,True,1
