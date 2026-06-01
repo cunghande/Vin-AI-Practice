@@ -1,6 +1,6 @@
 # Group Report: Lab 3 - Production-Grade Agentic System
 
-- **Team Name**: AI Practice Team
+- **Team Name**: DoVanCung
 - **Team Members**: Do Van Cung
 - **Deployment Date**: 2026-06-01
 

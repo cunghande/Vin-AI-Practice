@@ -65,7 +65,7 @@ This repository now includes a complete offline-friendly implementation:
 - Deterministic local provider: `src/core/fake_provider.py`
 - Demo runner: `scripts/demo.py`
 - Evaluation runner: `scripts/evaluate.py`
-- Group report: `report/group_report/GROUP_REPORT_AI_PRACTICE_TEAM.md`
+- Group report: `report/group_report/GROUP_REPORT_DoVanCung.md`
 - Individual report: `report/individual_reports/REPORT_DoVanCung.md`
 
 Run the offline evaluation:
