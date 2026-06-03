@@ -1,119 +1,107 @@
-# Thin SPEC Cuối Day 05 - AI Food Picker
-
-Thin SPEC này là bản chốt đủ rõ để sáng Day 06 nhóm build prototype ngay.
+# Thin SPEC - Learning OS Knowledge Intake Agent
 
 ## 1. Track, product/app và user
 
-**Track:** Food & Delivery  
-**Product/app thật:** GrabFood  
-**Tên prototype:** AI Food Picker  
-**User cụ thể:** Sinh viên/nhân viên văn phòng ở TP.HCM hoặc Hà Nội, đang đói/bận, muốn đặt đồ ăn nhanh nhưng chưa biết ăn món gì.  
-**Nhóm có phải user thật không? Nếu không, khác ở đâu?** Có. Các thành viên nhóm đều là người có thể dùng app giao đồ ăn trong bối cảnh học/làm, cần chọn món nhanh theo ngân sách và thời gian.
+**Track:** A - Learning OS
 
-## 2. Evidence summary
+**Product/app thật:** LMS hiện tại, Discord lớp, GitHub repo lab, slide/README/rubric của AI in Action
+
+**User cụ thể:** Học viên AI in Action đang hỏi mơ hồ về nội dung bài học, bài lab, deadline, nộp repo, làm nhóm/cá nhân, hoặc chuẩn bị prototype
+
+**Nhóm có phải user thật không?** Có. Nhóm đang trực tiếp gặp pain này khi đọc Day05/Day06 và phân biệt file `01` với `02`.
+
+## 2. Scope
+
+| Scope | Bao gồm | Không bao gồm |
+|---|---|---|
+| Learning Content Support | Giải thích khái niệm, lab, rubric, ví dụ, cách làm bài. | Không tự chấm điểm cuối cùng. |
+| Program Operations Support | Lịch, deadline, nộp repo, cá nhân/nhóm, demo, owner plan. | Không đoán rule nếu tài liệu không có. |
+
+## 3. Evidence Summary
 
 | Evidence | Nguồn | User/pain nói lên điều gì? | SPEC phải đổi gì? |
 |---|---|---|---|
-| Grab nói user trung bình browse 17 phút trước khi đặt món. | https://www.grab.com/inside-grab/stories/personalising-food-recommendations-on-grabfood/ | User mất thời gian ở bước chọn món, không phải chỉ ở bước checkout. | Build slice tập trung vào giảm thời gian discovery. |
-| Grab nói 74% user browse khi chưa có cuisine cụ thể. | Grab official article | User thường mở app với intent mơ hồ, nên search keyword không đủ. | AI phải hỏi lại/chuyển nhu cầu mơ hồ thành tiêu chí rõ. |
-| Grab dùng machine learning-driven search and recommendations để cá nhân hóa food discovery. | Grab official article | AI/recommendation là feature thật trong domain này. | Prototype dùng augmentation: AI rank 3 lựa chọn, user quyết định. |
-| ShopeeFood public site hiển thị số lượng địa điểm lớn ở TP.HCM/Hà Nội. | https://shopee.shopeefood.vn/ | Quá nhiều lựa chọn làm user bị overload. | Output phải ngắn: chỉ 3 gợi ý, có lý do và tiêu chí. |
+| Day05 README tách `01-invidual-workshop` và `02-group-spec`. | GitHub repo Day05 | User dễ nhầm bài cá nhân và phần nhóm. | Agent phải hỏi scope trước khi trả lời. |
+| Slide Day05 yêu cầu evidence, slice, decision, failure path, owner. | Screenshot slide | User cần checklist deliverable, không chỉ giải thích chung. | Output phải có checklist + missing info. |
+| Tài liệu lớp nằm ở nhiều nơi: slide, repo, Discord, mentor note. | Self-use observation | User không biết nguồn nào là source of truth. | Agent phải source-grounded và nêu source status. |
+| Có câu hỏi không có trong source hoặc source có thể đổi. | Domain observation | AI đoán có thể làm sai deadline/rubric. | Thêm no-source/unknown path. |
 
-## 3. Pain statement
-
-```text
-User sinh viên/nhân viên văn phòng đang gặp khó ở bước chọn món trước khi đặt đồ ăn,
-vì app có quá nhiều quán/món/voucher trong khi user thường chưa có cuisine cụ thể,
-dẫn tới mất thời gian browsing, chọn đại, hoặc bỏ cuộc.
-Bằng chứng chính là Grab nói user browse trung bình 17 phút trước khi order và 74% browse khi chưa có cuisine cụ thể.
-```
-
-## 4. Build slice
+## 4. Pain Statement
 
 ```text
-Cho sinh viên/nhân viên văn phòng đang đói nhưng chưa biết ăn gì,
-prototype sẽ dùng AI để hỏi 2-3 câu về ngân sách, khẩu vị/mood và thời gian giao,
-tạo ra 3 gợi ý món/quán có lý do, giá ước tính, ETA ước tính và confidence,
-và xử lý failure mode "AI gợi ý món không hợp khẩu vị/ngân sách" bằng feedback chips để user sửa và rerank.
+Học viên AI in Action đang gặp khó khi hỏi về bài học hoặc cách vận hành chương trình,
+vì thông tin nằm rải rác ở slide, repo, README, Discord và mentor note,
+dẫn tới user không biết câu hỏi thuộc nội dung học hay rule vận hành, không biết nguồn nào là đúng,
+và dễ làm sai deliverable nếu AI trả lời bằng suy đoán.
 ```
 
-## 5. Auto/Aug decision
+## 5. Build slice
 
-- [x] **Augmentation:** AI gợi ý/draft/phân loại, user quyết cuối.
-- [ ] **Conditional automation:** AI tự làm trong case hẹp; case mơ hồ/rủi ro chuyển người.
-- [ ] **Automation:** AI tự quyết và tự hành động.
-
-**Lý do chọn:** Chọn món ăn phụ thuộc khẩu vị, dị ứng, ngân sách và tâm trạng. Nếu AI tự quyết có thể làm user mất tiền hoặc nhận món không phù hợp. AI nên hỗ trợ ra quyết định, không đặt hàng thay user.  
-**Human role:** decider + trainer. User chọn món cuối cùng và sửa recommendation bằng feedback chips.
-
-## 6. Workflow prototype
-
-```mermaid
-flowchart TD
-  A["Start: User chưa biết ăn gì"] --> B["AI hỏi bối cảnh: bữa nào?"]
-  B --> C["AI hỏi budget + khẩu vị + thời gian giao"]
-  C --> D["AI tạo preference profile"]
-  D --> E{"Đủ thông tin?"}
-  E -- "Không" --> F["Low-confidence: hỏi lại 1 câu hoặc show chips"]
-  F --> D
-  E -- "Có" --> G["Rank 3 món/quán"]
-  G --> H["Show card: món, quán, giá, ETA, lý do, confidence"]
-  H --> I{"User chọn hay sửa?"}
-  I -- "Chọn" --> J["End: chọn món để đặt trong app thật"]
-  I -- "Sửa" --> K["Correction chips: quá đắt / giao lâu / không cay / không bò / món nhẹ"]
-  K --> D
+```text
+Cho một học viên hỏi mơ hồ "Day05 phải làm gì?",
+prototype dùng AI để hỏi thêm nếu thiếu context, phân loại câu hỏi thành Learning Content hoặc Program Operations,
+tìm trong knowledge pack đã nạp, rồi tạo source-grounded answer gồm summary, checklist, missing info, source status,
+và xử lý failure mode "không có nguồn hoặc sai scope" bằng ask loop, no-source/unknown response, correction loop, và draft câu hỏi gửi mentor/TA.
 ```
 
-## 7. Four paths
+## 6. Agent Workflow
+
+```text
+Understand question
+  -> Decide scope: Learning Content / Program Operations / Ambiguous
+  -> Ask loop nếu thiếu context
+  -> Retrieve source trong knowledge pack
+  -> Synthesize nếu có nguồn
+  -> Refuse/Unknown nếu không có nguồn hoặc source outdated
+  -> Correction loop nếu user sửa scope/day/context
+```
+
+## 7. Output Contract
+
+Prototype luôn phải có:
+
+- Detected scope
+- Source status
+- Answer summary
+- Action checklist
+- Missing info
+- Refusal/unknown note nếu thiếu nguồn
+
+## 8. Auto/Aug decision
+
+- [x] **Augmentation:** AI hỏi, tìm nguồn, tổng hợp, tạo checklist.
+- [ ] Conditional automation
+- [ ] Automation
+
+**Lý do chọn:** AI không nên tự quyết định rule/deadline/nộp bài thay user. AI chỉ hỗ trợ hiểu tài liệu và chuẩn bị next step; user/mentor vẫn xác nhận cuối.
+
+**Human role:** learner, verifier, corrector, mentor/TA khi source thiếu hoặc mâu thuẫn.
+
+## 9. Four Paths
 
 | Path | Prototype phải thể hiện gì? |
 |---|---|
-| Happy | User nhập tiêu chí rõ: "ăn trưa dưới 70k, no, không cay, giao dưới 25 phút". AI trả 3 gợi ý phù hợp, mỗi gợi ý có lý do ngắn và confidence cao. |
-| Low-confidence | User nhập quá mơ hồ: "ăn gì cũng được". AI không bịa danh sách ngay; hỏi lại ngân sách/mood hoặc đưa chips "ăn no", "ăn nhẹ", "healthy", "rẻ", "giao nhanh". |
-| Failure | User nói "không ăn bò" nhưng AI gợi ý món có bò, hoặc user nói dưới 60k nhưng gợi ý món 90k. Prototype phải hiển thị feedback "không hợp" và rerank. |
-| Correction | User bấm chip "quá đắt", "giao lâu", "không cay", "không ăn bò". AI cập nhật preference profile và trả lại danh sách mới. |
+| Happy | User hỏi "Day05 phần group spec cần gì?" -> agent tìm source và xuất checklist. |
+| Low-confidence | User hỏi "bài này làm sao?" -> agent hỏi day, scope, cá nhân/nhóm, output mong muốn. |
+| No-source / Unknown | User hỏi "deadline đổi chưa?" nhưng knowledge pack không có update -> agent không đoán, draft câu hỏi gửi mentor/Discord. |
+| Correction | User sửa "không phải Day05, là Day06 prototype" -> agent update memory và đổi checklist. |
+| Wrong-scope recovery | User hỏi khái niệm rồi chuyển sang hỏi cách nộp -> agent chuyển scope từ Learning Content sang Program Operations. |
 
-## 8. Failure mode nguy hiểm nhất
+## 10. Failure mode nguy hiểm nhất
 
 ```text
-Nếu user có ràng buộc ăn uống rõ như không ăn bò, không cay, dị ứng hải sản hoặc budget thấp,
-AI có thể gợi ý món vi phạm ràng buộc đó,
-hậu quả là user mất niềm tin, đặt sai món, mất tiền hoặc gặp rủi ro sức khỏe nhẹ/nặng tùy constraint.
-Prototype sẽ xử lý bằng ask again + hiển thị constraint đã hiểu + feedback chips + rerank ngay.
-Owner kiểm thử path này là Phúc.
+Nếu user hỏi một câu mơ hồ về bài lab hoặc deadline,
+AI có thể đoán sai scope hoặc trả lời không có nguồn,
+hậu quả là user làm sai file, thiếu evidence, nộp sai cấu trúc repo, hoặc mất thời gian hỏi lại.
+Prototype xử lý bằng ask loop, source status, no-source/unknown response, correction loop, và draft câu hỏi gửi mentor/TA.
 ```
 
-## 9. Owner plan cho sáng Day 06
+## 11. Owner plan cho Day06
 
 | Thành viên | Việc phụ trách | Bằng chứng cần có trong repo |
 |---|---|---|
-| Cung | Research / evidence + repo owner | `02-group-spec/evidence-pack.md`, link nguồn Grab/ShopeeFood, screenshot self-use nếu có, commit/push repo. |
-| Tuấn Anh | SPEC + prompt logic | `02-group-spec/thin-spec.md`, prompt system/user cho AI Food Picker, tiêu chí input/output. |
-| Vũ Anh | Prototype UI | Màn hình nhập nhu cầu, chips tiêu chí, 3 recommendation cards, state low-confidence/correction. |
-| Phúc | Test / failure path + demo script | Test cases happy/low-confidence/failure/correction, file demo script, evidence ảnh/video demo. |
-
-## 10. Kế hoạch làm việc Day 06
-
-| Thời điểm | Việc cần làm | Owner chính | Output |
-|---|---|---|---|
-| 08:30-09:00 | Chốt data mẫu: 8-12 món/quán giả lập với giá, ETA, tag khẩu vị | Cung + Tuấn Anh | Mock data trong prototype |
-| 09:00-10:30 | Build UI input + recommendation cards | Vũ Anh | Prototype chạy được path happy |
-| 10:30-11:00 | Viết prompt/ranking logic và confidence rule | Tuấn Anh | AI trả JSON/list ổn định |
-| 11:00-11:30 | Build low-confidence + correction chips | Vũ Anh + Phúc | Path mơ hồ và sửa gợi ý chạy được |
-| 11:30-12:00 | Test failure: không bò, không cay, budget thấp, giao nhanh | Phúc | Test log + bug list |
-| 13:30-14:30 | Sửa lỗi, thêm evidence screenshot/demo | Cả nhóm | Repo có ảnh/video demo |
-| 14:30-15:00 | Viết demo script 3 phút | Phúc + Cung | Demo script trong repo |
-| 15:00-16:00 | Rehearse demo và hoàn thiện README | Cả nhóm | Bản nộp cuối |
-
-## 11. Demo script ngắn
-
-```text
-1. Mở prototype AI Food Picker.
-2. Nhập case happy: "Ăn trưa dưới 70k, no, không cay, giao dưới 25 phút".
-3. Cho thấy AI trả 3 gợi ý có lý do, giá, ETA, confidence.
-4. Nhập case low-confidence: "Ăn gì cũng được".
-5. Cho thấy AI hỏi lại hoặc show chips, không bịa ngay.
-6. Nhập failure: "không ăn bò", sau đó nếu có món bò thì bấm "không hợp".
-7. Cho thấy prototype loại món bò và rerank.
-8. Kết luận: AI không đặt hàng thay user, chỉ giúp user chọn nhanh và sửa được khi sai.
-```
+| Phúc | Research / evidence | Screenshot slide, README Day05, quote câu hỏi mơ hồ |
+| Tuấn Anh | SPEC | `evidence-pack.md`, `workflow.md`, `thin-spec.md` |
+| Vũ Anh | Prototype | `prototype/index.html`, `styles.css`, `app.js` |
+| Cung | Test / failure path | Test happy, low-confidence, no-source/unknown, correction, wrong-scope |
+| Phúc | Demo script / repo | README hoặc demo notes |

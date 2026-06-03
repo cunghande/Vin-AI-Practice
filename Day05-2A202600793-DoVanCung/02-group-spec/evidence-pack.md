@@ -1,80 +1,57 @@
-# Evidence Pack - Food & Delivery
+# Evidence Pack - Learning OS Knowledge Intake Agent
 
 ## 1. Nhóm và track
 
-**Tên nhóm:** Food & Delivery - Cung, Tuấn Anh, Vũ Anh, Phúc  
-**Track:** Food & Delivery  
-**Product/app đã chọn:** GrabFood  
-**Build slice đang nghĩ:** AI hỏi nhanh nhu cầu ăn uống rồi gợi ý 3 món/quán phù hợp theo ngân sách, khẩu vị, thời gian giao và mức độ chắc chắn.
+**Track:** A - Learning OS
 
-## 2. Self-use evidence
+**Product/app thật để soi:** LMS hiện tại, Discord lớp, repo lab, slide/README/rubric của AI in Action
 
-Nhóm dùng workflow: mở app giao đồ ăn khi đang đói nhưng chưa biết ăn gì, thử tìm món theo nhu cầu mơ hồ như "ăn gì nhanh dưới 60k", "món nhẹ buổi chiều", "ăn no nhưng không cay".
+**Build slice đang nghĩ:** Agent nhận câu hỏi mơ hồ của học viên, hỏi thêm nếu thiếu context, tìm trong tài liệu đã nạp, rồi trả về checklist/source-grounded answer. Nếu không có nguồn, agent nói không biết và draft câu hỏi gửi mentor/TA.
+
+## 2. Self-use Evidence
 
 | Observation | Screenshot/link | Path liên quan | Điều học được |
 |---|---|---|---|
-| Khi user chưa có món cụ thể, app thường đưa nhiều danh mục/quán/voucher cùng lúc. User phải tự lọc theo giá, phí giao, rating, thời gian giao. | Cần bổ sung screenshot app thật của nhóm ở Day06 checkpoint M1. Nguồn tham khảo: https://food.grab.com/vn/en/ | Low-confidence | Pain không chỉ là "không có món", mà là quá nhiều lựa chọn nhưng thiếu quyết định được cá nhân hóa. |
-| Grab nói người dùng trung bình dành 17 phút browsing trước khi đặt món và 74% browse khi chưa có cuisine cụ thể. | https://www.grab.com/inside-grab/stories/personalising-food-recommendations-on-grabfood/ | Failure / Low-confidence | Build slice nên tập trung vào user "chưa biết ăn gì", không phải user đã biết chính xác quán/món. |
-| GrabFood dùng machine learning-driven search and recommendations để cá nhân hóa food discovery. | https://www.grab.com/inside-grab/stories/personalising-food-recommendations-on-grabfood/ | Happy | AI/recommendation là feature thật của app, nên nhóm có thể học pattern từ app thật thay vì tự nghĩ chatbot chung chung. |
-| Grab có pattern "Order Again" cho user hay mua lại quán quen, nhưng user cũng cần khám phá món mới. | https://www.grab.com/inside-grab/stories/personalising-food-recommendations-on-grabfood/ | Correction / Happy | Prototype nên cho user chọn "quán quen" hoặc "thử món mới", vì cùng một user có hai nhu cầu khác nhau. |
+| Day05 có nhiều nguồn rời rạc: slide, GitHub repo, screenshot, hướng dẫn trên lớp. | Screenshot slide / repo Day05 | Low-confidence | User dễ hỏi mơ hồ kiểu "bài này làm gì" vì không biết nguồn nào là chính. |
+| README Day05 tách rõ `01-invidual-workshop` và `02-group-spec`. | GitHub repo Day05 | Happy / Correction | Agent cần phân biệt câu hỏi cá nhân hay nhóm trước khi trả lời. |
+| Slide yêu cầu cuối Day05 phải có evidence, slice, decision, failure path, owner. | Screenshot gate checklist | Program Operations | Agent có thể tổng hợp deliverable thành checklist nếu có nguồn. |
+| Nếu không có update mới như deadline hoặc rule đổi, AI dễ đoán sai. | Domain observation | No-source / Unknown | Agent phải nói không tìm thấy trong tài liệu đã nạp thay vì đoán. |
 
-## 3. User / review / social evidence
+## 3. User / Review / Social Evidence
 
-| Quote / review / observation | Nguồn | User là ai? | Pain/failure mode |
+| Quote / observation | Nguồn | User là ai? | Pain/failure mode |
 |---|---|---|---|
-| "Consumers are spending an average of 17 minutes browsing on GrabFood before placing their order" | Grab official article: https://www.grab.com/inside-grab/stories/personalising-food-recommendations-on-grabfood/ | Người dùng GrabFood cần đặt đồ ăn | Tốn thời gian chọn món trước khi order. |
-| "Some 74 per cent also browse without a particular cuisine in mind" | Grab official article | User chưa biết ăn món gì | Search/recommendation dễ fail nếu user không có keyword rõ. |
-| Grab nói họ dùng hành vi như order history và clicks để hiểu likes/dislikes của user. | Grab official article | User dùng app nhiều lần | Nếu không dùng context cá nhân, gợi ý có thể chung chung và không đáng tin. |
-| ShopeeFood public site cho thấy số lượng địa điểm rất lớn: TP.HCM hơn 120k địa điểm, Hà Nội hơn 66k địa điểm. | ShopeeFood public site: https://shopee.shopeefood.vn/ | User ở đô thị lớn | Nhiều lựa chọn làm tăng cognitive load; cần bộ lọc/gợi ý tốt hơn. |
+| "Day05 rốt cuộc phải nộp file nào?" | Câu hỏi thật trong quá trình làm lab | Học viên AI in Action | User không biết đang hỏi phần cá nhân, nhóm, hay chuẩn bị Day06. |
+| "File 01 có liên quan gì tới file 02 không?" | Câu hỏi thật trong quá trình làm lab | Học viên đang đọc repo | User cần agent phân luồng scope trước khi đưa checklist. |
+| "Nếu tài liệu không có thông tin đó thì AI có được đoán không?" | Câu hỏi khi thiết kế workflow | Học viên/nhóm làm prototype | Failure mode là AI trả lời không có nguồn, sai deadline/rubric. |
 
-Nếu nhóm chưa có screenshot app thật trong điện thoại:
-
-```text
-Đây là evidence public + self-use draft. Nhóm sẽ kiểm bằng cách mỗi thành viên chụp 1 màn hình app GrabFood/ShopeeFood khi tìm món mơ hồ trước checkpoint M1 Day 06.
-```
-
-## 4. Competitor / analog evidence
-
-| App / mô hình tham khảo | Họ xử lý task này thế nào? | Pattern học được | Có áp dụng trong 1 ngày không? |
-|---|---|---|---|
-| GrabFood | Cá nhân hóa search/recommendation bằng order history, clicks, thời điểm trong ngày, budget và willingness to wait. | Dùng vài tín hiệu hẹp để rank món/quán, không hỏi user quá nhiều. | Có. Prototype dùng form 3 câu và mock ranking. |
-| ShopeeFood | Có mạng lưới địa điểm lớn ở nhiều thành phố, nhiều lựa chọn món/quán. | Vấn đề chính là lọc và quyết định, không phải thiếu lựa chọn. | Có. Dùng evidence số lượng địa điểm để justify pain. |
-| Netflix / Spotify recommendation | Gợi ý theo lịch sử, mood, preference và cho user sửa feedback. | Cần nút "không thích", "quá đắt", "giao lâu" để correction. | Có. Prototype có feedback chips. |
-
-## 5. Evidence -> Insight
+## 4. Evidence -> Insight
 
 ```text
 Evidence nổi bật nhất:
-GrabFood users browse trung bình 17 phút trước khi đặt món; 74% browse khi chưa có cuisine cụ thể.
-GrabFood đã dùng ML search/recommendation để cá nhân hóa discovery.
-ShopeeFood cho thấy số lượng địa điểm trong đô thị rất lớn, nên user dễ bị quá tải lựa chọn.
+Lab có nhiều nguồn đúng nhưng phân tán: slide, repo, README, Discord, mentor note.
 
 Insight:
-User không chỉ gặp vấn đề "không biết ăn gì".
-Thật ra họ cần decision support nhanh, có lý do rõ, để chọn một món đủ hợp trong bối cảnh rất cụ thể: ngân sách, khẩu vị, thời gian giao và mức độ đói.
+User không chỉ cần "một chatbot trả lời bài học".
+User cần một agent biết hỏi lại, xác định câu hỏi thuộc nội dung học hay vận hành chương trình,
+rồi chỉ trả lời dựa trên nguồn đã nạp.
 
 Opportunity:
-AI có thể giúp bằng cách augment bước chọn món: hỏi 2-3 câu, rank 3 lựa chọn phù hợp, giải thích lý do, và cho user sửa nếu gợi ý sai.
+AI có thể giúp bằng cách biến tài liệu lớp thành một Learning OS Knowledge Agent:
+hỏi thêm context, retrieve đúng source, tổng hợp checklist, và nói "không biết" khi source thiếu.
 ```
 
-## 6. Evidence đổi SPEC như thế nào?
+## 5. Evidence đổi SPEC như thế nào?
 
-- [x] Đổi user chính.
-- [x] Đổi pain statement.
-- [x] Đổi build slice.
-- [x] Đổi Auto/Aug decision.
-- [x] Đổi 4 paths.
-- [x] Đổi failure mode.
-- [x] Đổi owner/test plan.
-
-Ghi rõ thay đổi quan trọng:
+- [x] Chọn Track A - Learning OS.
+- [x] Chia scope thành Learning Content Support và Program Operations Support.
+- [x] Chốt build slice đủ nhỏ: một user hỏi mơ hồ về Day05/Day06, agent hỏi thêm + tìm source + trả checklist.
+- [x] Chọn Augmentation, không Automation.
+- [x] Thêm failure path: no-source/unknown, wrong-scope, correction.
+- [x] Thêm owner plan cho research, SPEC, prototype, test, demo.
 
 ```text
-Trước evidence, nhóm có thể định làm "AI assistant cho đặt đồ ăn".
-Sau evidence, nhóm đổi thành "AI gợi ý 3 món/quán cho user chưa biết ăn gì".
-Lý do: evidence cho thấy pain nằm ở browsing/discovery và quá tải lựa chọn, không nằm ở toàn bộ quy trình đặt hàng.
-
-Trước evidence, nhóm có thể muốn AI tự chọn món.
-Sau evidence, nhóm chọn augmentation: AI gợi ý, user quyết định cuối.
-Lý do: khẩu vị, dị ứng, ngân sách và thời gian giao là quyết định cá nhân; AI sai có thể làm user mất tiền hoặc nhận món không phù hợp.
+Trước evidence, ý tưởng còn dễ thành chatbot chung chung.
+Sau khi đọc yêu cầu Day05 và quan sát workflow làm bài, nhóm chốt Learning OS Knowledge Intake Agent.
+Lý do: scope này có nguồn thật dễ nạp, pain thật trong lớp, và demo được ask loop + source-grounded refusal trong một prototype nhỏ.
 ```
