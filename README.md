@@ -8,3 +8,4 @@ Repository lưu các bài thực hành hằng ngày trong chương trình Vin th
 - `Day02-2A202600793-DoVanCung` - Ngày 2: problem scan, group problem statement và reflection
 - `Day03-2A202600793-DoVanCung` - Ngày 3: chatbot baseline, ReAct agent, tools, telemetry và evaluation
 - `Day04-E403-Prompt-Engineering-Tool-Calling-Labs-main` - Ngày 4: OrderDesk agent, prompt engineering, tool calling và guardrails
+- `Day05-2A202600793-DoVanCung` - Ngày 5: AI Product kickoff, individual app teardown và group thin SPEC
