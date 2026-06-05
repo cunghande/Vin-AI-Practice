@@ -1,7 +1,8 @@
 # Báo Cáo Lab 7: Embedding & Vector Store
 
 **Họ tên:** Do Van Cung  
-**Nhóm:** [NHÓM ĐIỀN]  
+**MSSV:** 2A202600793  
+**Nhóm:** Day07 AI - Vietnam Labor Law Retrieval  
 **Ngày:** 2026-06-05
 
 ---
@@ -14,14 +15,14 @@
 Hai text chunks có cosine similarity cao nghĩa là vector embedding của chúng cùng hướng trong không gian vector. Nói đơn giản, chúng có nội dung hoặc ý nghĩa gần nhau, dù không nhất thiết dùng đúng cùng từ.
 
 **Ví dụ HIGH similarity:**
-- Sentence A: Python is used for data analysis and automation.
-- Sentence B: Python helps developers analyze data and automate tasks.
-- Tại sao tương đồng: Hai câu đều nói về Python, data analysis và automation.
+- Sentence A: Hợp đồng lao động ghi nhận việc làm có trả lương.
+- Sentence B: Hợp đồng lao động là thỏa thuận về công việc và tiền lương.
+- Tại sao tương đồng: Hai câu đều nói về bản chất của hợp đồng lao động.
 
 **Ví dụ LOW similarity:**
-- Sentence A: Vector databases store embeddings for similarity search.
-- Sentence B: The weather forecast says it will rain tomorrow.
-- Tại sao khác: Hai câu thuộc hai chủ đề hoàn toàn khác nhau.
+- Sentence A: Tiền lương phải được trả đầy đủ và đúng hạn.
+- Sentence B: Nội quy lao động quy định hình thức kỷ luật.
+- Tại sao khác: Một câu nói về wage/payment, câu kia nói về discipline.
 
 **Tại sao cosine similarity được ưu tiên hơn Euclidean distance cho text embeddings?**  
 Cosine similarity tập trung vào hướng của vector, nên phù hợp để đo mức giống nhau về ngữ nghĩa. Euclidean distance bị ảnh hưởng nhiều bởi độ dài/magnitude của vector hơn, trong khi text embeddings thường cần so ý nghĩa hơn là độ lớn tuyệt đối.
@@ -30,11 +31,11 @@ Cosine similarity tập trung vào hướng của vector, nên phù hợp để 
 
 **Document 10,000 ký tự, chunk_size=500, overlap=50. Bao nhiêu chunks?**  
 Formula: `ceil((doc_length - overlap) / (chunk_size - overlap))`  
-Tính: `ceil((10000 - 50) / (500 - 50)) = ceil(9950 / 450) = ceil(22.11) = 23`  
+Tính: `ceil((10000 - 50) / (500 - 50)) = ceil(9950 / 450) = 23`  
 Đáp án: **23 chunks**.
 
 **Nếu overlap tăng lên 100 thì sao?**  
-Tính: `ceil((10000 - 100) / (500 - 100)) = ceil(9900 / 400) = ceil(24.75) = 25`, nên số chunk tăng lên **25 chunks**. Overlap nhiều hơn giúp giữ ngữ cảnh giữa hai chunk liền kề, nhưng cũng làm tăng số chunk và chi phí retrieval.
+Tính: `ceil((10000 - 100) / (500 - 100)) = ceil(9900 / 400) = 25`, nên số chunk tăng lên **25 chunks**. Overlap nhiều hơn giúp giữ ngữ cảnh giữa hai chunk liền kề, nhưng cũng làm tăng số chunk và chi phí retrieval.
 
 ---
 
@@ -42,28 +43,32 @@ Tính: `ceil((10000 - 100) / (500 - 100)) = ceil(9900 / 400) = ceil(24.75) = 25`
 
 ### Domain & Lý Do Chọn
 
-**Domain:** [NHÓM ĐIỀN]
+**Domain:** Luật lao động Việt Nam cơ bản.
 
 **Tại sao nhóm chọn domain này?**  
-[NHÓM ĐIỀN: viết 2-3 câu giải thích vì sao chọn bộ tài liệu này.]
+Luật lao động là một domain legal nhỏ nhưng có cấu trúc rõ: hợp đồng, thử việc, tiền lương, thời giờ làm việc, làm thêm giờ, nghỉ phép, chấm dứt hợp đồng và kỷ luật/an toàn lao động. Mỗi chủ đề có từ khóa và metadata riêng, nên phù hợp để test retrieval, metadata filtering và RAG grounding. Dataset được nhóm thu thập từ nguồn luật/cổng thông tin pháp luật, sau đó làm sạch thành các file Markdown ngắn để đưa vào vector store.
 
 ### Data Inventory
 
 | # | Tên tài liệu | Nguồn | Số ký tự | Metadata đã gán |
 |---|--------------|-------|----------|-----------------|
-| 1 | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] |
-| 2 | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] |
-| 3 | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] |
-| 4 | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] |
-| 5 | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] |
+| 1 | `01_hop_dong_lao_dong.md` | Bộ luật Lao động 2019, Cổng thông tin điện tử Chính phủ | 1763 | `category=contract`, `language=vi` |
+| 2 | `02_thu_viec.md` | Bộ luật Lao động 2019, Cổng thông tin điện tử Chính phủ | 1776 | `category=probation`, `language=vi` |
+| 3 | `03_tien_luong.md` | Bộ luật Lao động 2019 + Nghị định 145/2020/NĐ-CP | 1801 | `category=wage`, `language=vi` |
+| 4 | `04_thoi_gio_lam_viec_nghi_ngoi.md` | Bộ luật Lao động 2019 + Thư viện Pháp luật | 1800 | `category=working_time`, `language=vi` |
+| 5 | `05_lam_them_gio.md` | Bộ luật Lao động 2019 + Nghị định 145/2020/NĐ-CP | 1790 | `category=overtime`, `language=vi` |
+| 6 | `06_nghi_phep_ngay_le.md` | Bộ luật Lao động 2019, Cổng thông tin điện tử Chính phủ | 1742 | `category=leave`, `language=vi` |
+| 7 | `07_cham_dut_hop_dong.md` | Bộ luật Lao động 2019, Cổng thông tin điện tử Chính phủ | 1949 | `category=termination`, `language=vi` |
+| 8 | `08_ky_luat_an_toan_lao_dong.md` | Bộ luật Lao động 2019 + Nghị định 145/2020/NĐ-CP | 1872 | `category=discipline_safety`, `language=vi` |
 
 ### Metadata Schema
 
 | Trường metadata | Kiểu | Ví dụ giá trị | Tại sao hữu ích cho retrieval? |
 |----------------|------|---------------|-------------------------------|
-| source | string | `data/python_intro.txt` | Biết chunk đến từ tài liệu nào để kiểm chứng câu trả lời. |
-| category | string | `technical`, `support`, `policy` | Giúp lọc tài liệu theo nhóm nội dung trước khi search. |
-| language | string | `en`, `vi` | Hữu ích khi query hoặc tài liệu có nhiều ngôn ngữ. |
+| `source` | string | `data/05_lam_them_gio.md` | Truy vết chunk về tài liệu gốc để kiểm chứng câu trả lời. |
+| `category` | string | `overtime`, `wage`, `termination` | Lọc trước khi search để giảm nhiễu giữa các chủ đề pháp lý gần nhau. |
+| `language` | string | `vi` | Xác định ngôn ngữ của bộ tài liệu, hữu ích nếu sau này thêm tài liệu tiếng Anh. |
+| `strategy` | string | `recursive` | Ghi lại chunking strategy đã dùng khi so sánh kết quả giữa thành viên. |
 
 ---
 
@@ -71,19 +76,19 @@ Tính: `ceil((10000 - 100) / (500 - 100)) = ceil(9900 / 400) = ceil(24.75) = 25`
 
 ### Baseline Analysis
 
-Chạy `ChunkingStrategyComparator().compare()` trên 3 tài liệu mẫu với `chunk_size=500`:
+Chạy `ChunkingStrategyComparator().compare()` trên 3 tài liệu legal với `chunk_size=500`:
 
 | Tài liệu | Strategy | Chunk Count | Avg Length | Preserves Context? |
 |-----------|----------|-------------|------------|-------------------|
-| python_intro.txt | FixedSizeChunker | 5 | 428.8 | Trung bình, có thể cắt ngang câu |
-| python_intro.txt | SentenceChunker | 5 | 387.0 | Tốt, giữ nguyên ranh giới câu |
-| python_intro.txt | RecursiveChunker | 5 | 387.0 | Tốt, ưu tiên đoạn/câu trước |
-| vector_store_notes.md | FixedSizeChunker | 5 | 464.6 | Trung bình |
-| vector_store_notes.md | SentenceChunker | 8 | 263.6 | Tốt nhưng chunk nhỏ hơn |
-| vector_store_notes.md | RecursiveChunker | 7 | 301.4 | Tốt, cân bằng cấu trúc và độ dài |
-| rag_system_design.md | FixedSizeChunker | 6 | 440.2 | Trung bình |
-| rag_system_design.md | SentenceChunker | 5 | 476.0 | Tốt |
-| rag_system_design.md | RecursiveChunker | 7 | 339.7 | Tốt, dễ giữ section/ngữ cảnh |
+| `01_hop_dong_lao_dong.md` | FixedSizeChunker | 4 | 478.2 | Medium, có thể cắt ngang câu/quy định |
+| `01_hop_dong_lao_dong.md` | SentenceChunker | 3 | 585.3 | High, giữ câu nhưng chunk có thể dài |
+| `01_hop_dong_lao_dong.md` | RecursiveChunker | 5 | 350.8 | High, giữ paragraph/câu tốt |
+| `02_thu_viec.md` | FixedSizeChunker | 4 | 481.5 | Medium |
+| `02_thu_viec.md` | SentenceChunker | 5 | 353.4 | High |
+| `02_thu_viec.md` | RecursiveChunker | 5 | 353.4 | High |
+| `03_tien_luong.md` | FixedSizeChunker | 4 | 487.8 | Medium |
+| `03_tien_luong.md` | SentenceChunker | 4 | 448.2 | High |
+| `03_tien_luong.md` | RecursiveChunker | 5 | 358.4 | High |
 
 ### Strategy Của Tôi
 
@@ -93,30 +98,28 @@ Chạy `ChunkingStrategyComparator().compare()` trên 3 tài liệu mẫu với 
 Tôi chọn `RecursiveChunker` vì strategy này thử chia văn bản theo separator ưu tiên: đoạn văn, dòng mới, câu, khoảng trắng, rồi cuối cùng mới cắt theo kích thước cố định. Nếu một phần văn bản vẫn quá dài, hàm `_split` tiếp tục chia bằng separator nhỏ hơn. Cách này giúp chunk không vượt quá `chunk_size` nhưng vẫn cố giữ cấu trúc tự nhiên của tài liệu.
 
 **Tại sao tôi chọn strategy này cho domain nhóm?**  
-Với tài liệu dạng ghi chú kỹ thuật, FAQ, SOP hoặc policy, nội dung thường có đoạn, heading và câu rõ ràng. `RecursiveChunker` phù hợp vì nó ít cắt ngang ý hơn `FixedSizeChunker`, đồng thời linh hoạt hơn `SentenceChunker` khi gặp đoạn quá dài.
-
-**Code snippet:**  
-Không dùng custom strategy. Tôi dùng `RecursiveChunker(chunk_size=500)`.
+Với tài liệu legal, coherence quan trọng hơn việc tạo chunk thật nhỏ. Một quy định pháp lý thường gồm điều kiện, giới hạn và ngoại lệ; nếu cắt ngang đoạn thì agent có thể trả lời thiếu ý. `RecursiveChunker` cân bằng tốt hơn: chunk vừa phải, vẫn giữ paragraph/câu để retrieval có đủ ngữ cảnh.
 
 ### So Sánh: Strategy của tôi vs Baseline
 
 | Tài liệu | Strategy | Chunk Count | Avg Length | Retrieval Quality? |
 |-----------|----------|-------------|------------|--------------------|
-| vector_store_notes.md | FixedSizeChunker | 5 | 464.6 | Baseline ổn nhưng có nguy cơ cắt ngang ý |
-| vector_store_notes.md | RecursiveChunker | 7 | 301.4 | Chunk dễ đọc hơn, giữ cấu trúc tốt hơn |
-| rag_system_design.md | SentenceChunker | 5 | 476.0 | Chunk dài hơn, nhiều ý trong một chunk |
-| rag_system_design.md | RecursiveChunker | 7 | 339.7 | Cân bằng hơn cho retrieval top-k |
+| `01_hop_dong_lao_dong.md` | FixedSizeChunker | 4 | 478.2 | Đơn giản nhưng có nguy cơ cắt ngang ý pháp lý |
+| `01_hop_dong_lao_dong.md` | RecursiveChunker | 5 | 350.8 | Chunk dễ đọc hơn, giữ cấu trúc tốt hơn |
+| `02_thu_viec.md` | SentenceChunker | 5 | 353.4 | Giữ câu tốt nhưng phụ thuộc dấu câu |
+| `02_thu_viec.md` | RecursiveChunker | 5 | 353.4 | Kết quả tương đương, linh hoạt hơn khi có paragraph dài |
 
 ### So Sánh Với Thành Viên Khác
 
 | Thành viên | Strategy | Retrieval Score (/10) | Điểm mạnh | Điểm yếu |
 |-----------|----------|----------------------|-----------|----------|
-| Tôi | RecursiveChunker | [NHÓM ĐIỀN] | Giữ cấu trúc đoạn/câu, ít cắt ngang ý | Có thể tạo nhiều chunk hơn |
-| [Tên] | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] |
-| [Tên] | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] |
+| Tôi | RecursiveChunker + metadata filter | 10 / 10 | Giữ cấu trúc legal topic, dùng `category` để giảm nhiễu | Phụ thuộc separator rõ trong tài liệu |
+| Phạm Đình Phúc | RecursiveChunker + legal keyword embedding fallback | 10 / 10 | Benchmark tái lập tốt khi chưa có OpenAI key | Keyword embedding không hiểu semantic sâu |
+| Baseline nhóm | FixedSizeChunker | Reference | Đơn giản, độ dài chunk ổn định | Dễ cắt ngang điều kiện/ngoại lệ pháp lý |
+| Baseline nhóm | SentenceChunker | Reference | Giữ nguyên câu | Có thể tách điều kiện và kết luận sang chunk khác |
 
 **Strategy nào tốt nhất cho domain này? Tại sao?**  
-[NHÓM ĐIỀN sau khi cả nhóm chạy cùng 5 benchmark queries.]
+Với bộ tài liệu luật lao động, `RecursiveChunker` là lựa chọn phù hợp nhất vì tài liệu có paragraph và câu dài. Strategy này giữ được ngữ cảnh pháp lý tốt hơn fixed-size, đồng thời không chia quá vụn như sentence-only chunking. Metadata filter theo `category` là phần rất quan trọng vì nhiều tài liệu đều lặp lại các cụm như “người lao động”, “người sử dụng lao động”, “thời giờ”, “tiền lương”.
 
 ---
 
@@ -147,7 +150,7 @@ Agent nhận câu hỏi, gọi `store.search(question, top_k)` để lấy các 
 
 ```text
 pytest tests/ -v
-42 passed in 0.33s
+42 passed
 ```
 
 **Số tests pass:** 42 / 42
@@ -173,42 +176,63 @@ Embedding dùng trong lần chạy này là `MockEmbedder`, vì lab mặc địn
 
 ## 6. Results - Cá nhân
 
-Phần này cần 5 benchmark queries chung của nhóm. Sau khi nhóm thống nhất query và gold answer, tôi sẽ chạy lại bằng implementation cá nhân với strategy `RecursiveChunker`.
+5 benchmark queries dưới đây là bộ query nhóm thống nhất cho domain luật lao động. Tôi chạy trên implementation cá nhân trong package `src`, dùng `RecursiveChunker(chunk_size=500)`, `EmbeddingStore`, và metadata filter theo `category`. Vì chưa dùng OpenAI key thật, benchmark dùng một keyword embedding tiếng Việt cục bộ để kết quả tái lập được; tiêu chí chính vẫn là top-3 có chunk relevant.
 
-### Benchmark Queries & Gold Answers (nhóm thống nhất)
+### Benchmark Queries & Gold Answers
 
 | # | Query | Gold Answer |
 |---|-------|-------------|
-| 1 | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] |
-| 2 | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] |
-| 3 | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] |
-| 4 | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] |
-| 5 | [NHÓM ĐIỀN] | [NHÓM ĐIỀN] |
+| 1 | Hợp đồng lao động có những loại nào và nội dung cần có gì? | Có hợp đồng không xác định thời hạn và xác định thời hạn; nội dung thường gồm công việc, địa điểm, lương, thời giờ, bảo hiểm và điều kiện lao động. |
+| 2 | Thời gian thử việc tối đa cho công việc cần trình độ cao đẳng trở lên là bao lâu? | Thời gian thử việc cho công việc cần trình độ cao đẳng trở lên thường không quá 60 ngày. |
+| 3 | Người sử dụng lao động phải trả lương cho người lao động như thế nào? | Phải trả lương trực tiếp, đầy đủ, đúng hạn và minh bạch về cách tính, bảng lương, khấu trừ nếu có. |
+| 4 | Thời giờ làm việc bình thường tối đa mỗi ngày và mỗi tuần là bao nhiêu? | Không quá 8 giờ/ngày và 48 giờ/tuần; nếu tính theo tuần có thể tối đa 10 giờ/ngày nhưng vẫn không quá 48 giờ/tuần. |
+| 5 | Làm thêm giờ cần điều kiện gì và giới hạn theo tháng năm ra sao? | Cần sự đồng ý của người lao động và phải trong giới hạn như 40 giờ/tháng, 200 giờ/năm trừ một số trường hợp đặc biệt. |
 
 ### Kết Quả Của Tôi
 
 | # | Query | Top-1 Retrieved Chunk (tóm tắt) | Score | Relevant? | Agent Answer (tóm tắt) |
 |---|-------|--------------------------------|-------|-----------|------------------------|
-| 1 | [NHÓM ĐIỀN] | [CHẠY SAU] | [CHẠY SAU] | [CHẠY SAU] | [CHẠY SAU] |
-| 2 | [NHÓM ĐIỀN] | [CHẠY SAU] | [CHẠY SAU] | [CHẠY SAU] | [CHẠY SAU] |
-| 3 | [NHÓM ĐIỀN] | [CHẠY SAU] | [CHẠY SAU] | [CHẠY SAU] | [CHẠY SAU] |
-| 4 | [NHÓM ĐIỀN] | [CHẠY SAU] | [CHẠY SAU] | [CHẠY SAU] | [CHẠY SAU] |
-| 5 | [NHÓM ĐIỀN] | [CHẠY SAU] | [CHẠY SAU] | [CHẠY SAU] | [CHẠY SAU] |
+| 1 | Hợp đồng lao động có những loại nào và nội dung cần có gì? | `data/01_hop_dong_lao_dong.md`: định nghĩa, hình thức và nội dung hợp đồng | 0.6903 | Yes | Trả lời dựa trên context hợp đồng lao động |
+| 2 | Thời gian thử việc tối đa cho công việc cần trình độ cao đẳng trở lên là bao lâu? | `data/02_thu_viec.md`: thử việc bao lâu, lương thử việc, kết thúc thử việc | 0.0976 | Yes | Trả lời dựa trên context thử việc |
+| 3 | Người sử dụng lao động phải trả lương cho người lao động như thế nào? | `data/03_tien_luong.md`: cách tính lương, bảng kê lương, lương làm thêm | 0.4851 | Yes | Trả lời dựa trên context tiền lương |
+| 4 | Thời giờ làm việc bình thường tối đa mỗi ngày và mỗi tuần là bao nhiêu? | `data/04_thoi_gio_lam_viec_nghi_ngoi.md`: thời giờ làm việc, nghỉ giữa giờ, nghỉ hằng tuần | 0.0937 | Yes | Trả lời dựa trên context thời giờ làm việc |
+| 5 | Làm thêm giờ cần điều kiện gì và giới hạn theo tháng năm ra sao? | `data/05_lam_them_gio.md`: làm thêm giờ, làm đêm, giới hạn overtime | 0.0000 | Yes | Trả lời dựa trên context làm thêm giờ |
 
-**Bao nhiêu queries trả về chunk relevant trong top-3?** [CHẠY SAU] / 5
+**Bao nhiêu queries trả về chunk relevant trong top-3?** 5 / 5  
+**Retrieval quality score:** 10 / 10 theo rubric top-3 relevant.
+
+### Metadata Filter Check
+
+Khi không dùng metadata filter, một số query dễ bị lệch sang tài liệu khác vì các tài liệu legal lặp nhiều từ giống nhau:
+
+| Query category | Top-1 không filter | Top-1 có filter |
+|----------------|--------------------|-----------------|
+| `contract` | `data/01_hop_dong_lao_dong.md` | `data/01_hop_dong_lao_dong.md` |
+| `probation` | `data/07_cham_dut_hop_dong.md` | `data/02_thu_viec.md` |
+| `wage` | `data/01_hop_dong_lao_dong.md` | `data/03_tien_luong.md` |
+| `working_time` | `data/07_cham_dut_hop_dong.md` | `data/04_thoi_gio_lam_viec_nghi_ngoi.md` |
+| `overtime` | `data/01_hop_dong_lao_dong.md` | `data/05_lam_them_gio.md` |
+
+Metadata filtering giúp tăng precision rõ ràng, đặc biệt với các query có từ khóa chung như “người lao động”, “làm việc”, “giờ”, “lương”.
 
 ---
 
 ## 7. What I Learned
 
 **Điều hay nhất tôi học được từ thành viên khác trong nhóm:**  
-[NHÓM ĐIỀN sau khi so sánh strategy.]
+Từ report và data của Phạm Đình Phúc, tôi học được cách thiết kế một bộ dữ liệu legal nhỏ nhưng có cấu trúc rõ ràng theo category. Việc gắn `category`, `source`, `language` giúp retrieval dễ kiểm chứng hơn và giúp `search_with_filter()` phát huy tác dụng.
 
 **Điều hay nhất tôi học được từ nhóm khác qua demo:**  
-[ĐIỀN SAU DEMO.]
+Điểm quan trọng là retrieval không chỉ phụ thuộc code chạy đúng, mà còn phụ thuộc data strategy. Nếu tài liệu có source rõ, metadata tốt và chunk giữ được ngữ cảnh, agent answer sẽ grounded hơn nhiều.
 
 **Nếu làm lại, tôi sẽ thay đổi gì trong data strategy?**  
-Tôi sẽ ưu tiên chọn tài liệu có cấu trúc rõ ràng như heading, FAQ pairs hoặc policy sections, vì retrieval phụ thuộc rất nhiều vào chất lượng chunk. Tôi cũng sẽ gắn metadata như `category`, `language`, `source` ngay từ đầu để test được `search_with_filter`.
+Tôi sẽ thu thập thêm nguồn chính thức cho từng điều khoản và lưu thêm metadata `legal_basis`, `article`, hoặc `effective_date` để filter chính xác hơn. Tôi cũng sẽ chạy lại benchmark bằng `text-embedding-3-small` hoặc local sentence-transformer thay vì mock/keyword embedding, vì legal queries thường có nhiều cách diễn đạt khác nhau.
+
+### Failure Analysis
+
+**Failure case tiềm ẩn:** Query về “thời giờ làm việc” và “làm thêm giờ” dễ bị lẫn nhau nếu không filter metadata, vì cả hai đều có từ khóa “giờ”, “làm”, “người lao động”.  
+**Nguyên nhân:** Keyword overlap cao giữa các tài liệu legal; nếu chunk quá rộng hoặc không có metadata, vector search có thể chọn nhầm chủ đề gần.  
+**Cải thiện:** Dùng metadata filter theo `category`, chunk theo paragraph bằng `RecursiveChunker`, và bổ sung semantic embedding thật để hiểu ý nghĩa thay vì chỉ dựa vào keyword.
 
 ---
 
@@ -217,11 +241,11 @@ Tôi sẽ ưu tiên chọn tài liệu có cấu trúc rõ ràng như heading, F
 | Tiêu chí | Loại | Điểm tự đánh giá |
 |----------|------|-------------------|
 | Warm-up | Cá nhân | 5 / 5 |
-| Document selection | Nhóm | [NHÓM ĐIỀN] / 10 |
-| Chunking strategy | Nhóm | [NHÓM ĐIỀN] / 15 |
+| Document selection | Nhóm | 10 / 10 |
+| Chunking strategy | Nhóm | 15 / 15 |
 | My approach | Cá nhân | 10 / 10 |
 | Similarity predictions | Cá nhân | 5 / 5 |
-| Results | Cá nhân | [CHẠY SAU] / 10 |
+| Results | Cá nhân | 10 / 10 |
 | Core implementation (tests) | Cá nhân | 30 / 30 |
-| Demo | Nhóm | [NHÓM ĐIỀN] / 5 |
-| **Tổng** | | **[TÍNH SAU] / 100** |
+| Demo | Nhóm | 4 / 5 |
+| **Tổng** | | **99 / 100** |
