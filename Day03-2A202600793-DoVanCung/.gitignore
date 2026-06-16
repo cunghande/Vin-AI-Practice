@@ -1,7 +1,0 @@
-.env
-logs/
-__pycache__/
-.pytest_cache/
-*.log
-.DS_Store
-models/
