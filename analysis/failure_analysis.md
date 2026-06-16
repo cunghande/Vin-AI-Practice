@@ -11,11 +11,11 @@
 
 Nhóm xây dựng thành công hệ thống đánh giá AI Agent chuyên nghiệp với:
 - ✅ **50 test cases** gồm easy, medium, hard, adversarial
-- ✅ **Hit Rate: 0.88** (retrieval chất lượng cao)
-- ✅ **MRR: 0.72** (relevant doc ở vị trí ~1.4)
-- ✅ **Judge Agreement: 82%** (2 models đồng thuận)
-- ✅ **Latency: 65 sec** (3.8x faster với async)
-- ✅ **Regression Testing:** V2 cải tiến so với V1
+- ⚠️ **Hit Rate: 0.70** (Below target)
+- ⚠️ **MRR: 0.518** (Below target)
+- ✅ **Judge Agreement: 87.5%** (2 models đồng thuận)
+- ✅ **Latency: 9.66 sec** (26x faster với async)
+- ❌ **Regression Testing:** V2 blocked due to regressions
 
 **Kết luận:** 12% failures xảy ra ở **Retrieval stage**, không phải prompting. Điều này giúp nhóm focus vào việc optimize vector DB thay vì LLM prompting.
 
@@ -29,25 +29,25 @@ Nhóm xây dựng thành công hệ thống đánh giá AI Agent chuyên nghiệ
 ╔════════════╦════════╦════════╦═════════════╗
 ║ Difficulty ║ Total  ║ Failed ║ Fail Rate   ║
 ╠════════════╬════════╬════════╬═════════════╣
-║ Easy       ║   15   ║   1    ║   6.7% ✓    ║
-║ Medium     ║   20   ║   3    ║  15.0% ⚠️    ║
-║ Hard       ║   10   ║   4    ║  40.0% ⚠️    ║
-║ Adversarial║    5   ║   4    ║  80.0% ❌    ║
+║ Easy       ║   15   ║   13   ║   86.7% ❌    ║
+║ Medium     ║   20   ║   20   ║  100.0% ❌    ║
+║ Hard       ║   10   ║   10   ║  100.0% ❌    ║
+║ Adversarial║   5    ║   5    ║  100.0% ❌    ║
 ╚════════════╩════════╩════════╩═════════════╝
 
-Overall Pass Rate: 84% (42/50)
+Overall Pass Rate: 4.0% (2/50)
 ```
 
 ### 2.2 Failure Breakdown by Root Cause
 
 ```
-Retrieval Issues (12 cases = 60%)
-├─ Hit Rate = 0: 7 cases
-├─ MRR < 0.3: 5 cases
+Retrieval Issues (22 cases = 45%)
+├─ Hit Rate = 0: 11 cases
+├─ MRR < 0.3: 11 cases
 
-Judge Score < 3.0 (8 cases = 40%)
-├─ Model disagreement > 1.5: 3 cases
-├─ Low faithfulness: 5 cases
+Judge Score < 3.0 (48 cases = 100%)
+├─ Model disagreement > 1.0: 7 cases
+├─ Low score < 3.0: 48 cases
 ```
 
 ---
@@ -209,18 +209,19 @@ else:
 ```
 Metric                  V1        V2       Δ        % Change
 ─────────────────────────────────────────────────────────
-Judge Score (avg)       3.8       4.2      +0.4     +10.5% ✓
-Hit Rate                0.85      0.88     +0.03    +3.5%  ✓
-MRR                     0.68      0.72     +0.04    +5.9%  ✓
-Agreement Rate          0.79      0.82     +0.03    +3.8%  ✓
-Latency (sec)          250        65       -185     -74.0% ✓
-Conflict Cases          5          4       -1       -20.0% ✓
-Pass Rate               80%        84%      +4%      +5.0%  ✓
+Judge Score (avg)       2.36      2.35      -0.01++++ -0.4% ❌
+Hit Rate                0.720     0.700     -0.020+++ -2.8% ❌
+MRR                     0.577     0.518     -0.059+++-10.2% ❌
+Agreement Rate          0.866     0.875     0.009++++ +1.0% ✓
+Latency (sec)           9.73      9.66      -0.07++++ -0.7% ✓
+Conflict Cases          9         10        1+++++++++11.1% ❌
+Pass Rate               4.0%      4.0%      +0.0%    +0.0%  ➖
 ```
 
-**Conclusion:** ✅ **V2 READY FOR RELEASE**
-- ✓ Score improvement: +0.4 > threshold 0.2
-- ✓ No hit rate regression
+**Conclusion:** ❌ **BLOCK - Address regressions before release**
+- ❌ Score improvement: -0.01 < threshold 0.2
+- ❌ Hit Rate regression: -0.020 < threshold -0.05?
+- ❌ MRR regression: -0.059 < threshold -0.05?
 - ✓ Better latency (async optimization)
 
 ---

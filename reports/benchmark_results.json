@@ -1,0 +1,1252 @@
+[
+  {
+    "case_id": "case_001",
+    "question": "Công ty cho bao nhiêu ngày phép/năm?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Công ty cho bao nhiêu ngày phép/năm?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "20",
+    "latency_seconds": 0.513,
+    "retrieval": {
+      "hit_rate": 0.0,
+      "mrr": 0.25,
+      "retrieved_count": 4,
+      "relevance_rank": 4
+    },
+    "judge": {
+      "final_score": 2.4,
+      "agreement_rate": 0.77,
+      "individual_scores": {
+        "gpt-4o": 2.86,
+        "claude-3.5": 1.71
+      },
+      "conflict_detected": true,
+      "reasoning": "Judge A: 2.86 | Judge B: 1.71 | Agreement: 77.0%"
+    },
+    "status": "fail",
+    "difficulty": "easy"
+  },
+  {
+    "case_id": "case_002",
+    "question": "Giờ làm việc bình thường là mấy giờ?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Giờ làm việc bình thường là mấy giờ?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "8:30 AM - 5:30 PM",
+    "latency_seconds": 0.513,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.3333333333333333,
+      "retrieved_count": 4,
+      "relevance_rank": 3
+    },
+    "judge": {
+      "final_score": 2.07,
+      "agreement_rate": 0.903,
+      "individual_scores": {
+        "gpt-4o": 2.32,
+        "claude-3.5": 1.83
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.32 | Judge B: 1.83 | Agreement: 90.3%"
+    },
+    "status": "fail",
+    "difficulty": "easy"
+  },
+  {
+    "case_id": "case_003",
+    "question": "Lương tháng 13 có được cấp không?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Lương tháng 13 có được cấp không?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Có",
+    "latency_seconds": 0.513,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.5,
+      "retrieved_count": 4,
+      "relevance_rank": 2
+    },
+    "judge": {
+      "final_score": 3.66,
+      "agreement_rate": 0.883,
+      "individual_scores": {
+        "gpt-4o": 3.95,
+        "claude-3.5": 3.37
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 3.95 | Judge B: 3.37 | Agreement: 88.3%"
+    },
+    "status": "pass",
+    "difficulty": "easy"
+  },
+  {
+    "case_id": "case_004",
+    "question": "Bảo hiểm y tế bao gồm ai?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Bảo hiểm y tế bao gồm ai?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "bản thân, vợ/chồng, con em",
+    "latency_seconds": 0.513,
+    "retrieval": {
+      "hit_rate": 0.0,
+      "mrr": 0.25,
+      "retrieved_count": 4,
+      "relevance_rank": 4
+    },
+    "judge": {
+      "final_score": 2.03,
+      "agreement_rate": 0.884,
+      "individual_scores": {
+        "gpt-4o": 2.32,
+        "claude-3.5": 1.74
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.32 | Judge B: 1.74 | Agreement: 88.4%"
+    },
+    "status": "fail",
+    "difficulty": "easy"
+  },
+  {
+    "case_id": "case_005",
+    "question": "Phải xin phép trước bao lâu?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Phải xin phép trước bao lâu?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "3 ngày",
+    "latency_seconds": 0.513,
+    "retrieval": {
+      "hit_rate": 0.0,
+      "mrr": 0.25,
+      "retrieved_count": 4,
+      "relevance_rank": 4
+    },
+    "judge": {
+      "final_score": 2.58,
+      "agreement_rate": 0.861,
+      "individual_scores": {
+        "gpt-4o": 2.92,
+        "claude-3.5": 2.23
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.92 | Judge B: 2.23 | Agreement: 86.1%"
+    },
+    "status": "fail",
+    "difficulty": "easy"
+  },
+  {
+    "case_id": "case_006",
+    "question": "Công ty hỗ trợ bao % học phí?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Công ty hỗ trợ bao % học phí?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "50%",
+    "latency_seconds": 0.513,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "retrieved_count": 4,
+      "relevance_rank": 1
+    },
+    "judge": {
+      "final_score": 2.07,
+      "agreement_rate": 0.896,
+      "individual_scores": {
+        "gpt-4o": 2.33,
+        "claude-3.5": 1.81
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.33 | Judge B: 1.81 | Agreement: 89.6%"
+    },
+    "status": "fail",
+    "difficulty": "easy"
+  },
+  {
+    "case_id": "case_007",
+    "question": "Gym allowance là bao %?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Gym allowance là bao %?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "70%",
+    "latency_seconds": 0.513,
+    "retrieval": {
+      "hit_rate": 0.0,
+      "mrr": 0.25,
+      "retrieved_count": 4,
+      "relevance_rank": 4
+    },
+    "judge": {
+      "final_score": 2.31,
+      "agreement_rate": 0.8,
+      "individual_scores": {
+        "gpt-4o": 2.81,
+        "claude-3.5": 1.81
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.81 | Judge B: 1.81 | Agreement: 80.0%"
+    },
+    "status": "fail",
+    "difficulty": "easy"
+  },
+  {
+    "case_id": "case_008",
+    "question": "Allowance ăn trưa là bao nhiêu?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Allowance ăn trưa là bao nhiêu?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "200k VND",
+    "latency_seconds": 0.513,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "retrieved_count": 4,
+      "relevance_rank": 1
+    },
+    "judge": {
+      "final_score": 2.52,
+      "agreement_rate": 0.912,
+      "individual_scores": {
+        "gpt-4o": 2.74,
+        "claude-3.5": 2.3
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.74 | Judge B: 2.30 | Agreement: 91.2%"
+    },
+    "status": "fail",
+    "difficulty": "easy"
+  },
+  {
+    "case_id": "case_009",
+    "question": "WFH được bao nhiêu ngày/tuần?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'WFH được bao nhiêu ngày/tuần?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "2",
+    "latency_seconds": 0.513,
+    "retrieval": {
+      "hit_rate": 0.0,
+      "mrr": 0.25,
+      "retrieved_count": 4,
+      "relevance_rank": 4
+    },
+    "judge": {
+      "final_score": 2.58,
+      "agreement_rate": 0.873,
+      "individual_scores": {
+        "gpt-4o": 2.9,
+        "claude-3.5": 2.26
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.90 | Judge B: 2.26 | Agreement: 87.3%"
+    },
+    "status": "fail",
+    "difficulty": "easy"
+  },
+  {
+    "case_id": "case_010",
+    "question": "Allowance internet WFH là bao nhiêu?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Allowance internet WFH là bao nhiêu?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "500k",
+    "latency_seconds": 0.513,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.3333333333333333,
+      "retrieved_count": 4,
+      "relevance_rank": 3
+    },
+    "judge": {
+      "final_score": 2.5,
+      "agreement_rate": 0.755,
+      "individual_scores": {
+        "gpt-4o": 2.99,
+        "claude-3.5": 1.76
+      },
+      "conflict_detected": true,
+      "reasoning": "Judge A: 2.99 | Judge B: 1.76 | Agreement: 75.5%"
+    },
+    "status": "fail",
+    "difficulty": "easy"
+  },
+  {
+    "case_id": "case_011",
+    "question": "Phép sinh nhật bao nhiêu ngày?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Phép sinh nhật bao nhiêu ngày?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "+1",
+    "latency_seconds": 0.504,
+    "retrieval": {
+      "hit_rate": 0.0,
+      "mrr": 0.25,
+      "retrieved_count": 4,
+      "relevance_rank": 4
+    },
+    "judge": {
+      "final_score": 2.26,
+      "agreement_rate": 0.934,
+      "individual_scores": {
+        "gpt-4o": 2.43,
+        "claude-3.5": 2.1
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.43 | Judge B: 2.10 | Agreement: 93.4%"
+    },
+    "status": "fail",
+    "difficulty": "easy"
+  },
+  {
+    "case_id": "case_012",
+    "question": "Sick leave <2 ngày có cần xin phép?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Sick leave <2 ngày có cần xin phép?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Không",
+    "latency_seconds": 0.504,
+    "retrieval": {
+      "hit_rate": 0.0,
+      "mrr": 0.25,
+      "retrieved_count": 4,
+      "relevance_rank": 4
+    },
+    "judge": {
+      "final_score": 2.22,
+      "agreement_rate": 0.976,
+      "individual_scores": {
+        "gpt-4o": 2.28,
+        "claude-3.5": 2.16
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.28 | Judge B: 2.16 | Agreement: 97.6%"
+    },
+    "status": "fail",
+    "difficulty": "easy"
+  },
+  {
+    "case_id": "case_013",
+    "question": "Phép tối đa tích lũy là bao nhiêu?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Phép tối đa tích lũy là bao nhiêu?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "10 ngày",
+    "latency_seconds": 0.504,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.5,
+      "retrieved_count": 4,
+      "relevance_rank": 2
+    },
+    "judge": {
+      "final_score": 2.41,
+      "agreement_rate": 0.899,
+      "individual_scores": {
+        "gpt-4o": 2.67,
+        "claude-3.5": 2.16
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.67 | Judge B: 2.16 | Agreement: 89.9%"
+    },
+    "status": "fail",
+    "difficulty": "easy"
+  },
+  {
+    "case_id": "case_014",
+    "question": "Tea & coffee tại văn phòng có miễn phí?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Tea & coffee tại văn phòng có miễn phí?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Có",
+    "latency_seconds": 0.504,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.3333333333333333,
+      "retrieved_count": 4,
+      "relevance_rank": 3
+    },
+    "judge": {
+      "final_score": 3.87,
+      "agreement_rate": 0.763,
+      "individual_scores": {
+        "gpt-4o": 4.35,
+        "claude-3.5": 3.16
+      },
+      "conflict_detected": true,
+      "reasoning": "Judge A: 4.35 | Judge B: 3.16 | Agreement: 76.3%"
+    },
+    "status": "pass",
+    "difficulty": "easy"
+  },
+  {
+    "case_id": "case_015",
+    "question": "Budget team building/năm là bao nhiêu?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Budget team building/năm là bao nhiêu?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "5M VND",
+    "latency_seconds": 0.504,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.5,
+      "retrieved_count": 4,
+      "relevance_rank": 2
+    },
+    "judge": {
+      "final_score": 2.56,
+      "agreement_rate": 0.884,
+      "individual_scores": {
+        "gpt-4o": 2.85,
+        "claude-3.5": 2.27
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.85 | Judge B: 2.27 | Agreement: 88.4%"
+    },
+    "status": "fail",
+    "difficulty": "easy"
+  },
+  {
+    "case_id": "case_016",
+    "question": "Nếu mình WFH, có được internet allowance không?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Nếu mình WFH, có được internet allowance không?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "500k VND",
+    "latency_seconds": 0.503,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.5,
+      "retrieved_count": 4,
+      "relevance_rank": 2
+    },
+    "judge": {
+      "final_score": 2.16,
+      "agreement_rate": 0.878,
+      "individual_scores": {
+        "gpt-4o": 2.46,
+        "claude-3.5": 1.85
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.46 | Judge B: 1.85 | Agreement: 87.8%"
+    },
+    "status": "fail",
+    "difficulty": "medium"
+  },
+  {
+    "case_id": "case_017",
+    "question": "Tổng benefit ăn trưa + gym trong tháng bao nhiêu?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Tổng benefit ăn trưa + gym trong tháng bao nhiêu?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "70% gym + 200k ăn",
+    "latency_seconds": 0.504,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.5,
+      "retrieved_count": 4,
+      "relevance_rank": 2
+    },
+    "judge": {
+      "final_score": 2.18,
+      "agreement_rate": 0.848,
+      "individual_scores": {
+        "gpt-4o": 2.56,
+        "claude-3.5": 1.8
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.56 | Judge B: 1.80 | Agreement: 84.8%"
+    },
+    "status": "fail",
+    "difficulty": "medium"
+  },
+  {
+    "case_id": "case_018",
+    "question": "Phép hưởng bắt đầu từ khi nào?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Phép hưởng bắt đầu từ khi nào?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "6 tháng",
+    "latency_seconds": 0.504,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.3333333333333333,
+      "retrieved_count": 4,
+      "relevance_rank": 3
+    },
+    "judge": {
+      "final_score": 2.21,
+      "agreement_rate": 0.802,
+      "individual_scores": {
+        "gpt-4o": 2.71,
+        "claude-3.5": 1.72
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.71 | Judge B: 1.72 | Agreement: 80.2%"
+    },
+    "status": "fail",
+    "difficulty": "medium"
+  },
+  {
+    "case_id": "case_019",
+    "question": "WFH có cần bật camera không?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'WFH có cần bật camera không?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Có (buổi họp)",
+    "latency_seconds": 0.504,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "retrieved_count": 4,
+      "relevance_rank": 1
+    },
+    "judge": {
+      "final_score": 2.44,
+      "agreement_rate": 0.843,
+      "individual_scores": {
+        "gpt-4o": 2.83,
+        "claude-3.5": 2.04
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.83 | Judge B: 2.04 | Agreement: 84.3%"
+    },
+    "status": "fail",
+    "difficulty": "medium"
+  },
+  {
+    "case_id": "case_020",
+    "question": "Laptop WFH do ai cung cấp?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Laptop WFH do ai cung cấp?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "công ty",
+    "latency_seconds": 0.504,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "retrieved_count": 4,
+      "relevance_rank": 1
+    },
+    "judge": {
+      "final_score": 2.48,
+      "agreement_rate": 0.926,
+      "individual_scores": {
+        "gpt-4o": 2.66,
+        "claude-3.5": 2.29
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.66 | Judge B: 2.29 | Agreement: 92.6%"
+    },
+    "status": "fail",
+    "difficulty": "medium"
+  },
+  {
+    "case_id": "case_021",
+    "question": "Kết hợp phép sinh nhật + phép thường được bao nhiêu?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Kết hợp phép sinh nhật + phép thường được bao nhiêu?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "21",
+    "latency_seconds": 0.5,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.3333333333333333,
+      "retrieved_count": 5,
+      "relevance_rank": 5
+    },
+    "judge": {
+      "final_score": 2.56,
+      "agreement_rate": 0.858,
+      "individual_scores": {
+        "gpt-4o": 2.92,
+        "claude-3.5": 2.21
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.92 | Judge B: 2.21 | Agreement: 85.8%"
+    },
+    "status": "fail",
+    "difficulty": "medium"
+  },
+  {
+    "case_id": "case_022",
+    "question": "Learning budget + gym budget/năm bao nhiêu?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Learning budget + gym budget/năm bao nhiêu?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Tùy chi phí khóa học",
+    "latency_seconds": 0.5,
+    "retrieval": {
+      "hit_rate": 0.0,
+      "mrr": 0.25,
+      "retrieved_count": 4,
+      "relevance_rank": 4
+    },
+    "judge": {
+      "final_score": 2.43,
+      "agreement_rate": 0.925,
+      "individual_scores": {
+        "gpt-4o": 2.61,
+        "claude-3.5": 2.24
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.61 | Judge B: 2.24 | Agreement: 92.5%"
+    },
+    "status": "fail",
+    "difficulty": "medium"
+  },
+  {
+    "case_id": "case_023",
+    "question": "Time tracking tool nào để WFH?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Time tracking tool nào để WFH?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Toggl Track hoặc Asana",
+    "latency_seconds": 0.5,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.3333333333333333,
+      "retrieved_count": 4,
+      "relevance_rank": 3
+    },
+    "judge": {
+      "final_score": 2.36,
+      "agreement_rate": 0.957,
+      "individual_scores": {
+        "gpt-4o": 2.47,
+        "claude-3.5": 2.26
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.47 | Judge B: 2.26 | Agreement: 95.7%"
+    },
+    "status": "fail",
+    "difficulty": "medium"
+  },
+  {
+    "case_id": "case_024",
+    "question": "Sau bao lâu mới được hưởng phép?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Sau bao lâu mới được hưởng phép?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "6 tháng",
+    "latency_seconds": 0.5,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.3333333333333333,
+      "retrieved_count": 4,
+      "relevance_rank": 3
+    },
+    "judge": {
+      "final_score": 2.47,
+      "agreement_rate": 0.841,
+      "individual_scores": {
+        "gpt-4o": 2.87,
+        "claude-3.5": 2.07
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.87 | Judge B: 2.07 | Agreement: 84.1%"
+    },
+    "status": "fail",
+    "difficulty": "medium"
+  },
+  {
+    "case_id": "case_025",
+    "question": "Overtime được thanh toán như thế nào?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Overtime được thanh toán như thế nào?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Không đề cập (không tìm thấy)",
+    "latency_seconds": 0.5,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "retrieved_count": 4,
+      "relevance_rank": 1
+    },
+    "judge": {
+      "final_score": 2.43,
+      "agreement_rate": 0.827,
+      "individual_scores": {
+        "gpt-4o": 2.86,
+        "claude-3.5": 1.99
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.86 | Judge B: 1.99 | Agreement: 82.7%"
+    },
+    "status": "fail",
+    "difficulty": "medium"
+  },
+  {
+    "case_id": "case_026",
+    "question": "Có được WFH 100% không?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Có được WFH 100% không?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Không, tối đa 2 ngày/tuần",
+    "latency_seconds": 0.502,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.5,
+      "retrieved_count": 4,
+      "relevance_rank": 2
+    },
+    "judge": {
+      "final_score": 2.14,
+      "agreement_rate": 0.968,
+      "individual_scores": {
+        "gpt-4o": 2.22,
+        "claude-3.5": 2.07
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.22 | Judge B: 2.07 | Agreement: 96.8%"
+    },
+    "status": "fail",
+    "difficulty": "medium"
+  },
+  {
+    "case_id": "case_027",
+    "question": "Emergency leave được xử lý thế nào?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Emergency leave được xử lý thế nào?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "được phê duyệt ngay, báo cáo hậu quả",
+    "latency_seconds": 0.502,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "retrieved_count": 4,
+      "relevance_rank": 1
+    },
+    "judge": {
+      "final_score": 2.31,
+      "agreement_rate": 0.789,
+      "individual_scores": {
+        "gpt-4o": 2.73,
+        "claude-3.5": 1.68
+      },
+      "conflict_detected": true,
+      "reasoning": "Judge A: 2.73 | Judge B: 1.68 | Agreement: 78.9%"
+    },
+    "status": "fail",
+    "difficulty": "medium"
+  },
+  {
+    "case_id": "case_028",
+    "question": "Phép bị mất nếu không dùng khi nào?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Phép bị mất nếu không dùng khi nào?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "tích lũy quá 10 ngày",
+    "latency_seconds": 0.502,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.3333333333333333,
+      "retrieved_count": 4,
+      "relevance_rank": 3
+    },
+    "judge": {
+      "final_score": 2.3,
+      "agreement_rate": 0.902,
+      "individual_scores": {
+        "gpt-4o": 2.55,
+        "claude-3.5": 2.06
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.55 | Judge B: 2.06 | Agreement: 90.2%"
+    },
+    "status": "fail",
+    "difficulty": "medium"
+  },
+  {
+    "case_id": "case_029",
+    "question": "Công ty có hỗ trợ học tập không?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Công ty có hỗ trợ học tập không?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Có, 50%",
+    "latency_seconds": 0.503,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.3333333333333333,
+      "retrieved_count": 4,
+      "relevance_rank": 3
+    },
+    "judge": {
+      "final_score": 2.53,
+      "agreement_rate": 0.875,
+      "individual_scores": {
+        "gpt-4o": 2.84,
+        "claude-3.5": 2.22
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.84 | Judge B: 2.22 | Agreement: 87.5%"
+    },
+    "status": "fail",
+    "difficulty": "medium"
+  },
+  {
+    "case_id": "case_030",
+    "question": "Sick leave kéo dài quá 2 ngày thì sao?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Sick leave kéo dài quá 2 ngày thì sao?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "cần xin phép",
+    "latency_seconds": 0.502,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.5,
+      "retrieved_count": 4,
+      "relevance_rank": 2
+    },
+    "judge": {
+      "final_score": 2.37,
+      "agreement_rate": 0.761,
+      "individual_scores": {
+        "gpt-4o": 2.84,
+        "claude-3.5": 1.65
+      },
+      "conflict_detected": true,
+      "reasoning": "Judge A: 2.84 | Judge B: 1.65 | Agreement: 76.1%"
+    },
+    "status": "fail",
+    "difficulty": "medium"
+  },
+  {
+    "case_id": "case_031",
+    "question": "Annual team building budget là bao nhiêu?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Annual team building budget là bao nhiêu?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "5M VND",
+    "latency_seconds": 0.506,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "retrieved_count": 4,
+      "relevance_rank": 1
+    },
+    "judge": {
+      "final_score": 2.18,
+      "agreement_rate": 0.814,
+      "individual_scores": {
+        "gpt-4o": 2.64,
+        "claude-3.5": 1.71
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.64 | Judge B: 1.71 | Agreement: 81.4%"
+    },
+    "status": "fail",
+    "difficulty": "medium"
+  },
+  {
+    "case_id": "case_032",
+    "question": "Internet allowance dành cho ai?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Internet allowance dành cho ai?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "WFH",
+    "latency_seconds": 0.507,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.5,
+      "retrieved_count": 4,
+      "relevance_rank": 2
+    },
+    "judge": {
+      "final_score": 2.15,
+      "agreement_rate": 0.949,
+      "individual_scores": {
+        "gpt-4o": 2.28,
+        "claude-3.5": 2.03
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.28 | Judge B: 2.03 | Agreement: 94.9%"
+    },
+    "status": "fail",
+    "difficulty": "medium"
+  },
+  {
+    "case_id": "case_033",
+    "question": "Phép tối thiểu phải lấy là bao nhiêu?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Phép tối thiểu phải lấy là bao nhiêu?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Không quy định",
+    "latency_seconds": 0.507,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.5,
+      "retrieved_count": 4,
+      "relevance_rank": 2
+    },
+    "judge": {
+      "final_score": 2.43,
+      "agreement_rate": 0.948,
+      "individual_scores": {
+        "gpt-4o": 2.56,
+        "claude-3.5": 2.3
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.56 | Judge B: 2.30 | Agreement: 94.8%"
+    },
+    "status": "fail",
+    "difficulty": "medium"
+  },
+  {
+    "case_id": "case_034",
+    "question": "Lương tháng 13 có bị khấu không?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Lương tháng 13 có bị khấu không?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Không đề cập",
+    "latency_seconds": 0.507,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.3333333333333333,
+      "retrieved_count": 4,
+      "relevance_rank": 3
+    },
+    "judge": {
+      "final_score": 2.42,
+      "agreement_rate": 0.805,
+      "individual_scores": {
+        "gpt-4o": 2.91,
+        "claude-3.5": 1.93
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.91 | Judge B: 1.93 | Agreement: 80.5%"
+    },
+    "status": "fail",
+    "difficulty": "medium"
+  },
+  {
+    "case_id": "case_035",
+    "question": "Chứng chỉ học tập có được quy đổi tiền không?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Chứng chỉ học tập có được quy đổi tiền không?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Không đề cập",
+    "latency_seconds": 0.507,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.3333333333333333,
+      "retrieved_count": 4,
+      "relevance_rank": 3
+    },
+    "judge": {
+      "final_score": 2.35,
+      "agreement_rate": 0.823,
+      "individual_scores": {
+        "gpt-4o": 2.79,
+        "claude-3.5": 1.91
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.79 | Judge B: 1.91 | Agreement: 82.3%"
+    },
+    "status": "fail",
+    "difficulty": "medium"
+  },
+  {
+    "case_id": "case_036",
+    "question": "Nếu lấy sick leave 2 ngày rồi quay lại 1 ngày rồi lại sick 1 ngày, có bị tính liên tiếp không?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Nếu lấy sick leave 2 ngày rồi quay lại 1 ngày rồi lại sick 1 ngày, có bị tính liên tiếp không?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Không (không liên tiếp)",
+    "latency_seconds": 0.513,
+    "retrieval": {
+      "hit_rate": 0.0,
+      "mrr": 0.25,
+      "retrieved_count": 4,
+      "relevance_rank": 4
+    },
+    "judge": {
+      "final_score": 2.46,
+      "agreement_rate": 0.735,
+      "individual_scores": {
+        "gpt-4o": 2.99,
+        "claude-3.5": 1.67
+      },
+      "conflict_detected": true,
+      "reasoning": "Judge A: 2.99 | Judge B: 1.67 | Agreement: 73.5%"
+    },
+    "status": "fail",
+    "difficulty": "hard"
+  },
+  {
+    "case_id": "case_037",
+    "question": "Khi nào nên chọn WFH vs office để optimize benefit?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Khi nào nên chọn WFH vs office để optimize benefit?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Tùy prefer & project",
+    "latency_seconds": 0.513,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "retrieved_count": 5,
+      "relevance_rank": 5
+    },
+    "judge": {
+      "final_score": 2.15,
+      "agreement_rate": 0.875,
+      "individual_scores": {
+        "gpt-4o": 2.46,
+        "claude-3.5": 1.84
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.46 | Judge B: 1.84 | Agreement: 87.5%"
+    },
+    "status": "fail",
+    "difficulty": "hard"
+  },
+  {
+    "case_id": "case_038",
+    "question": "Team building budget có thể dùng cho cá nhân không?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Team building budget có thể dùng cho cá nhân không?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Không (team activity)",
+    "latency_seconds": 0.513,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.5,
+      "retrieved_count": 4,
+      "relevance_rank": 2
+    },
+    "judge": {
+      "final_score": 2.55,
+      "agreement_rate": 0.872,
+      "individual_scores": {
+        "gpt-4o": 2.87,
+        "claude-3.5": 2.22
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.87 | Judge B: 2.22 | Agreement: 87.2%"
+    },
+    "status": "fail",
+    "difficulty": "hard"
+  },
+  {
+    "case_id": "case_039",
+    "question": "Phép hưởng + phép tích lũy tối đa là bao nhiêu?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Phép hưởng + phép tích lũy tối đa là bao nhiêu?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "30 (20+10)",
+    "latency_seconds": 0.513,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "retrieved_count": 5,
+      "relevance_rank": 3
+    },
+    "judge": {
+      "final_score": 2.2,
+      "agreement_rate": 0.819,
+      "individual_scores": {
+        "gpt-4o": 2.66,
+        "claude-3.5": 1.75
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.66 | Judge B: 1.75 | Agreement: 81.9%"
+    },
+    "status": "fail",
+    "difficulty": "hard"
+  },
+  {
+    "case_id": "case_040",
+    "question": "Đồng tính được hưởng benefit cho partner không?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Đồng tính được hưởng benefit cho partner không?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Cần xác nhận (hiện chỉ nêu vợ/chồng)",
+    "latency_seconds": 0.513,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.5,
+      "retrieved_count": 4,
+      "relevance_rank": 2
+    },
+    "judge": {
+      "final_score": 2.26,
+      "agreement_rate": 0.873,
+      "individual_scores": {
+        "gpt-4o": 2.58,
+        "claude-3.5": 1.95
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.58 | Judge B: 1.95 | Agreement: 87.3%"
+    },
+    "status": "fail",
+    "difficulty": "hard"
+  },
+  {
+    "case_id": "case_041",
+    "question": "WFH vào ngày Friday có được flexibility?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'WFH vào ngày Friday có được flexibility?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Không đề cập rõ",
+    "latency_seconds": 0.515,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.3333333333333333,
+      "retrieved_count": 4,
+      "relevance_rank": 3
+    },
+    "judge": {
+      "final_score": 2.33,
+      "agreement_rate": 0.941,
+      "individual_scores": {
+        "gpt-4o": 2.48,
+        "claude-3.5": 2.19
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.48 | Judge B: 2.19 | Agreement: 94.1%"
+    },
+    "status": "fail",
+    "difficulty": "hard"
+  },
+  {
+    "case_id": "case_042",
+    "question": "Nếu resign giữa năm, lương tháng 13 được bao nhiêu?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Nếu resign giữa năm, lương tháng 13 được bao nhiêu?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Không đề cập (tính tỷ lệ?)",
+    "latency_seconds": 0.515,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.5,
+      "retrieved_count": 4,
+      "relevance_rank": 2
+    },
+    "judge": {
+      "final_score": 2.13,
+      "agreement_rate": 0.932,
+      "individual_scores": {
+        "gpt-4o": 2.31,
+        "claude-3.5": 1.96
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.31 | Judge B: 1.96 | Agreement: 93.2%"
+    },
+    "status": "fail",
+    "difficulty": "hard"
+  },
+  {
+    "case_id": "case_043",
+    "question": "Online course được học trong giờ làm việc không?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Online course được học trong giờ làm việc không?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Không quy định",
+    "latency_seconds": 0.515,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.5,
+      "retrieved_count": 4,
+      "relevance_rank": 2
+    },
+    "judge": {
+      "final_score": 2.28,
+      "agreement_rate": 0.948,
+      "individual_scores": {
+        "gpt-4o": 2.4,
+        "claude-3.5": 2.15
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.40 | Judge B: 2.15 | Agreement: 94.8%"
+    },
+    "status": "fail",
+    "difficulty": "hard"
+  },
+  {
+    "case_id": "case_044",
+    "question": "Nếu company closed, WFH mandatory có được internet allowance tăng không?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Nếu company closed, WFH mandatory có được internet allowance tăng không?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Không quy định",
+    "latency_seconds": 0.515,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "retrieved_count": 4,
+      "relevance_rank": 1
+    },
+    "judge": {
+      "final_score": 2.21,
+      "agreement_rate": 0.921,
+      "individual_scores": {
+        "gpt-4o": 2.41,
+        "claude-3.5": 2.01
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.41 | Judge B: 2.01 | Agreement: 92.1%"
+    },
+    "status": "fail",
+    "difficulty": "hard"
+  },
+  {
+    "case_id": "case_045",
+    "question": "Multiple leaves được stack không (phép + sick + emergency)?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Multiple leaves được stack không (phép + sick + emergency)?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Không quy định rõ",
+    "latency_seconds": 0.515,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "retrieved_count": 4,
+      "relevance_rank": 1
+    },
+    "judge": {
+      "final_score": 2.37,
+      "agreement_rate": 0.774,
+      "individual_scores": {
+        "gpt-4o": 2.82,
+        "claude-3.5": 1.69
+      },
+      "conflict_detected": true,
+      "reasoning": "Judge A: 2.82 | Judge B: 1.69 | Agreement: 77.4%"
+    },
+    "status": "fail",
+    "difficulty": "hard"
+  },
+  {
+    "case_id": "case_046",
+    "question": "Công ty cho bao nhiêu ngày phép?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Công ty cho bao nhiêu ngày phép?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Tài liệu không tồn tại",
+    "latency_seconds": 0.505,
+    "retrieval": {
+      "hit_rate": 0.0,
+      "mrr": 0.25,
+      "retrieved_count": 4,
+      "relevance_rank": 4
+    },
+    "judge": {
+      "final_score": 2.27,
+      "agreement_rate": 0.888,
+      "individual_scores": {
+        "gpt-4o": 2.56,
+        "claude-3.5": 1.99
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.56 | Judge B: 1.99 | Agreement: 88.8%"
+    },
+    "status": "fail",
+    "difficulty": "adversarial"
+  },
+  {
+    "case_id": "case_047",
+    "question": "Lương tháng 14 có được cấp không?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Lương tháng 14 có được cấp không?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Không (không có tháng 14)",
+    "latency_seconds": 0.505,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.3333333333333333,
+      "retrieved_count": 4,
+      "relevance_rank": 3
+    },
+    "judge": {
+      "final_score": 2.05,
+      "agreement_rate": 0.825,
+      "individual_scores": {
+        "gpt-4o": 2.49,
+        "claude-3.5": 1.61
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.49 | Judge B: 1.61 | Agreement: 82.5%"
+    },
+    "status": "fail",
+    "difficulty": "adversarial"
+  },
+  {
+    "case_id": "case_048",
+    "question": "CEO có giới hạn phép không?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'CEO có giới hạn phép không?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Không đề cập (khác nhân viên)",
+    "latency_seconds": 0.505,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "retrieved_count": 4,
+      "relevance_rank": 1
+    },
+    "judge": {
+      "final_score": 2.37,
+      "agreement_rate": 0.883,
+      "individual_scores": {
+        "gpt-4o": 2.66,
+        "claude-3.5": 2.07
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.66 | Judge B: 2.07 | Agreement: 88.3%"
+    },
+    "status": "fail",
+    "difficulty": "adversarial"
+  },
+  {
+    "case_id": "case_049",
+    "question": "Phép được trả tiền khi resign có không?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Phép được trả tiền khi resign có không?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Không nêu (tùy luật)",
+    "latency_seconds": 0.505,
+    "retrieval": {
+      "hit_rate": 0.0,
+      "mrr": 0.25,
+      "retrieved_count": 4,
+      "relevance_rank": 4
+    },
+    "judge": {
+      "final_score": 2.08,
+      "agreement_rate": 0.937,
+      "individual_scores": {
+        "gpt-4o": 2.23,
+        "claude-3.5": 1.92
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.23 | Judge B: 1.92 | Agreement: 93.7%"
+    },
+    "status": "fail",
+    "difficulty": "adversarial"
+  },
+  {
+    "case_id": "case_050",
+    "question": "Gender pay gap là bao nhiêu %?",
+    "agent_response": "Dựa trên tài liệu hệ thống, tôi xin trả lời câu hỏi 'Gender pay gap là bao nhiêu %?' như sau: [Câu trả lời mẫu].",
+    "expected_answer": "Không đề cập",
+    "latency_seconds": 0.505,
+    "retrieval": {
+      "hit_rate": 1.0,
+      "mrr": 0.5,
+      "retrieved_count": 4,
+      "relevance_rank": 2
+    },
+    "judge": {
+      "final_score": 2.12,
+      "agreement_rate": 0.875,
+      "individual_scores": {
+        "gpt-4o": 2.43,
+        "claude-3.5": 1.8
+      },
+      "conflict_detected": false,
+      "reasoning": "Judge A: 2.43 | Judge B: 1.80 | Agreement: 87.5%"
+    },
+    "status": "fail",
+    "difficulty": "adversarial"
+  }
+]
