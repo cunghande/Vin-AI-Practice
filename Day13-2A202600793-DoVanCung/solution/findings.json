@@ -1,0 +1,26 @@
+{
+  "team": "DoVanCung",
+  "schema_version": 1,
+  "findings": [
+    {
+      "fault_class": "latency_spike",
+      "evidence": {
+        "metric": "latency_ms",
+        "observed": "p95=32099 ms, max=45347 ms on practice telemetry",
+        "trace_ids": ["prac-012", "prac-014", "prac-018", "prac-019"]
+      },
+      "root_cause": "The agent is spending too long per request because the prompt/context path is heavy and the free-router model adds retry/rate-limit delay under concurrency.",
+      "suggested_fix": "Trim the prompt/context load, set self_consistency=1, keep cache on, and pin a faster paid/local model instead of openrouter/free."
+    },
+    {
+      "fault_class": "cost_blowup",
+      "evidence": {
+        "metric": "total_tokens",
+        "observed": "median=30726 tokens, p95=40871 tokens on practice telemetry",
+        "trace_ids": ["prac-006", "prac-012", "prac-014", "prac-019"]
+      },
+      "root_cause": "The request envelope is too large for this task: repeated routing/retries plus a heavy prompt/context keep prompt tokens very high even on simple queries.",
+      "suggested_fix": "Reduce context_size and self_consistency, avoid unnecessary retries, and use a smaller/cheaper model route for the default path."
+    }
+  ]
+}

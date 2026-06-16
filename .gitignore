@@ -1,6 +1,10 @@
-.env
 __pycache__/
+.pytest_cache/
+.venv/
+*.egg-info/
 *.pyc
+.env
+.env.*
+!.env.example
+*.log
 .DS_Store
-reports/
-data/golden_set.jsonl
