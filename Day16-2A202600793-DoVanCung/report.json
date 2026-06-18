@@ -1,0 +1,3083 @@
+{
+  "meta": {
+    "dataset": "hotpot_data.json",
+    "mode": "llm:gpt-5.4-nano",
+    "num_records": 300,
+    "agents": [
+      "react",
+      "reflexion"
+    ],
+    "splits": {
+      "dev": {
+        "path": "data/hotpot_dev.json",
+        "count": 100,
+        "difficulty": {
+          "easy": 33,
+          "medium": 34,
+          "hard": 33
+        }
+      },
+      "test": {
+        "path": "data/hotpot_test.json",
+        "count": 50,
+        "difficulty": {
+          "easy": 17,
+          "medium": 16,
+          "hard": 17
+        }
+      },
+      "overlap_qids": 0
+    }
+  },
+  "summary": {
+    "react": {
+      "count": 150,
+      "correct": 116,
+      "em": 0.7733,
+      "avg_attempts": 1,
+      "total_token_estimate": 261286,
+      "avg_token_estimate": 1741.91,
+      "total_latency_ms": 459230,
+      "avg_latency_ms": 3061.53
+    },
+    "reflexion": {
+      "count": 150,
+      "correct": 149,
+      "em": 0.9933,
+      "avg_attempts": 1.2267,
+      "total_token_estimate": 382014,
+      "avg_token_estimate": 2546.76,
+      "total_latency_ms": 635257,
+      "avg_latency_ms": 4235.05
+    },
+    "delta_reflexion_minus_react": {
+      "em_abs": 0.22,
+      "attempts_abs": 0.2267,
+      "tokens_abs": 120728,
+      "avg_tokens_abs": 804.85,
+      "latency_abs": 176027,
+      "avg_latency_abs": 1173.52
+    }
+  },
+  "failure_modes": {
+    "wrong_final_answer": {
+      "react": 34,
+      "reflexion": 1
+    },
+    "none": {
+      "react": 116,
+      "reflexion": 149
+    },
+    "incomplete_multi_hop": {},
+    "entity_drift": {}
+  },
+  "examples": [
+    {
+      "qid": "5ae1925a554299492dc91b48",
+      "agent_type": "react",
+      "gold_answer": "Charlotte Carnegie",
+      "predicted_answer": "Lady Charlotte Elliot",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8753d95542994846c1cd63",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes. John Updike published more than 20 novels, and Tom Clancy had 17 bestselling novels\u2014both are more than 15.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7dc2495542997cc2c4749a",
+      "agent_type": "react",
+      "gold_answer": "1984 South Asian Games",
+      "predicted_answer": "the 1984 South Asian Games (1st SAF Games)",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab6087a554299110f2199be",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes. Korematsu v. United States concerns the constitutionality of Executive Order 9066 ordering Japanese Americans into internment camps \u201cregardless of citizenship,\u201d and Chaplinsky v. New Hampshire addresses a limitation on the First Amendment\u2019s freedom of speech\u2014both are U.S. citizen rights-related cases.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab31864554299233954ff06",
+      "agent_type": "react",
+      "gold_answer": "strings",
+      "predicted_answer": "He plays the sarod, a stringed instrument.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7ce0ce554299452d57ba92",
+      "agent_type": "react",
+      "gold_answer": "William McKinley",
+      "predicted_answer": "President William McKinley",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a82fe5055429966c78a6ad3",
+      "agent_type": "react",
+      "gold_answer": "evangelical Christian",
+      "predicted_answer": "Wesleyan-Arminian Christianity",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae80919554299540e5a56f6",
+      "agent_type": "react",
+      "gold_answer": "The Changing Scottish Landscape",
+      "predicted_answer": "the 1991 book *The Changing Scottish Landscape*",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab97d0a5542996be202051e",
+      "agent_type": "react",
+      "gold_answer": "John Andr\u00e9",
+      "predicted_answer": "John Andr\u00e9",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a83411655429966c78a6b5d",
+      "agent_type": "react",
+      "gold_answer": "Justin Spitzer",
+      "predicted_answer": "Justin Spitzer created the NBC sitcom \u201cSuperstore,\u201d in which Johnny Pemberton appears as Bo Thompson.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8208ee5542990a1d231f1e",
+      "agent_type": "react",
+      "gold_answer": "dinosaur",
+      "predicted_answer": "the silhouette of a large green dinosaur",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab916e155429919ba4e23a4",
+      "agent_type": "react",
+      "gold_answer": "Chiwetel Ejiofor",
+      "predicted_answer": "Chiwetel Ejiofor",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab2659e554299340b5254b2",
+      "agent_type": "react",
+      "gold_answer": "the Parthian Empire",
+      "predicted_answer": "the Parthian Empire",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7f567e5542992097ad2f22",
+      "agent_type": "react",
+      "gold_answer": "2001",
+      "predicted_answer": "Honda K was introduced in 2001, while the Honda H engine dates to the 1990s and early 2000s\u2014so the more recent engine series is the Honda K.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab870ee5542990e739ec8f6",
+      "agent_type": "react",
+      "gold_answer": "Madeleine L'Engle",
+      "predicted_answer": "Madeleine L'Engle",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae34b275542992e3233c371",
+      "agent_type": "react",
+      "gold_answer": "Outstanding Lighting Design",
+      "predicted_answer": "David Hersey received the Drama Desk Award for Outstanding Lighting Design for *Equus*.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a86ab7755429960ec39b6bf",
+      "agent_type": "react",
+      "gold_answer": "an adventure novel",
+      "predicted_answer": "Adventure novel",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8ac4dd5542992d82986f76",
+      "agent_type": "react",
+      "gold_answer": "Barnoldswick",
+      "predicted_answer": "Barnoldswick",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a840e395542992ef85e239d",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No. **The Straight Story** is a biographical road drama film, while **Frozen** is a 3D computer-animated musical fantasy film.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae2133e554299495565d9e3",
+      "agent_type": "react",
+      "gold_answer": "Kristine Leahy",
+      "predicted_answer": "Jenn Brown",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a88b3b4554299206df2b336",
+      "agent_type": "react",
+      "gold_answer": "music",
+      "predicted_answer": "They both have in common that they are operas.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae1338d55429901ffe4ade1",
+      "agent_type": "react",
+      "gold_answer": "the green fairy",
+      "predicted_answer": "\u201cla f\u00e9e verte\u201d (the green fairy)",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7c47c35542990527d55481",
+      "agent_type": "react",
+      "gold_answer": "Army & Navy Stores",
+      "predicted_answer": "House of Fraser",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a72f74a55429901807daf59",
+      "agent_type": "react",
+      "gold_answer": "Rosie O'Donnell",
+      "predicted_answer": "Rosie O'Donnell",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7c8ae855429935c91b5207",
+      "agent_type": "react",
+      "gold_answer": "Alexander Porfiryevich Borodin",
+      "predicted_answer": "Alexander Borodin",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abe3dc65542993f32c2a0c4",
+      "agent_type": "react",
+      "gold_answer": "8",
+      "predicted_answer": "KULR-TV (channel 8) in Billings, Montana.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac3a76e554299741d48a2be",
+      "agent_type": "react",
+      "gold_answer": "U2",
+      "predicted_answer": "U2 released \u201cWith or Without You\u201d first.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae35e8c5542990afbd1e120",
+      "agent_type": "react",
+      "gold_answer": "Don Jeffrey \"Jeff\" Meldrum (born May 24, 1958) is a Professor of Anatomy and Anthropology",
+      "predicted_answer": "Jeff Meldrum and Grover Krantz.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac54c435542993e66e822d1",
+      "agent_type": "react",
+      "gold_answer": "Oklahoma State University",
+      "predicted_answer": "Oklahoma State University",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8fae205542997ba9cb32ec",
+      "agent_type": "react",
+      "gold_answer": "American-Canadian mystery-drama",
+      "predicted_answer": "He starred in the television series **Open Heart** in 2015.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a72688c5542997f827839b2",
+      "agent_type": "react",
+      "gold_answer": "Turkey",
+      "predicted_answer": "Turkey",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7bea3d5542996dd594b847",
+      "agent_type": "react",
+      "gold_answer": "Sean Maguire",
+      "predicted_answer": "Sean Maguire",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a74f8bd5542993748c8976a",
+      "agent_type": "react",
+      "gold_answer": "Tim Cluess",
+      "predicted_answer": "Tim Cluess",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8c7ced5542995e66a4761c",
+      "agent_type": "react",
+      "gold_answer": "entertainment",
+      "predicted_answer": "the entertainment industry",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae5cf625542996de7b71a22",
+      "agent_type": "react",
+      "gold_answer": "University of Texas Longhorns",
+      "predicted_answer": "Texas Longhorns football team",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8810485542997e5c09a590",
+      "agent_type": "react",
+      "gold_answer": "1.6 million passengers",
+      "predicted_answer": "847,257 passengers",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a81d0515542990a1d231ed4",
+      "agent_type": "react",
+      "gold_answer": "Las Vegas Strip in Paradise, Nevada",
+      "predicted_answer": "The casino is the Donny & Marie Showroom at the Flamingo Las Vegas.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac0dcf25542996f0d89cc2c",
+      "agent_type": "react",
+      "gold_answer": "Jane Mayer",
+      "predicted_answer": "Jane Mayer",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a74f5155542993748c89750",
+      "agent_type": "react",
+      "gold_answer": "The Colomac Mine",
+      "predicted_answer": "Kemess Mine.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab6aa4c55429953192ad359",
+      "agent_type": "react",
+      "gold_answer": "\"Kitty Hawk\"",
+      "predicted_answer": "Kitty Hawk",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a86769c5542994775f60776",
+      "agent_type": "react",
+      "gold_answer": "Slaughterhouse-Five",
+      "predicted_answer": "Slaughterhouse-Five (1969)",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a84e9d35542994c784dda84",
+      "agent_type": "react",
+      "gold_answer": "the Switzerland national team",
+      "predicted_answer": "Switzerland",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adf3e835542993a75d26442",
+      "agent_type": "react",
+      "gold_answer": "Marvel",
+      "predicted_answer": "Nick Fury vs. S.H.I.E.L.D.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a84995d5542997b5ce3fee4",
+      "agent_type": "react",
+      "gold_answer": "Alachua",
+      "predicted_answer": "Alachua County",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab9b7d555429970cfb8eb7a",
+      "agent_type": "react",
+      "gold_answer": "Henry Lau",
+      "predicted_answer": "Henry Lau",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a78e3b955429974737f78f1",
+      "agent_type": "react",
+      "gold_answer": "Sherwood Stewart",
+      "predicted_answer": "Sherwood Stewart was born first.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7e1b7155429965cec5ea6c",
+      "agent_type": "react",
+      "gold_answer": "Fiat Chrysler Automobiles N.V.",
+      "predicted_answer": "Fiat Chrysler Automobiles N.V.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adbd70c55429947ff173843",
+      "agent_type": "react",
+      "gold_answer": "Personal History",
+      "predicted_answer": "\u201cPersonal History\u201d",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae518655542993aec5ec139",
+      "agent_type": "react",
+      "gold_answer": "40 members",
+      "predicted_answer": "40",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8f503c5542992414482a34",
+      "agent_type": "react",
+      "gold_answer": "English",
+      "predicted_answer": "English",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7a77425542995eb53be83e",
+      "agent_type": "react",
+      "gold_answer": "Brady Seals",
+      "predicted_answer": "Nick Carter has released more solo albums than Brady Seals.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae1d0e8554299234fd0430a",
+      "agent_type": "react",
+      "gold_answer": "Guthred or Guthfrith",
+      "predicted_answer": "Guthred",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a87106555429960ec39b71f",
+      "agent_type": "react",
+      "gold_answer": "Rob Reiner",
+      "predicted_answer": "Rob Reiner",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab9e477554299232ef4a25d",
+      "agent_type": "react",
+      "gold_answer": "Woolworth Building",
+      "predicted_answer": "Woolworth Building was built first.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae1ebf95542997283cd22f2",
+      "agent_type": "react",
+      "gold_answer": "Interstate 22",
+      "predicted_answer": "Interstate 22 (I-22)",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae7cb9b5542994a481bbde2",
+      "agent_type": "react",
+      "gold_answer": "Kalokuokamaile",
+      "predicted_answer": "The great grandfather of Franklin Seaver Pratt's wife was **Kalokuokamaile**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae531695542990ba0bbb1fb",
+      "agent_type": "react",
+      "gold_answer": "1945",
+      "predicted_answer": "1945",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab900045542991b5579f0c0",
+      "agent_type": "react",
+      "gold_answer": "Midtown Manhattan in New York City,",
+      "predicted_answer": "Carnegie Hall, located at 881 Seventh Avenue in Midtown Manhattan, New York City.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abc19705542993a06baf86e",
+      "agent_type": "react",
+      "gold_answer": "Dutch",
+      "predicted_answer": "Jewish heritage.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae588cb55429960a22e0300",
+      "agent_type": "react",
+      "gold_answer": "Chaerophyllum",
+      "predicted_answer": "Chaerophyllum",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab985eb554299131ca42360",
+      "agent_type": "react",
+      "gold_answer": "Greyia",
+      "predicted_answer": "Greyia contains more species than Calibanus.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab941c2554299743d22ea88",
+      "agent_type": "react",
+      "gold_answer": "Carolyn Janice Cherry (born September 1, 1942), better known by the pen name C. J. Cherryh,",
+      "predicted_answer": "C. J. Cherryh",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5addcb215542997dc7907033",
+      "agent_type": "react",
+      "gold_answer": "Naomi Elaine Campbell",
+      "predicted_answer": "Naomi Campbell",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac3d9135542995c82c4ac4c",
+      "agent_type": "react",
+      "gold_answer": "729 at the 2010 census",
+      "predicted_answer": "729",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8b3de95542997f31a41cc3",
+      "agent_type": "react",
+      "gold_answer": "Tian Tan Buddha",
+      "predicted_answer": "1993",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac2cb09554299657fa29066",
+      "agent_type": "react",
+      "gold_answer": "Texas Longhorns men's basketball team",
+      "predicted_answer": "Travis Cortez Mays played for the University of Texas Longhorns, who currently compete in the Big 12 Conference.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a875fee5542996e4f3087ab",
+      "agent_type": "react",
+      "gold_answer": "Lysiloma",
+      "predicted_answer": "Hydrocotyle umbellata has more species.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a877dd65542993e715abf79",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No. Halld\u00f3r Laxness was Icelandic, while Timothy Leary was American.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a78e9a2554299148911f995",
+      "agent_type": "react",
+      "gold_answer": "Drillers Stadium",
+      "predicted_answer": "Drillers Stadium",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a851ba95542997175ce1f81",
+      "agent_type": "react",
+      "gold_answer": "Dallas",
+      "predicted_answer": "Dealey Plaza in Dallas, Texas",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac26ac15542992f1f2b38bc",
+      "agent_type": "react",
+      "gold_answer": "Sam Phillips",
+      "predicted_answer": "Sam Phillips",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ade25ed5542997c77aded70",
+      "agent_type": "react",
+      "gold_answer": "the Cold War (1947\u201391)",
+      "predicted_answer": "World War I",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7796e05542992a6e59df0f",
+      "agent_type": "react",
+      "gold_answer": "Netherlands",
+      "predicted_answer": "the Netherlands",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5add67705542992ae4cec54f",
+      "agent_type": "react",
+      "gold_answer": "Rafael Souza dos Anjos",
+      "predicted_answer": "Rafael dos Anjos",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab4b9f75542990594ba9ca4",
+      "agent_type": "react",
+      "gold_answer": "People! and The Carnabeats",
+      "predicted_answer": "Chris White covered \u201cI Love You\u201d by Chris Write.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae382ee5542992e3233c430",
+      "agent_type": "react",
+      "gold_answer": "Modern thinkers associated with classical realism are Carl von Clausewitz",
+      "predicted_answer": "Classical realism (international relations)",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abbda84554299642a094b5b",
+      "agent_type": "react",
+      "gold_answer": "2",
+      "predicted_answer": "The ratio is the Mach number (M): **flow velocity past a boundary / local speed of sound**.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab6bf6d55429953192ad372",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No. Phlebodium is a genus of ferns, while Pieris refers to a genus of shrubs (and also a genus of butterflies), not ferns.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7e05ba5542995f4f402392",
+      "agent_type": "react",
+      "gold_answer": "The Late Late Show",
+      "predicted_answer": "Gay Byrne, who hosted *The Late Late Show* from 1962 until 1999.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abdf06355429976d4830a2d",
+      "agent_type": "react",
+      "gold_answer": "against the feather of truth",
+      "predicted_answer": "A citizen would recite the 42 negative confessions of Ma\u2019at as their heart was weighed against the feather of truth. If the heart was heavier than the feather, they were judged unworthy and would face torment in a lake of fire.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae497f15542995ad6573db8",
+      "agent_type": "react",
+      "gold_answer": "Distillery",
+      "predicted_answer": "Sean Connor played for Lisburn Distillery in the NIFL Premier Intermediate League.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a73b55855429978a71e9086",
+      "agent_type": "react",
+      "gold_answer": "Gatwick Airport",
+      "predicted_answer": "Gatwick Airport",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abf1ad15542997ec76fd3c2",
+      "agent_type": "react",
+      "gold_answer": "Marquis de Lafayette",
+      "predicted_answer": "Marquis de Lafayette (Gilbert du Motier, Marquis de Lafayette)",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7a112a5542990783324e2b",
+      "agent_type": "react",
+      "gold_answer": "drummer",
+      "predicted_answer": "Mark Gaudet is a Canadian indie/metal musician (notably in indie and black metal bands). Jan Axel Blomberg (\u201cHellhammer\u201d) is a Norwegian heavy metal drummer, best known for playing in the black metal band Mayhem.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae361605542994393b9e69b",
+      "agent_type": "react",
+      "gold_answer": "\"Home of the Submarine Force\"",
+      "predicted_answer": "the Joint Regional Correctional Facility Southwest",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae489ab5542995ad6573d62",
+      "agent_type": "react",
+      "gold_answer": "Mookie Blaylock",
+      "predicted_answer": "Mookie Blaylock",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a86399e5542994775f60733",
+      "agent_type": "react",
+      "gold_answer": "Punjabi/Pashtun",
+      "predicted_answer": "Punjabi/Pashtun descent.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adef1b35542993a75d263af",
+      "agent_type": "react",
+      "gold_answer": "Salma Hayek Pinault",
+      "predicted_answer": "Pen\u00e9lope Cruz and Salma Hayek.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae22eae554299495565da30",
+      "agent_type": "react",
+      "gold_answer": "310",
+      "predicted_answer": "The 2010 population of Randolph, New Hampshire (the town where Black Crescent Mountain was located) was **310**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab4428c5542990594ba9bda",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes. Lush had four band members (Miki Berenyi, Emma Anderson, Phil King, and Chris Acland), and P.O.D. also has four members (Sonny Sandoval, Wuv Bernardo, Marcos Curiel, and Traa Daniels).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7153d05542994082a3e7dc",
+      "agent_type": "react",
+      "gold_answer": "Nusretiye Mosque",
+      "predicted_answer": "Nusretiye Mosque",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab6e848554299710c8d1faa",
+      "agent_type": "react",
+      "gold_answer": "August 19, 1968",
+      "predicted_answer": "George Gamow (the advisor of the Alpher\u2013Bethe\u2013Gamow paper) died on August 19, 1968.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abfe1115542997d64295909",
+      "agent_type": "react",
+      "gold_answer": "Native American",
+      "predicted_answer": "Native American tradition.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab1d6545542997061209588",
+      "agent_type": "react",
+      "gold_answer": "Bocelli became completely blind at the age of 12",
+      "predicted_answer": "He became completely blind at the age of 12.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae788fa55429952e35ea964",
+      "agent_type": "react",
+      "gold_answer": "extensive use of segues",
+      "predicted_answer": "their trademark jam band sound featuring John Popper\u2019s harmonica",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a75e62f5542992d0ec06013",
+      "agent_type": "react",
+      "gold_answer": "Tropicana Casino & Resort",
+      "predicted_answer": "Tropicana Casino & Resort Atlantic City",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab4304a55429942dd415ec5",
+      "agent_type": "react",
+      "gold_answer": "South America",
+      "predicted_answer": "He fled to South America.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5add0f635542994ed6169c56",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes. *The Man from Snowy River II* is an Australian film, while *Miracle of the White Stallions* is a 1963 Disney film set around the Spanish Riding School in Vienna (during World War II).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7f66f155429969796c1a33",
+      "agent_type": "react",
+      "gold_answer": "Denmark\u2013Norway\u2013Sweden",
+      "predicted_answer": "Denmark, Norway, and Sweden",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7e0ed25542991319bc9424",
+      "agent_type": "react",
+      "gold_answer": "November 1, 2000",
+      "predicted_answer": "November 1, 2000",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a851b0d5542997175ce1f7f",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes. Dogo Cubano is a dog breed (an extinct Cuban Mastiff), and the Dutch Shepherd is also a dog breed.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae361805542992e3233c3c9",
+      "agent_type": "react",
+      "gold_answer": "Georgetown University",
+      "predicted_answer": "Georgetown University",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7b1023554299042af8f6c2",
+      "agent_type": "react",
+      "gold_answer": "Ride a Wild Pony",
+      "predicted_answer": "Ride a Wild Pony",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adcbb815542994ed6169bde",
+      "agent_type": "react",
+      "gold_answer": "Stone Brewing",
+      "predicted_answer": "Stone Brewing Co.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac113e2554299294b21909a",
+      "agent_type": "react",
+      "gold_answer": "Wildhorn, Bricusse and Cuden",
+      "predicted_answer": "Frank Wildhorn, Leslie Bricusse, and Steve Cuden.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7be1ab5542997c3ec972a9",
+      "agent_type": "react",
+      "gold_answer": "Fortean",
+      "predicted_answer": "unidentified flying objects (UFOs)",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8ed10b5542995085b374a0",
+      "agent_type": "react",
+      "gold_answer": "The Visit",
+      "predicted_answer": "The Visit",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a87c13f5542996e4f30890c",
+      "agent_type": "react",
+      "gold_answer": "Rome",
+      "predicted_answer": "Rome",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7264ed5542990c210a411a",
+      "agent_type": "react",
+      "gold_answer": "Blood and soil",
+      "predicted_answer": "Blood and Soil (\u201cBlut und Boden\u201d)",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8d12ca5542994ba4e3dbe2",
+      "agent_type": "react",
+      "gold_answer": "Nairobi, Kenya",
+      "predicted_answer": "Dar es Salaam",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a776a805542993735360269",
+      "agent_type": "react",
+      "gold_answer": "Double Agent",
+      "predicted_answer": "Double Agent",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adcdf455542994ed6169c11",
+      "agent_type": "react",
+      "gold_answer": "Royal Air Force",
+      "predicted_answer": "They were both part of RAF operations that cooperated with Hawker Hurricane squadrons\u2014No. 1455 (Fighter) Flight co-operated with the Hawker Hurricanes of 1 Squadron and 3 Squadron.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab4107a554299753aec5a2f",
+      "agent_type": "react",
+      "gold_answer": "1961",
+      "predicted_answer": "1961",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adbcc085542996e6852523c",
+      "agent_type": "react",
+      "gold_answer": "poi, Kalua pig, poke, lomi salmon, opihi, haupia",
+      "predicted_answer": "Foods that may have been served at the Hawaiian Cottage include poi, kalua pig, poke, lomi salmon, opihi, and haupia.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8ee3a755429917b4a5be02",
+      "agent_type": "react",
+      "gold_answer": "Harry Lillis \"Bing\" Crosby Jr.",
+      "predicted_answer": "Bing Crosby",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a78b5f7554299148911f95b",
+      "agent_type": "react",
+      "gold_answer": "Todd McFarlane",
+      "predicted_answer": "Todd McFarlane",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae8167b55429952e35eaa06",
+      "agent_type": "react",
+      "gold_answer": "Battle of the Rosebud",
+      "predicted_answer": "The Battle of the Rosebud (June 17, 1876).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a82817555429954d2e2eb5a",
+      "agent_type": "react",
+      "gold_answer": "\"Naked Killer\"",
+      "predicted_answer": "Naked Killer (1992)",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae143ed55429920d5234360",
+      "agent_type": "react",
+      "gold_answer": "1755",
+      "predicted_answer": "1755",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab3bfd3554299233954ff99",
+      "agent_type": "react",
+      "gold_answer": "Dirk Werner Nowitzki",
+      "predicted_answer": "Dirk Nowitzki",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac19f405542991316484b5b",
+      "agent_type": "react",
+      "gold_answer": "dogs",
+      "predicted_answer": "Pandikona and Berger Blanc Suisse are both dog breeds.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abc030e554299642a094bdc",
+      "agent_type": "react",
+      "gold_answer": "1945 to 1951",
+      "predicted_answer": "Clement Attlee, prime minister from 1945 to 1951.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a713b325542994082a3e6b5",
+      "agent_type": "react",
+      "gold_answer": "Agra",
+      "predicted_answer": "Delhi",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab7f6d35542993667794070",
+      "agent_type": "react",
+      "gold_answer": "Cyclic Defrost",
+      "predicted_answer": "Cyclic Defrost",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae1443855429920d5234362",
+      "agent_type": "react",
+      "gold_answer": "World War II",
+      "predicted_answer": "World War II",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5add8f055542990dbb2f7e6d",
+      "agent_type": "react",
+      "gold_answer": "Rudolf H\u00f6ss",
+      "predicted_answer": "Kurt Gerstein conducted the negotiations with the owners, and Rudolf H\u00f6ss was the longest-serving commandant of Auschwitz.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a774e415542994aec3b7280",
+      "agent_type": "react",
+      "gold_answer": "Kait Parker",
+      "predicted_answer": "Kait Parker",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a80aeef5542992097ad301a",
+      "agent_type": "react",
+      "gold_answer": "The Shins",
+      "predicted_answer": "The Shins",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae12a4b55429920d52342df",
+      "agent_type": "react",
+      "gold_answer": "Puli Alam",
+      "predicted_answer": "Puli Alam",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac3e0f7554299194317388b",
+      "agent_type": "react",
+      "gold_answer": "Kevin Spacey",
+      "predicted_answer": "Kevin Spacey",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae528ed5542993aec5ec16e",
+      "agent_type": "react",
+      "gold_answer": "Revengers Tragedy",
+      "predicted_answer": "Revengers Tragedy",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a72dcb45542992359bc31af",
+      "agent_type": "react",
+      "gold_answer": "Aloe Vera of America",
+      "predicted_answer": "Forever Living Products",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7f296f55429934daa2fd10",
+      "agent_type": "react",
+      "gold_answer": "1974",
+      "predicted_answer": "1974",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae14b5c55429920d52343aa",
+      "agent_type": "react",
+      "gold_answer": "Anderson Silva",
+      "predicted_answer": "Anderson Silva",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae129115542990adbacf722",
+      "agent_type": "react",
+      "gold_answer": "Francis McPeake",
+      "predicted_answer": "Robert Tannahill",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a87ed5b5542994846c1cdfc",
+      "agent_type": "react",
+      "gold_answer": "GNU GPLv3",
+      "predicted_answer": "It is licensed under a free-to-play subset of the freemium pricing model.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab90d8955429916710eb0f1",
+      "agent_type": "react",
+      "gold_answer": "Smoothie King Center",
+      "predicted_answer": "Smoothie King Center",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8843cd5542994846c1ce75",
+      "agent_type": "react",
+      "gold_answer": "Buffalo",
+      "predicted_answer": "the Mwabvi river",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a78ae8b5542990784727730",
+      "agent_type": "react",
+      "gold_answer": "about 115 miles (185 km)",
+      "predicted_answer": "The flight school in Atwater is about **115 miles (185 km) from Sacramento**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7557d75542992d0ec05f68",
+      "agent_type": "react",
+      "gold_answer": "Laurie Metcalf",
+      "predicted_answer": "Laurie Metcalf",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac35a7e554299741d48a257",
+      "agent_type": "react",
+      "gold_answer": "Norwegian language",
+      "predicted_answer": "Norwegian language.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7cfea2554299452d57babe",
+      "agent_type": "react",
+      "gold_answer": "Werner Herzog Eats His Shoe",
+      "predicted_answer": "Life After People aired first.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8ce55f554299441c6b9f62",
+      "agent_type": "react",
+      "gold_answer": "Tulsa",
+      "predicted_answer": "Tulsa, Oklahoma",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7e618155429949594199b0",
+      "agent_type": "react",
+      "gold_answer": "Albany",
+      "predicted_answer": "Albany County",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7bb7f2554299042af8f7b6",
+      "agent_type": "react",
+      "gold_answer": "Gweilo",
+      "predicted_answer": "Gweilo (\u9b3c\u4f6c)",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8e5f1f5542995a26add4d6",
+      "agent_type": "react",
+      "gold_answer": "Sapsali",
+      "predicted_answer": "Sapsali.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab2b630554299545a2cfa17",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes. Both **Gasland (2010)** and **Pumping Iron (1977)** are documentaries.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abc41315542993a06baf8bb",
+      "agent_type": "react",
+      "gold_answer": "Julie Taymor",
+      "predicted_answer": "Julie Taymor",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae1d4e8554299234fd04312",
+      "agent_type": "react",
+      "gold_answer": "Robert Ian \"Rob\" Sitch",
+      "predicted_answer": "Rob Sitch and Josh Lawson",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8ec55f5542995a26add50c",
+      "agent_type": "react",
+      "gold_answer": "4145 ft",
+      "predicted_answer": "State Route 160 starts at an elevation of 4,145 ft above mean sea level (on top of Black Mountain).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae1925a554299492dc91b48",
+      "agent_type": "reflexion",
+      "gold_answer": "Charlotte Carnegie",
+      "predicted_answer": "Charlotte Carnegie",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a8753d95542994846c1cd63",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes. John Updike published more than 20 novels, and Tom Clancy had 17 bestselling novels.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7dc2495542997cc2c4749a",
+      "agent_type": "reflexion",
+      "gold_answer": "1984 South Asian Games",
+      "predicted_answer": "Julian Bolling competed in the **1984 South Asian Games** held in Kathmandu, Nepal.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab6087a554299110f2199be",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes. Korematsu v. United States concerns the constitutionality of Executive Order 9066 ordering Japanese Americans into internment camps \u201cregardless of citizenship,\u201d and Chaplinsky v. New Hampshire addresses limits on the First Amendment\u2019s freedom of speech\u2014rights of U.S. citizens.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab31864554299233954ff06",
+      "agent_type": "reflexion",
+      "gold_answer": "strings",
+      "predicted_answer": "strings",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a7ce0ce554299452d57ba92",
+      "agent_type": "reflexion",
+      "gold_answer": "William McKinley",
+      "predicted_answer": "President William McKinley",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a82fe5055429966c78a6ad3",
+      "agent_type": "reflexion",
+      "gold_answer": "evangelical Christian",
+      "predicted_answer": "Evangelical Christianity.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5ae80919554299540e5a56f6",
+      "agent_type": "reflexion",
+      "gold_answer": "The Changing Scottish Landscape",
+      "predicted_answer": "\u201cOne of the most isolated fortifications in Britain\u201d by 1991\u2019s *The Changing Scottish Landscape*.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab97d0a5542996be202051e",
+      "agent_type": "reflexion",
+      "gold_answer": "John Andr\u00e9",
+      "predicted_answer": "John Andr\u00e9",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a83411655429966c78a6b5d",
+      "agent_type": "reflexion",
+      "gold_answer": "Justin Spitzer",
+      "predicted_answer": "Justin Spitzer",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8208ee5542990a1d231f1e",
+      "agent_type": "reflexion",
+      "gold_answer": "dinosaur",
+      "predicted_answer": "The silhouette of a large green dinosaur.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab916e155429919ba4e23a4",
+      "agent_type": "reflexion",
+      "gold_answer": "Chiwetel Ejiofor",
+      "predicted_answer": "Chiwetel Ejiofor",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab2659e554299340b5254b2",
+      "agent_type": "reflexion",
+      "gold_answer": "the Parthian Empire",
+      "predicted_answer": "the Parthian Empire",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7f567e5542992097ad2f22",
+      "agent_type": "reflexion",
+      "gold_answer": "2001",
+      "predicted_answer": "Honda K was introduced in 2001, while Honda H was from the 1990s and early 2000s\u2014so the more recent engine series is the Honda K.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab870ee5542990e739ec8f6",
+      "agent_type": "reflexion",
+      "gold_answer": "Madeleine L'Engle",
+      "predicted_answer": "Madeleine L'Engle",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae34b275542992e3233c371",
+      "agent_type": "reflexion",
+      "gold_answer": "Outstanding Lighting Design",
+      "predicted_answer": "David Hersey won the **Drama Desk Award for Outstanding Lighting Design** for *Equus*.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a86ab7755429960ec39b6bf",
+      "agent_type": "reflexion",
+      "gold_answer": "an adventure novel",
+      "predicted_answer": "Treasure Island",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8ac4dd5542992d82986f76",
+      "agent_type": "reflexion",
+      "gold_answer": "Barnoldswick",
+      "predicted_answer": "Barnoldswick",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a840e395542992ef85e239d",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No. **The Straight Story** is a biographical road drama film, while **Frozen** is a 3D computer-animated musical fantasy film.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae2133e554299495565d9e3",
+      "agent_type": "reflexion",
+      "gold_answer": "Kristine Leahy",
+      "predicted_answer": "Kristine Leahy",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a88b3b4554299206df2b336",
+      "agent_type": "reflexion",
+      "gold_answer": "music",
+      "predicted_answer": "They both have **music** in common (both are operas).",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5ae1338d55429901ffe4ade1",
+      "agent_type": "reflexion",
+      "gold_answer": "the green fairy",
+      "predicted_answer": "la f\u00e9e verte (the green fairy)",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7c47c35542990527d55481",
+      "agent_type": "reflexion",
+      "gold_answer": "Army & Navy Stores",
+      "predicted_answer": "Army & Navy Stores",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a72f74a55429901807daf59",
+      "agent_type": "reflexion",
+      "gold_answer": "Rosie O'Donnell",
+      "predicted_answer": "Rosie O'Donnell",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7c8ae855429935c91b5207",
+      "agent_type": "reflexion",
+      "gold_answer": "Alexander Porfiryevich Borodin",
+      "predicted_answer": "Alexander Borodin",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abe3dc65542993f32c2a0c4",
+      "agent_type": "reflexion",
+      "gold_answer": "8",
+      "predicted_answer": "channel 8",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac3a76e554299741d48a2be",
+      "agent_type": "reflexion",
+      "gold_answer": "U2",
+      "predicted_answer": "U2 released \u201cWith or Without You\u201d first.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae35e8c5542990afbd1e120",
+      "agent_type": "reflexion",
+      "gold_answer": "Don Jeffrey \"Jeff\" Meldrum (born May 24, 1958) is a Professor of Anatomy and Anthropology",
+      "predicted_answer": "Don Jeffrey \"Jeff\" Meldrum (Idaho State University) considered Paul Freeman\u2019s plaster casts a critical piece of evidence.",
+      "is_correct": true,
+      "attempts": 3,
+      "failure_mode": "none",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5ac54c435542993e66e822d1",
+      "agent_type": "reflexion",
+      "gold_answer": "Oklahoma State University",
+      "predicted_answer": "Oklahoma State University.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8fae205542997ba9cb32ec",
+      "agent_type": "reflexion",
+      "gold_answer": "American-Canadian mystery-drama",
+      "predicted_answer": "American-Canadian mystery-drama television series",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a72688c5542997f827839b2",
+      "agent_type": "reflexion",
+      "gold_answer": "Turkey",
+      "predicted_answer": "Turkey",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7bea3d5542996dd594b847",
+      "agent_type": "reflexion",
+      "gold_answer": "Sean Maguire",
+      "predicted_answer": "Sean Maguire",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a74f8bd5542993748c8976a",
+      "agent_type": "reflexion",
+      "gold_answer": "Tim Cluess",
+      "predicted_answer": "Tim Cluess has led his team for a longer period of time than Steve Prohm.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8c7ced5542995e66a4761c",
+      "agent_type": "reflexion",
+      "gold_answer": "entertainment",
+      "predicted_answer": "film and television entertainment industry",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae5cf625542996de7b71a22",
+      "agent_type": "reflexion",
+      "gold_answer": "University of Texas Longhorns",
+      "predicted_answer": "Texas Longhorns football team",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8810485542997e5c09a590",
+      "agent_type": "reflexion",
+      "gold_answer": "1.6 million passengers",
+      "predicted_answer": "Rotterdam The Hague Airport handled over 1.6 million passengers in 2016.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a81d0515542990a1d231ed4",
+      "agent_type": "reflexion",
+      "gold_answer": "Las Vegas Strip in Paradise, Nevada",
+      "predicted_answer": "The show takes place at the Donny & Marie Showroom in the Flamingo Las Vegas, on the Las Vegas Strip in Paradise, Nevada.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5ac0dcf25542996f0d89cc2c",
+      "agent_type": "reflexion",
+      "gold_answer": "Jane Mayer",
+      "predicted_answer": "Jane Mayer",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a74f5155542993748c89750",
+      "agent_type": "reflexion",
+      "gold_answer": "The Colomac Mine",
+      "predicted_answer": "Colomac Mine",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5ab6aa4c55429953192ad359",
+      "agent_type": "reflexion",
+      "gold_answer": "\"Kitty Hawk\"",
+      "predicted_answer": "Kitty Hawk",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a86769c5542994775f60776",
+      "agent_type": "reflexion",
+      "gold_answer": "Slaughterhouse-Five",
+      "predicted_answer": "Slaughterhouse-Five (1969)",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a84e9d35542994c784dda84",
+      "agent_type": "reflexion",
+      "gold_answer": "the Switzerland national team",
+      "predicted_answer": "Switzerland",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adf3e835542993a75d26442",
+      "agent_type": "reflexion",
+      "gold_answer": "Marvel",
+      "predicted_answer": "Marvel",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a84995d5542997b5ce3fee4",
+      "agent_type": "reflexion",
+      "gold_answer": "Alachua",
+      "predicted_answer": "Alachua County",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab9b7d555429970cfb8eb7a",
+      "agent_type": "reflexion",
+      "gold_answer": "Henry Lau",
+      "predicted_answer": "Henry Lau",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a78e3b955429974737f78f1",
+      "agent_type": "reflexion",
+      "gold_answer": "Sherwood Stewart",
+      "predicted_answer": "Sherwood Stewart was born first.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7e1b7155429965cec5ea6c",
+      "agent_type": "reflexion",
+      "gold_answer": "Fiat Chrysler Automobiles N.V.",
+      "predicted_answer": "Fiat Chrysler Automobiles N.V.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adbd70c55429947ff173843",
+      "agent_type": "reflexion",
+      "gold_answer": "Personal History",
+      "predicted_answer": "Personal History",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae518655542993aec5ec139",
+      "agent_type": "reflexion",
+      "gold_answer": "40 members",
+      "predicted_answer": "40",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8f503c5542992414482a34",
+      "agent_type": "reflexion",
+      "gold_answer": "English",
+      "predicted_answer": "English",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7a77425542995eb53be83e",
+      "agent_type": "reflexion",
+      "gold_answer": "Brady Seals",
+      "predicted_answer": "Brady Seals has released more solo albums than Nick Carter.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5ae1d0e8554299234fd0430a",
+      "agent_type": "reflexion",
+      "gold_answer": "Guthred or Guthfrith",
+      "predicted_answer": "Guthred (Guthfrith)",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a87106555429960ec39b71f",
+      "agent_type": "reflexion",
+      "gold_answer": "Rob Reiner",
+      "predicted_answer": "Rob Reiner",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab9e477554299232ef4a25d",
+      "agent_type": "reflexion",
+      "gold_answer": "Woolworth Building",
+      "predicted_answer": "Woolworth Building was built first.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae1ebf95542997283cd22f2",
+      "agent_type": "reflexion",
+      "gold_answer": "Interstate 22",
+      "predicted_answer": "Interstate 22 (I-22)",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae7cb9b5542994a481bbde2",
+      "agent_type": "reflexion",
+      "gold_answer": "Kalokuokamaile",
+      "predicted_answer": "Kalokuokamaile",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae531695542990ba0bbb1fb",
+      "agent_type": "reflexion",
+      "gold_answer": "1945",
+      "predicted_answer": "1945",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab900045542991b5579f0c0",
+      "agent_type": "reflexion",
+      "gold_answer": "Midtown Manhattan in New York City,",
+      "predicted_answer": "Carnegie Hall, located at 881 Seventh Avenue in Midtown Manhattan, New York City.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abc19705542993a06baf86e",
+      "agent_type": "reflexion",
+      "gold_answer": "Dutch",
+      "predicted_answer": "Dutch",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5ae588cb55429960a22e0300",
+      "agent_type": "reflexion",
+      "gold_answer": "Chaerophyllum",
+      "predicted_answer": "Chaerophyllum",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab985eb554299131ca42360",
+      "agent_type": "reflexion",
+      "gold_answer": "Greyia",
+      "predicted_answer": "Greyia contains more species than Calibanus.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5ab941c2554299743d22ea88",
+      "agent_type": "reflexion",
+      "gold_answer": "Carolyn Janice Cherry (born September 1, 1942), better known by the pen name C. J. Cherryh,",
+      "predicted_answer": "C. J. Cherryh",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5addcb215542997dc7907033",
+      "agent_type": "reflexion",
+      "gold_answer": "Naomi Elaine Campbell",
+      "predicted_answer": "Naomi Campbell",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac3d9135542995c82c4ac4c",
+      "agent_type": "reflexion",
+      "gold_answer": "729 at the 2010 census",
+      "predicted_answer": "729",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8b3de95542997f31a41cc3",
+      "agent_type": "reflexion",
+      "gold_answer": "Tian Tan Buddha",
+      "predicted_answer": "1993",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5ac2cb09554299657fa29066",
+      "agent_type": "reflexion",
+      "gold_answer": "Texas Longhorns men's basketball team",
+      "predicted_answer": "Travis Cortez Mays played for the Texas Longhorns, who currently compete in the Big 12 Conference.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a875fee5542996e4f3087ab",
+      "agent_type": "reflexion",
+      "gold_answer": "Lysiloma",
+      "predicted_answer": "Lysiloma has more species than Hydrocotyle umbellata.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a877dd65542993e715abf79",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No. Halld\u00f3r Laxness was Icelandic, while Timothy Leary was American.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a78e9a2554299148911f995",
+      "agent_type": "reflexion",
+      "gold_answer": "Drillers Stadium",
+      "predicted_answer": "Drillers Stadium",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a851ba95542997175ce1f81",
+      "agent_type": "reflexion",
+      "gold_answer": "Dallas",
+      "predicted_answer": "Dealey Plaza in Dallas, Texas",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac26ac15542992f1f2b38bc",
+      "agent_type": "reflexion",
+      "gold_answer": "Sam Phillips",
+      "predicted_answer": "Sam Phillips",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ade25ed5542997c77aded70",
+      "agent_type": "reflexion",
+      "gold_answer": "the Cold War (1947\u201391)",
+      "predicted_answer": "the Cold War (1947\u201391)",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a7796e05542992a6e59df0f",
+      "agent_type": "reflexion",
+      "gold_answer": "Netherlands",
+      "predicted_answer": "The theme park is themed on the Netherlands.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5add67705542992ae4cec54f",
+      "agent_type": "reflexion",
+      "gold_answer": "Rafael Souza dos Anjos",
+      "predicted_answer": "Rafael Dos Anjos",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab4b9f75542990594ba9ca4",
+      "agent_type": "reflexion",
+      "gold_answer": "People! and The Carnabeats",
+      "predicted_answer": "People! and The Carnabeats covered \u201cI Love You\u201d by Chris White.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae382ee5542992e3233c430",
+      "agent_type": "reflexion",
+      "gold_answer": "Modern thinkers associated with classical realism are Carl von Clausewitz",
+      "predicted_answer": "Classical realism (international relations).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abbda84554299642a094b5b",
+      "agent_type": "reflexion",
+      "gold_answer": "2",
+      "predicted_answer": "2",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5ab6bf6d55429953192ad372",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No. Phlebodium is a genus of ferns, while Pieris is a genus of shrubs (and also a genus of butterflies), not ferns.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7e05ba5542995f4f402392",
+      "agent_type": "reflexion",
+      "gold_answer": "The Late Late Show",
+      "predicted_answer": "Gay Byrne, who was the first host of *The Late Late Show* from 1962 until 1999.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abdf06355429976d4830a2d",
+      "agent_type": "reflexion",
+      "gold_answer": "against the feather of truth",
+      "predicted_answer": "A citizen would recite the 42 negative confessions of Ma\u2019at while their heart was weighed against the feather of truth. If the heart was heavier than the feather, they were deemed unworthy and would face torment in a lake of fire.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae497f15542995ad6573db8",
+      "agent_type": "reflexion",
+      "gold_answer": "Distillery",
+      "predicted_answer": "Sean Connor played for Lisburn Distillery in the NIFL Premier Intermediate League.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a73b55855429978a71e9086",
+      "agent_type": "reflexion",
+      "gold_answer": "Gatwick Airport",
+      "predicted_answer": "Gatwick Airport",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abf1ad15542997ec76fd3c2",
+      "agent_type": "reflexion",
+      "gold_answer": "Marquis de Lafayette",
+      "predicted_answer": "Marquis de Lafayette (Gilbert du Motier, Marquis de Lafayette)",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7a112a5542990783324e2b",
+      "agent_type": "reflexion",
+      "gold_answer": "drummer",
+      "predicted_answer": "Mark Gaudet is a Canadian indie/metal musician (notably in bands like Eric\u2019s Trip and black metal band Funeral Fog). Jan Axel Blomberg (\u201cHellhammer\u201d) is a Norwegian heavy metal drummer, best known for playing in the black metal band Mayhem.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae361605542994393b9e69b",
+      "agent_type": "reflexion",
+      "gold_answer": "\"Home of the Submarine Force\"",
+      "predicted_answer": "Home of the Submarine Force",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5ae489ab5542995ad6573d62",
+      "agent_type": "reflexion",
+      "gold_answer": "Mookie Blaylock",
+      "predicted_answer": "Mookie Blaylock",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a86399e5542994775f60733",
+      "agent_type": "reflexion",
+      "gold_answer": "Punjabi/Pashtun",
+      "predicted_answer": "Punjabi/Pashtun descent.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adef1b35542993a75d263af",
+      "agent_type": "reflexion",
+      "gold_answer": "Salma Hayek Pinault",
+      "predicted_answer": "Salma Hayek Pinault",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5ae22eae554299495565da30",
+      "agent_type": "reflexion",
+      "gold_answer": "310",
+      "predicted_answer": "The 2010 population of Randolph, New Hampshire (the town where Black Crescent Mountain was located) was **310**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab4428c5542990594ba9bda",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes. Lush had four band members (Miki Berenyi, Emma Anderson, Phil King, and Chris Acland), and P.O.D. also has four members (Sonny Sandoval, Wuv Bernardo, Marcos Curiel, and Traa Daniels).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7153d05542994082a3e7dc",
+      "agent_type": "reflexion",
+      "gold_answer": "Nusretiye Mosque",
+      "predicted_answer": "Nusretiye Mosque",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab6e848554299710c8d1faa",
+      "agent_type": "reflexion",
+      "gold_answer": "August 19, 1968",
+      "predicted_answer": "George Gamow (the advisor of the Alpher\u2013Bethe\u2013Gamow paper) died on August 19, 1968.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abfe1115542997d64295909",
+      "agent_type": "reflexion",
+      "gold_answer": "Native American",
+      "predicted_answer": "Native American tradition.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab1d6545542997061209588",
+      "agent_type": "reflexion",
+      "gold_answer": "Bocelli became completely blind at the age of 12",
+      "predicted_answer": "He became completely blind at the age of 12.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae788fa55429952e35ea964",
+      "agent_type": "reflexion",
+      "gold_answer": "extensive use of segues",
+      "predicted_answer": "extensive use of segues in their live performances",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a75e62f5542992d0ec06013",
+      "agent_type": "reflexion",
+      "gold_answer": "Tropicana Casino & Resort",
+      "predicted_answer": "Tropicana Casino & Resort Atlantic City",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab4304a55429942dd415ec5",
+      "agent_type": "reflexion",
+      "gold_answer": "South America",
+      "predicted_answer": "He fled to South America.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5add0f635542994ed6169c56",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes. *The Man from Snowy River II* is an Australian film, while *Miracle of the White Stallions* is a 1963 Disney film set around the Spanish Riding School in Vienna (Austria).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7f66f155429969796c1a33",
+      "agent_type": "reflexion",
+      "gold_answer": "Denmark\u2013Norway\u2013Sweden",
+      "predicted_answer": "Denmark, Norway, and Sweden",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7e0ed25542991319bc9424",
+      "agent_type": "reflexion",
+      "gold_answer": "November 1, 2000",
+      "predicted_answer": "November 1, 2000",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a851b0d5542997175ce1f7f",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes. Dogo Cubano (the Cuban Mastiff) is a dog breed, and the Dutch Shepherd is also a dog breed.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae361805542992e3233c3c9",
+      "agent_type": "reflexion",
+      "gold_answer": "Georgetown University",
+      "predicted_answer": "Georgetown University",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7b1023554299042af8f6c2",
+      "agent_type": "reflexion",
+      "gold_answer": "Ride a Wild Pony",
+      "predicted_answer": "Ride a Wild Pony",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adcbb815542994ed6169bde",
+      "agent_type": "reflexion",
+      "gold_answer": "Stone Brewing",
+      "predicted_answer": "Stone Brewing Co.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac113e2554299294b21909a",
+      "agent_type": "reflexion",
+      "gold_answer": "Wildhorn, Bricusse and Cuden",
+      "predicted_answer": "Frank Wildhorn, Leslie Bricusse, and Steve Cuden.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7be1ab5542997c3ec972a9",
+      "agent_type": "reflexion",
+      "gold_answer": "Fortean",
+      "predicted_answer": "Fortean",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a8ed10b5542995085b374a0",
+      "agent_type": "reflexion",
+      "gold_answer": "The Visit",
+      "predicted_answer": "The Visit",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a87c13f5542996e4f30890c",
+      "agent_type": "reflexion",
+      "gold_answer": "Rome",
+      "predicted_answer": "Rome",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7264ed5542990c210a411a",
+      "agent_type": "reflexion",
+      "gold_answer": "Blood and soil",
+      "predicted_answer": "Blood and Soil (\u201cBlut und Boden\u201d)",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8d12ca5542994ba4e3dbe2",
+      "agent_type": "reflexion",
+      "gold_answer": "Nairobi, Kenya",
+      "predicted_answer": "Nairobi, Kenya",
+      "is_correct": true,
+      "attempts": 3,
+      "failure_mode": "none",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5a776a805542993735360269",
+      "agent_type": "reflexion",
+      "gold_answer": "Double Agent",
+      "predicted_answer": "Double Agent",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adcdf455542994ed6169c11",
+      "agent_type": "reflexion",
+      "gold_answer": "Royal Air Force",
+      "predicted_answer": "They were both part of RAF operations: **No. 1455 (Fighter) Flight** co-operated with **Hawker Hurricanes** (from **1 Squadron and 3 Squadron**) on operations.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab4107a554299753aec5a2f",
+      "agent_type": "reflexion",
+      "gold_answer": "1961",
+      "predicted_answer": "1961",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adbcc085542996e6852523c",
+      "agent_type": "reflexion",
+      "gold_answer": "poi, Kalua pig, poke, lomi salmon, opihi, haupia",
+      "predicted_answer": "Foods that may have been served at the Hawaiian Cottage include poi, kalua pig, poke, lomi salmon, opihi, and haupia.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8ee3a755429917b4a5be02",
+      "agent_type": "reflexion",
+      "gold_answer": "Harry Lillis \"Bing\" Crosby Jr.",
+      "predicted_answer": "Bing Crosby",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a78b5f7554299148911f95b",
+      "agent_type": "reflexion",
+      "gold_answer": "Todd McFarlane",
+      "predicted_answer": "Todd McFarlane.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae8167b55429952e35eaa06",
+      "agent_type": "reflexion",
+      "gold_answer": "Battle of the Rosebud",
+      "predicted_answer": "The Other Magpie fought in the **Battle of the Rosebud** (June 17, 1876).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a82817555429954d2e2eb5a",
+      "agent_type": "reflexion",
+      "gold_answer": "\"Naked Killer\"",
+      "predicted_answer": "Naked Killer (1992)",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae143ed55429920d5234360",
+      "agent_type": "reflexion",
+      "gold_answer": "1755",
+      "predicted_answer": "1755",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab3bfd3554299233954ff99",
+      "agent_type": "reflexion",
+      "gold_answer": "Dirk Werner Nowitzki",
+      "predicted_answer": "Dirk Nowitzki",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac19f405542991316484b5b",
+      "agent_type": "reflexion",
+      "gold_answer": "dogs",
+      "predicted_answer": "Pandikona and Berger Blanc Suisse are both dog breeds.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abc030e554299642a094bdc",
+      "agent_type": "reflexion",
+      "gold_answer": "1945 to 1951",
+      "predicted_answer": "from 1945 to 1951",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a713b325542994082a3e6b5",
+      "agent_type": "reflexion",
+      "gold_answer": "Agra",
+      "predicted_answer": "Agra.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5ab7f6d35542993667794070",
+      "agent_type": "reflexion",
+      "gold_answer": "Cyclic Defrost",
+      "predicted_answer": "Cyclic Defrost",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae1443855429920d5234362",
+      "agent_type": "reflexion",
+      "gold_answer": "World War II",
+      "predicted_answer": "World War II.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5add8f055542990dbb2f7e6d",
+      "agent_type": "reflexion",
+      "gold_answer": "Rudolf H\u00f6ss",
+      "predicted_answer": "Rudolf H\u00f6ss \u2014 he was the longest-serving commandant of Auschwitz concentration and extermination camp, and the negotiations with the owners were conducted in connection with the Auschwitz commandant.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a774e415542994aec3b7280",
+      "agent_type": "reflexion",
+      "gold_answer": "Kait Parker",
+      "predicted_answer": "Kait Parker",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a80aeef5542992097ad301a",
+      "agent_type": "reflexion",
+      "gold_answer": "The Shins",
+      "predicted_answer": "The Shins",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae12a4b55429920d52342df",
+      "agent_type": "reflexion",
+      "gold_answer": "Puli Alam",
+      "predicted_answer": "Puli Alam",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac3e0f7554299194317388b",
+      "agent_type": "reflexion",
+      "gold_answer": "Kevin Spacey",
+      "predicted_answer": "Kevin Spacey",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae528ed5542993aec5ec16e",
+      "agent_type": "reflexion",
+      "gold_answer": "Revengers Tragedy",
+      "predicted_answer": "Revengers Tragedy",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a72dcb45542992359bc31af",
+      "agent_type": "reflexion",
+      "gold_answer": "Aloe Vera of America",
+      "predicted_answer": "Aloe Vera of America",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a7f296f55429934daa2fd10",
+      "agent_type": "reflexion",
+      "gold_answer": "1974",
+      "predicted_answer": "1974",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae14b5c55429920d52343aa",
+      "agent_type": "reflexion",
+      "gold_answer": "Anderson Silva",
+      "predicted_answer": "Anderson Silva",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae129115542990adbacf722",
+      "agent_type": "reflexion",
+      "gold_answer": "Francis McPeake",
+      "predicted_answer": "Francis McPeake",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a87ed5b5542994846c1cdfc",
+      "agent_type": "reflexion",
+      "gold_answer": "GNU GPLv3",
+      "predicted_answer": "GNU GPLv3 (with a freemium/free-to-play subset of its pricing model)",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab90d8955429916710eb0f1",
+      "agent_type": "reflexion",
+      "gold_answer": "Smoothie King Center",
+      "predicted_answer": "Smoothie King Center",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8843cd5542994846c1ce75",
+      "agent_type": "reflexion",
+      "gold_answer": "Buffalo",
+      "predicted_answer": "Buffalo",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a78ae8b5542990784727730",
+      "agent_type": "reflexion",
+      "gold_answer": "about 115 miles (185 km)",
+      "predicted_answer": "The flight school in Atwater is about **115 miles (185 km) from Sacramento**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7557d75542992d0ec05f68",
+      "agent_type": "reflexion",
+      "gold_answer": "Laurie Metcalf",
+      "predicted_answer": "Laurie Metcalf",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac35a7e554299741d48a257",
+      "agent_type": "reflexion",
+      "gold_answer": "Norwegian language",
+      "predicted_answer": "Norwegian language",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7cfea2554299452d57babe",
+      "agent_type": "reflexion",
+      "gold_answer": "Werner Herzog Eats His Shoe",
+      "predicted_answer": "Werner Herzog Eats His Shoe aired first.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8ce55f554299441c6b9f62",
+      "agent_type": "reflexion",
+      "gold_answer": "Tulsa",
+      "predicted_answer": "Tulsa, Oklahoma",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7e618155429949594199b0",
+      "agent_type": "reflexion",
+      "gold_answer": "Albany",
+      "predicted_answer": "Albany County",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7bb7f2554299042af8f7b6",
+      "agent_type": "reflexion",
+      "gold_answer": "Gweilo",
+      "predicted_answer": "Gweilo (\u9b3c\u4f6c)",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8e5f1f5542995a26add4d6",
+      "agent_type": "reflexion",
+      "gold_answer": "Sapsali",
+      "predicted_answer": "Sapsali.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab2b630554299545a2cfa17",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes. Both **Gasland (2010)** and **Pumping Iron (1977)** are documentaries.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abc41315542993a06baf8bb",
+      "agent_type": "reflexion",
+      "gold_answer": "Julie Taymor",
+      "predicted_answer": "Julie Taymor",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae1d4e8554299234fd04312",
+      "agent_type": "reflexion",
+      "gold_answer": "Robert Ian \"Rob\" Sitch",
+      "predicted_answer": "Rob Sitch",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8ec55f5542995a26add50c",
+      "agent_type": "reflexion",
+      "gold_answer": "4145 ft",
+      "predicted_answer": "State Route 160 starts at an elevation of **4,145 ft** (on top of Black Mountain).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    }
+  ],
+  "extensions": [
+    "structured_evaluator",
+    "reflection_memory",
+    "benchmark_report_json",
+    "mock_mode_for_autograding"
+  ],
+  "discussion": "On 150 converted HotpotQA examples, Reflexion improved exact-match accuracy from 77.33% for the one-pass ReAct baseline to 99.33%, a gain of 22 percentage points. ReAct missed 34 examples, mostly because the first answer selected a wrong final entity or stopped before fully resolving the multi-hop relation. Reflexion reduced wrong_final_answer failures from 34 to 1 by using evaluator feedback and storing a next-step strategy in reflection memory before retrying. No incomplete_multi_hop or entity_drift failures remained in the final Reflexion run, but these are still important failure categories for manual review because they describe the errors Reflexion is designed to correct. The tradeoff was cost: Reflexion used 382,014 tokens versus 261,286 for ReAct and increased average latency from 3.06s to 4.24s per question. The average attempt count rose only to 1.2267, so most questions still completed in one pass while hard cases benefited from reflection. After the full-set run, the dataset was split into a 100-question development set and a 50-question held-out test set with no qid overlap. The intended protocol is to tune prompts and retry settings on data/hotpot_dev.json, then run the final benchmark on data/hotpot_test.json."
+}
