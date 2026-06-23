@@ -1,0 +1,3447 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "United States",
+      "id": "United States"
+    },
+    {
+      "label": "Electric Vehicles",
+      "id": "Electric Vehicles"
+    },
+    {
+      "label": "Zero-Emission Vehicle Regulations",
+      "id": "Zero-Emission Vehicle Regulations"
+    },
+    {
+      "label": "Tesla",
+      "id": "Tesla"
+    },
+    {
+      "label": "51.3%",
+      "id": "51.3%"
+    },
+    {
+      "label": "Negative",
+      "id": "Negative"
+    },
+    {
+      "label": "Cadillac",
+      "id": "Cadillac"
+    },
+    {
+      "label": "499.2%",
+      "id": "499.2%"
+    },
+    {
+      "label": "Mercedes",
+      "id": "Mercedes"
+    },
+    {
+      "label": "66.9%",
+      "id": "66.9%"
+    },
+    {
+      "label": "Bmw",
+      "id": "Bmw"
+    },
+    {
+      "label": "62.6%",
+      "id": "62.6%"
+    },
+    {
+      "label": "Ford",
+      "id": "Ford"
+    },
+    {
+      "label": "86.1%",
+      "id": "86.1%"
+    },
+    {
+      "label": "Chevy",
+      "id": "Chevy"
+    },
+    {
+      "label": "Rivian",
+      "id": "Rivian"
+    },
+    {
+      "label": "Vinfast",
+      "id": "Vinfast"
+    },
+    {
+      "label": "Toyota",
+      "id": "Toyota"
+    },
+    {
+      "label": "Hybrid Vehicles",
+      "id": "Hybrid Vehicles"
+    },
+    {
+      "label": "National Renewable Energy Laboratory",
+      "id": "National Renewable Energy Laboratory"
+    },
+    {
+      "label": "Predictive Modeling",
+      "id": "Predictive Modeling"
+    },
+    {
+      "label": "EIA",
+      "id": "EIA"
+    },
+    {
+      "label": "ELECTRIC POWER MONTHLY",
+      "id": "ELECTRIC POWER MONTHLY"
+    },
+    {
+      "label": "API",
+      "id": "API"
+    },
+    {
+      "label": "GITHUB",
+      "id": "GITHUB"
+    },
+    {
+      "label": "TODAY IN ENERGY",
+      "id": "TODAY IN ENERGY"
+    },
+    {
+      "label": "WHAT'S NEW",
+      "id": "WHAT'S NEW"
+    },
+    {
+      "label": "26%",
+      "id": "26%"
+    },
+    {
+      "label": "China",
+      "id": "China"
+    },
+    {
+      "label": "6%",
+      "id": "6%"
+    },
+    {
+      "label": "Europe",
+      "id": "Europe"
+    },
+    {
+      "label": "Citigroup",
+      "id": "Citigroup"
+    },
+    {
+      "label": "EV Penetration Matrix",
+      "id": "EV Penetration Matrix"
+    },
+    {
+      "label": "Environmental Defense Fund",
+      "id": "Environmental Defense Fund"
+    },
+    {
+      "label": "U.S. Electric Vehicle Manufacturing Investments And Jobs Report",
+      "id": "U.S. Electric Vehicle Manufacturing Investments And Jobs Report"
+    },
+    {
+      "label": "WSP USA",
+      "id": "WSP USA"
+    },
+    {
+      "label": "Ellen Robo",
+      "id": "Ellen Robo"
+    },
+    {
+      "label": "Georgia",
+      "id": "Georgia"
+    },
+    {
+      "label": "31.2 Billion Dollars Investment",
+      "id": "31.2 Billion Dollars Investment"
+    },
+    {
+      "label": "38700 Jobs",
+      "id": "38700 Jobs"
+    },
+    {
+      "label": "Michigan",
+      "id": "Michigan"
+    },
+    {
+      "label": "20 Billion Dollars Investment",
+      "id": "20 Billion Dollars Investment"
+    },
+    {
+      "label": "North Carolina",
+      "id": "North Carolina"
+    },
+    {
+      "label": "19 Billion Dollars Investment",
+      "id": "19 Billion Dollars Investment"
+    },
+    {
+      "label": "Mexico",
+      "id": "Mexico"
+    },
+    {
+      "label": "Indonesia",
+      "id": "Indonesia"
+    },
+    {
+      "label": "European Union",
+      "id": "European Union"
+    },
+    {
+      "label": "Inflation Reduction Act",
+      "id": "Inflation Reduction Act"
+    },
+    {
+      "label": "Electric Vehicle Market",
+      "id": "Electric Vehicle Market"
+    },
+    {
+      "label": "Battery Manufacturing",
+      "id": "Battery Manufacturing"
+    },
+    {
+      "label": "Ilaria Mazzocco",
+      "id": "Ilaria Mazzocco"
+    },
+    {
+      "label": "U.S.-CHINA ECONOMIC AND SECURITY REVIEW COMMISSION",
+      "id": "U.S.-CHINA ECONOMIC AND SECURITY REVIEW COMMISSION"
+    },
+    {
+      "label": "ELECTRIC VEHICLES",
+      "id": "ELECTRIC VEHICLES"
+    },
+    {
+      "label": "LITHIUM BATTERIES",
+      "id": "LITHIUM BATTERIES"
+    },
+    {
+      "label": "International Energy Agency",
+      "id": "International Energy Agency"
+    },
+    {
+      "label": "CHINA",
+      "id": "CHINA"
+    },
+    {
+      "label": "Department Of Energy",
+      "id": "Department Of Energy"
+    },
+    {
+      "label": "BATTERY PRODUCTION",
+      "id": "BATTERY PRODUCTION"
+    },
+    {
+      "label": "CATHODE",
+      "id": "CATHODE"
+    },
+    {
+      "label": "HYDROGEN FUEL CELL VEHICLE INDUSTRY",
+      "id": "HYDROGEN FUEL CELL VEHICLE INDUSTRY"
+    },
+    {
+      "label": "AI",
+      "id": "AI"
+    },
+    {
+      "label": "ADVANCED COMPUTING",
+      "id": "ADVANCED COMPUTING"
+    },
+    {
+      "label": "BIOTECH",
+      "id": "BIOTECH"
+    },
+    {
+      "label": "EPA",
+      "id": "EPA"
+    },
+    {
+      "label": "Power Profiler",
+      "id": "Power Profiler"
+    },
+    {
+      "label": "Beyond Tailpipe Emissions Calculator",
+      "id": "Beyond Tailpipe Emissions Calculator"
+    },
+    {
+      "label": "Vehicle Technologies Office",
+      "id": "Vehicle Technologies Office"
+    },
+    {
+      "label": "Argonne National Laboratory",
+      "id": "Argonne National Laboratory"
+    },
+    {
+      "label": "GREET 2 2021",
+      "id": "GREET 2 2021"
+    },
+    {
+      "label": "DELOITTE",
+      "id": "DELOITTE"
+    },
+    {
+      "label": "ELECTRIC VEHICLE TRENDS",
+      "id": "ELECTRIC VEHICLE TRENDS"
+    },
+    {
+      "label": "TANYA OTT",
+      "id": "TANYA OTT"
+    },
+    {
+      "label": "DELOITTE INSIGHTS WEBCAST",
+      "id": "DELOITTE INSIGHTS WEBCAST"
+    },
+    {
+      "label": "BATTERY ELECTRIC VEHICLES",
+      "id": "BATTERY ELECTRIC VEHICLES"
+    },
+    {
+      "label": "PLUG-IN HYBRID ELECTRIC VEHICLES",
+      "id": "PLUG-IN HYBRID ELECTRIC VEHICLES"
+    },
+    {
+      "label": "74 PERCENT",
+      "id": "74 PERCENT"
+    },
+    {
+      "label": "2.5 PERCENT",
+      "id": "2.5 PERCENT"
+    },
+    {
+      "label": "EUROPE",
+      "id": "EUROPE"
+    },
+    {
+      "label": "93 PERCENT",
+      "id": "93 PERCENT"
+    },
+    {
+      "label": "17 PERCENT",
+      "id": "17 PERCENT"
+    },
+    {
+      "label": "UNITED STATES",
+      "id": "UNITED STATES"
+    },
+    {
+      "label": "-2 PERCENT",
+      "id": "-2 PERCENT"
+    },
+    {
+      "label": "NORWAY",
+      "id": "NORWAY"
+    },
+    {
+      "label": "56 PERCENT",
+      "id": "56 PERCENT"
+    },
+    {
+      "label": "BLOOMBERGNEF",
+      "id": "BLOOMBERGNEF"
+    },
+    {
+      "label": "EVO REPORT 2024",
+      "id": "EVO REPORT 2024"
+    },
+    {
+      "label": "BLOOMBERG FINANCE LP",
+      "id": "BLOOMBERG FINANCE LP"
+    },
+    {
+      "label": "GLOBAL EV MARKET",
+      "id": "GLOBAL EV MARKET"
+    },
+    {
+      "label": "BATTERY CELLS",
+      "id": "BATTERY CELLS"
+    },
+    {
+      "label": "BATTERY COMPONENTS",
+      "id": "BATTERY COMPONENTS"
+    },
+    {
+      "label": "ELECTRIC VEHICLE MARKET",
+      "id": "ELECTRIC VEHICLE MARKET"
+    },
+    {
+      "label": "THAILAND",
+      "id": "THAILAND"
+    },
+    {
+      "label": "RECORD EV SALES",
+      "id": "RECORD EV SALES"
+    },
+    {
+      "label": "INDIA",
+      "id": "INDIA"
+    },
+    {
+      "label": "TURKEY",
+      "id": "TURKEY"
+    },
+    {
+      "label": "BRAZIL",
+      "id": "BRAZIL"
+    },
+    {
+      "label": "1.7 MILLION BARRELS PER DAY OF OIL",
+      "id": "1.7 MILLION BARRELS PER DAY OF OIL"
+    },
+    {
+      "label": "Nvidia",
+      "id": "Nvidia"
+    },
+    {
+      "label": "Hopper",
+      "id": "Hopper"
+    },
+    {
+      "label": "Blackwell",
+      "id": "Blackwell"
+    },
+    {
+      "label": "Spectrum-X",
+      "id": "Spectrum-X"
+    },
+    {
+      "label": "Nvidia NIM",
+      "id": "Nvidia NIM"
+    },
+    {
+      "label": "Jensen Huang",
+      "id": "Jensen Huang"
+    },
+    {
+      "label": "Polestar",
+      "id": "Polestar"
+    },
+    {
+      "label": "Sweden",
+      "id": "Sweden"
+    },
+    {
+      "label": "Revenue",
+      "id": "Revenue"
+    },
+    {
+      "label": "Volvo Cars",
+      "id": "Volvo Cars"
+    },
+    {
+      "label": "VinFast",
+      "id": "VinFast"
+    },
+    {
+      "label": "Vietnam",
+      "id": "Vietnam"
+    },
+    {
+      "label": "Vingroup",
+      "id": "Vingroup"
+    },
+    {
+      "label": "Thuy Le",
+      "id": "Thuy Le"
+    },
+    {
+      "label": "Lan Anh Nguyen",
+      "id": "Lan Anh Nguyen"
+    },
+    {
+      "label": "Zeekr",
+      "id": "Zeekr"
+    },
+    {
+      "label": "Geely Group",
+      "id": "Geely Group"
+    },
+    {
+      "label": "Andy An",
+      "id": "Andy An"
+    },
+    {
+      "label": "Jing Yuan",
+      "id": "Jing Yuan"
+    },
+    {
+      "label": "BYD",
+      "id": "BYD"
+    },
+    {
+      "label": "Canoo",
+      "id": "Canoo"
+    },
+    {
+      "label": "US",
+      "id": "US"
+    },
+    {
+      "label": "Fisker",
+      "id": "Fisker"
+    },
+    {
+      "label": "Lucid",
+      "id": "Lucid"
+    },
+    {
+      "label": "Nikola",
+      "id": "Nikola"
+    },
+    {
+      "label": "Stellantis",
+      "id": "Stellantis"
+    },
+    {
+      "label": "Argentina",
+      "id": "Argentina"
+    },
+    {
+      "label": "LG",
+      "id": "LG"
+    },
+    {
+      "label": "SK",
+      "id": "SK"
+    },
+    {
+      "label": "Mercedes-Benz",
+      "id": "Mercedes-Benz"
+    },
+    {
+      "label": "Beijing",
+      "id": "Beijing"
+    },
+    {
+      "label": "Nevada",
+      "id": "Nevada"
+    },
+    {
+      "label": "California",
+      "id": "California"
+    },
+    {
+      "label": "Germany",
+      "id": "Germany"
+    },
+    {
+      "label": "Automakers",
+      "id": "Automakers"
+    },
+    {
+      "label": "Corolla Hybrid",
+      "id": "Corolla Hybrid"
+    },
+    {
+      "label": "Transportation Sector",
+      "id": "Transportation Sector"
+    },
+    {
+      "label": "REE Automotive",
+      "id": "REE Automotive"
+    },
+    {
+      "label": "EAVX",
+      "id": "EAVX"
+    },
+    {
+      "label": "JB Poindexter",
+      "id": "JB Poindexter"
+    },
+    {
+      "label": "Morgan Olson",
+      "id": "Morgan Olson"
+    },
+    {
+      "label": "Electric Trucks",
+      "id": "Electric Trucks"
+    },
+    {
+      "label": "Hydrogen Fuel Cell Trucks",
+      "id": "Hydrogen Fuel Cell Trucks"
+    },
+    {
+      "label": "Iveco Group",
+      "id": "Iveco Group"
+    },
+    {
+      "label": "Voltera Power",
+      "id": "Voltera Power"
+    },
+    {
+      "label": "Fortescue Future Industries",
+      "id": "Fortescue Future Industries"
+    },
+    {
+      "label": "North America",
+      "id": "North America"
+    },
+    {
+      "label": "Drayage Trucks",
+      "id": "Drayage Trucks"
+    },
+    {
+      "label": "Cox Automotive",
+      "id": "Cox Automotive"
+    },
+    {
+      "label": "Dealer Sentiment Index",
+      "id": "Dealer Sentiment Index"
+    },
+    {
+      "label": "Dealer Sentiment",
+      "id": "Dealer Sentiment"
+    },
+    {
+      "label": "IPO",
+      "id": "IPO"
+    },
+    {
+      "label": "Tax Credits",
+      "id": "Tax Credits"
+    },
+    {
+      "label": "Government Subsidies",
+      "id": "Government Subsidies"
+    },
+    {
+      "label": "Batteries",
+      "id": "Batteries"
+    },
+    {
+      "label": "Electric Vehicle Subsidies",
+      "id": "Electric Vehicle Subsidies"
+    },
+    {
+      "label": "Microvast",
+      "id": "Microvast"
+    },
+    {
+      "label": "Li Auto",
+      "id": "Li Auto"
+    },
+    {
+      "label": "Xpeng",
+      "id": "Xpeng"
+    },
+    {
+      "label": "GM",
+      "id": "GM"
+    },
+    {
+      "label": "JOINT OFFICE OF ENERGY AND TRANSPORTATION",
+      "id": "JOINT OFFICE OF ENERGY AND TRANSPORTATION"
+    },
+    {
+      "label": "NATIONAL ELECTRIC VEHICLE INFRASTRUCTURE FORMULA PROGRAM",
+      "id": "NATIONAL ELECTRIC VEHICLE INFRASTRUCTURE FORMULA PROGRAM"
+    },
+    {
+      "label": "CHARGING AND FUELING INFRASTRUCTURE PROGRAM",
+      "id": "CHARGING AND FUELING INFRASTRUCTURE PROGRAM"
+    },
+    {
+      "label": "NATIONAL CHARGING EXPERIENCE CONSORTIUM",
+      "id": "NATIONAL CHARGING EXPERIENCE CONSORTIUM"
+    },
+    {
+      "label": "ELECTRIC VEHICLE WORKING GROUP",
+      "id": "ELECTRIC VEHICLE WORKING GROUP"
+    },
+    {
+      "label": "NATIONAL ZERO-EMISSION FREIGHT CORRIDOR STRATEGY",
+      "id": "NATIONAL ZERO-EMISSION FREIGHT CORRIDOR STRATEGY"
+    },
+    {
+      "label": "ELECTRIC VEHICLE CHARGING INFRASTRUCTURE",
+      "id": "ELECTRIC VEHICLE CHARGING INFRASTRUCTURE"
+    },
+    {
+      "label": "ZERO-EMISSION TECHNOLOGY",
+      "id": "ZERO-EMISSION TECHNOLOGY"
+    },
+    {
+      "label": "CHARGEX CONSORTIUM",
+      "id": "CHARGEX CONSORTIUM"
+    },
+    {
+      "label": "ELECTRIC VEHICLE INFRASTRUCTURE TRAINING PROGRAM",
+      "id": "ELECTRIC VEHICLE INFRASTRUCTURE TRAINING PROGRAM"
+    },
+    {
+      "label": "55%",
+      "id": "55%"
+    },
+    {
+      "label": "BMW",
+      "id": "BMW"
+    },
+    {
+      "label": "Audi",
+      "id": "Audi"
+    },
+    {
+      "label": "Volkswagen",
+      "id": "Volkswagen"
+    },
+    {
+      "label": "100%",
+      "id": "100%"
+    },
+    {
+      "label": "Model Y",
+      "id": "Model Y"
+    },
+    {
+      "label": "Model 3",
+      "id": "Model 3"
+    },
+    {
+      "label": "Mustang Mach-E",
+      "id": "Mustang Mach-E"
+    },
+    {
+      "label": "F-150 Lightning",
+      "id": "F-150 Lightning"
+    },
+    {
+      "label": "Donald Trump",
+      "id": "Donald Trump"
+    },
+    {
+      "label": "EcoPro BM",
+      "id": "EcoPro BM"
+    },
+    {
+      "label": "Secondary Battery",
+      "id": "Secondary Battery"
+    },
+    {
+      "label": "LG Energy Solution",
+      "id": "LG Energy Solution"
+    },
+    {
+      "label": "IDTechEx",
+      "id": "IDTechEx"
+    },
+    {
+      "label": "Battery Technologies",
+      "id": "Battery Technologies"
+    },
+    {
+      "label": "ACC",
+      "id": "ACC"
+    },
+    {
+      "label": "Longo Toyota",
+      "id": "Longo Toyota"
+    },
+    {
+      "label": "Hyundai",
+      "id": "Hyundai"
+    },
+    {
+      "label": "Ioniq 5 N",
+      "id": "Ioniq 5 N"
+    },
+    {
+      "label": "Japan",
+      "id": "Japan"
+    },
+    {
+      "label": "EV Battery Production",
+      "id": "EV Battery Production"
+    },
+    {
+      "label": "General Motors",
+      "id": "General Motors"
+    },
+    {
+      "label": "Honda",
+      "id": "Honda"
+    },
+    {
+      "label": "United Automobile Workers",
+      "id": "United Automobile Workers"
+    },
+    {
+      "label": "Auto Industry",
+      "id": "Auto Industry"
+    },
+    {
+      "label": "Elon Musk",
+      "id": "Elon Musk"
+    },
+    {
+      "label": "UK",
+      "id": "UK"
+    },
+    {
+      "label": "Singapore",
+      "id": "Singapore"
+    },
+    {
+      "label": "Goldman Sachs",
+      "id": "Goldman Sachs"
+    },
+    {
+      "label": "Solar Energy Industries Association",
+      "id": "Solar Energy Industries Association"
+    },
+    {
+      "label": "Washington, D.C.",
+      "id": "Washington, D.C."
+    },
+    {
+      "label": "SolarAPP",
+      "id": "SolarAPP"
+    },
+    {
+      "label": "Texas",
+      "id": "Texas"
+    },
+    {
+      "label": "Solar Installations",
+      "id": "Solar Installations"
+    },
+    {
+      "label": "Joe Biden",
+      "id": "Joe Biden"
+    },
+    {
+      "label": "Xi Jinping",
+      "id": "Xi Jinping"
+    },
+    {
+      "label": "Bureau of Industry and Security",
+      "id": "Bureau of Industry and Security"
+    },
+    {
+      "label": "Semiconductors",
+      "id": "Semiconductors"
+    },
+    {
+      "label": "CATL",
+      "id": "CATL"
+    },
+    {
+      "label": "FDB",
+      "id": "FDB"
+    },
+    {
+      "label": "American Airlines",
+      "id": "American Airlines"
+    },
+    {
+      "label": "Robert Heppenstall",
+      "id": "Robert Heppenstall"
+    },
+    {
+      "label": "Delta Air Lines",
+      "id": "Delta Air Lines"
+    },
+    {
+      "label": "U.S. ENERGY INFORMATION ADMINISTRATION",
+      "id": "U.S. ENERGY INFORMATION ADMINISTRATION"
+    },
+    {
+      "label": "MONTHLY ENERGY REVIEW",
+      "id": "MONTHLY ENERGY REVIEW"
+    },
+    {
+      "label": "ELECTRIC VEHICLE",
+      "id": "ELECTRIC VEHICLE"
+    },
+    {
+      "label": "CRUDE OIL",
+      "id": "CRUDE OIL"
+    },
+    {
+      "label": "NATURAL GAS",
+      "id": "NATURAL GAS"
+    },
+    {
+      "label": "NUCLEAR ENERGY",
+      "id": "NUCLEAR ENERGY"
+    },
+    {
+      "label": "RENEWABLE ENERGY",
+      "id": "RENEWABLE ENERGY"
+    },
+    {
+      "label": "ENERGY STATISTICS",
+      "id": "ENERGY STATISTICS"
+    },
+    {
+      "label": "Electric Vehicle",
+      "id": "Electric Vehicle"
+    },
+    {
+      "label": "Weak",
+      "id": "Weak"
+    },
+    {
+      "label": "Dealer",
+      "id": "Dealer"
+    },
+    {
+      "label": "Market Uncertainty",
+      "id": "Market Uncertainty"
+    },
+    {
+      "label": "PwC",
+      "id": "PwC"
+    },
+    {
+      "label": "Market Analysis",
+      "id": "Market Analysis"
+    },
+    {
+      "label": "27 Million",
+      "id": "27 Million"
+    },
+    {
+      "label": "Infrastructure Investment and Jobs Act",
+      "id": "Infrastructure Investment and Jobs Act"
+    },
+    {
+      "label": "Electric Vehicle Charging Infrastructure",
+      "id": "Electric Vehicle Charging Infrastructure"
+    },
+    {
+      "label": "United Kingdom",
+      "id": "United Kingdom"
+    },
+    {
+      "label": "Brexit",
+      "id": "Brexit"
+    },
+    {
+      "label": "COVID-19",
+      "id": "COVID-19"
+    },
+    {
+      "label": "Wales",
+      "id": "Wales"
+    },
+    {
+      "label": "Northern Ireland",
+      "id": "Northern Ireland"
+    },
+    {
+      "label": "Google",
+      "id": "Google"
+    },
+    {
+      "label": "Google Trend",
+      "id": "Google Trend"
+    },
+    {
+      "label": "Twitter",
+      "id": "Twitter"
+    },
+    {
+      "label": "Sentiment Analysis",
+      "id": "Sentiment Analysis"
+    },
+    {
+      "label": "INFLATION REDUCTION ACT",
+      "id": "INFLATION REDUCTION ACT"
+    },
+    {
+      "label": "US ELECTRIC VEHICLE INDUSTRY",
+      "id": "US ELECTRIC VEHICLE INDUSTRY"
+    },
+    {
+      "label": "30%",
+      "id": "30%"
+    },
+    {
+      "label": "India",
+      "id": "India"
+    },
+    {
+      "label": "13%",
+      "id": "13%"
+    },
+    {
+      "label": "Taiwan",
+      "id": "Taiwan"
+    },
+    {
+      "label": "33%",
+      "id": "33%"
+    },
+    {
+      "label": "7%",
+      "id": "7%"
+    },
+    {
+      "label": "BlackRock",
+      "id": "BlackRock"
+    },
+    {
+      "label": "BlackRock Flexible Income ETF",
+      "id": "BlackRock Flexible Income ETF"
+    },
+    {
+      "label": "S&P 500",
+      "id": "S&P 500"
+    },
+    {
+      "label": "25%",
+      "id": "25%"
+    },
+    {
+      "label": "Oil",
+      "id": "Oil"
+    },
+    {
+      "label": "OPEC+",
+      "id": "OPEC+"
+    },
+    {
+      "label": "EY",
+      "id": "EY"
+    },
+    {
+      "label": "AllianceBernstein",
+      "id": "AllianceBernstein"
+    },
+    {
+      "label": "Columbia University",
+      "id": "Columbia University"
+    },
+    {
+      "label": "Chinese Auto Manufacturers",
+      "id": "Chinese Auto Manufacturers"
+    },
+    {
+      "label": "GCL Technology",
+      "id": "GCL Technology"
+    },
+    {
+      "label": "SunEdison",
+      "id": "SunEdison"
+    },
+    {
+      "label": "KPMG",
+      "id": "KPMG"
+    },
+    {
+      "label": "Global Economy",
+      "id": "Global Economy"
+    },
+    {
+      "label": "GDP",
+      "id": "GDP"
+    },
+    {
+      "label": "Capital Group",
+      "id": "Capital Group"
+    },
+    {
+      "label": "Auto Sales",
+      "id": "Auto Sales"
+    },
+    {
+      "label": "Luxury Goods",
+      "id": "Luxury Goods"
+    },
+    {
+      "label": "Russell Investments",
+      "id": "Russell Investments"
+    },
+    {
+      "label": "TA Associates Management",
+      "id": "TA Associates Management"
+    },
+    {
+      "label": "Reverence Capital Partners",
+      "id": "Reverence Capital Partners"
+    },
+    {
+      "label": "GLOBAL ECONOMY",
+      "id": "GLOBAL ECONOMY"
+    },
+    {
+      "label": "MRI",
+      "id": "MRI"
+    },
+    {
+      "label": "JAPANESE ECONOMY",
+      "id": "JAPANESE ECONOMY"
+    },
+    {
+      "label": "FINANCIAL MARKETS",
+      "id": "FINANCIAL MARKETS"
+    },
+    {
+      "label": "BULLISH",
+      "id": "BULLISH"
+    },
+    {
+      "label": "Silicon Valley",
+      "id": "Silicon Valley"
+    },
+    {
+      "label": "Market Capitalization",
+      "id": "Market Capitalization"
+    },
+    {
+      "label": "Oil Consumption",
+      "id": "Oil Consumption"
+    },
+    {
+      "label": "US Economy",
+      "id": "US Economy"
+    },
+    {
+      "label": "Roadster",
+      "id": "Roadster"
+    },
+    {
+      "label": "Wan Gang",
+      "id": "Wan Gang"
+    },
+    {
+      "label": "Volkswagen AG",
+      "id": "Volkswagen AG"
+    },
+    {
+      "label": "Lucid Motors",
+      "id": "Lucid Motors"
+    },
+    {
+      "label": "Nio",
+      "id": "Nio"
+    },
+    {
+      "label": "XPeng",
+      "id": "XPeng"
+    },
+    {
+      "label": "Lithium Batteries",
+      "id": "Lithium Batteries"
+    },
+    {
+      "label": "Asia",
+      "id": "Asia"
+    },
+    {
+      "label": "Internal Combustion Engine",
+      "id": "Internal Combustion Engine"
+    },
+    {
+      "label": "EV Batteries",
+      "id": "EV Batteries"
+    },
+    {
+      "label": "PHEV Sales",
+      "id": "PHEV Sales"
+    },
+    {
+      "label": "EV Sales",
+      "id": "EV Sales"
+    },
+    {
+      "label": "Vehicles",
+      "id": "Vehicles"
+    },
+    {
+      "label": "McKinsey",
+      "id": "McKinsey"
+    },
+    {
+      "label": "EV Industry",
+      "id": "EV Industry"
+    }
+  ],
+  "edges": [
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_1.txt",
+      "source": "United States",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "HAS_MARKET_SHARE",
+      "source_doc": "doc_44.txt",
+      "source": "United States",
+      "target": "Electric Vehicles",
+      "key": 1
+    },
+    {
+      "relation": "IMPLEMENTS",
+      "source_doc": "doc_1.txt",
+      "source": "United States",
+      "target": "Zero-Emission Vehicle Regulations",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_5.txt",
+      "source": "United States",
+      "target": "26%",
+      "key": 0
+    },
+    {
+      "relation": "OFFERS",
+      "source_doc": "doc_24.txt",
+      "source": "United States",
+      "target": "Tax Credits",
+      "key": 0
+    },
+    {
+      "relation": "PASSED",
+      "source_doc": "doc_25.txt",
+      "source": "United States",
+      "target": "Inflation Reduction Act",
+      "key": 0
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_25.txt",
+      "source": "United States",
+      "target": "China",
+      "key": 0
+    },
+    {
+      "relation": "PRODUCES",
+      "source_doc": "doc_53.txt",
+      "source": "United States",
+      "target": "Oil",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURED_BY",
+      "source_doc": "doc_17.txt",
+      "source": "Electric Vehicles",
+      "target": "Automakers",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_DECLINE_IN",
+      "source_doc": "doc_21.txt",
+      "source": "Electric Vehicles",
+      "target": "Dealer Sentiment",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_DECLINE_IN",
+      "source_doc": "doc_23.txt",
+      "source": "Electric Vehicles",
+      "target": "Dealer Sentiment",
+      "key": 1
+    },
+    {
+      "relation": "REDUCES",
+      "source_doc": "doc_62.txt",
+      "source": "Electric Vehicles",
+      "target": "Oil Consumption",
+      "key": 0
+    },
+    {
+      "relation": "STRENGTHENS",
+      "source_doc": "doc_62.txt",
+      "source": "Electric Vehicles",
+      "target": "US Economy",
+      "key": 0
+    },
+    {
+      "relation": "REPLACES",
+      "source_doc": "doc_65.txt",
+      "source": "Electric Vehicles",
+      "target": "Internal Combustion Engine",
+      "key": 0
+    },
+    {
+      "relation": "HAS_MARKET_SHARE",
+      "source_doc": "doc_2.txt",
+      "source": "Tesla",
+      "target": "51.3%",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_2.txt",
+      "source": "Tesla",
+      "target": "Negative",
+      "key": 0
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_2.txt",
+      "source": "Tesla",
+      "target": "Ford",
+      "key": 0
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_26.txt",
+      "source": "Tesla",
+      "target": "Ford",
+      "key": 1
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_30.txt",
+      "source": "Tesla",
+      "target": "Ford",
+      "key": 2
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_2.txt",
+      "source": "Tesla",
+      "target": "Bmw",
+      "key": 0
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_2.txt",
+      "source": "Tesla",
+      "target": "Cadillac",
+      "key": 0
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_2.txt",
+      "source": "Tesla",
+      "target": "Mercedes",
+      "key": 0
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_2.txt",
+      "source": "Tesla",
+      "target": "Rivian",
+      "key": 0
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_26.txt",
+      "source": "Tesla",
+      "target": "Rivian",
+      "key": 1
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_30.txt",
+      "source": "Tesla",
+      "target": "Rivian",
+      "key": 2
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_2.txt",
+      "source": "Tesla",
+      "target": "Vinfast",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_15.txt",
+      "source": "Tesla",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "DEVELOPED",
+      "source_doc": "doc_24.txt",
+      "source": "Tesla",
+      "target": "Electric Vehicles",
+      "key": 1
+    },
+    {
+      "relation": "DEVELOPED",
+      "source_doc": "doc_28.txt",
+      "source": "Tesla",
+      "target": "Electric Vehicles",
+      "key": 2
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_30.txt",
+      "source": "Tesla",
+      "target": "Electric Vehicles",
+      "key": 3
+    },
+    {
+      "relation": "HAS_MARKET_SHARE",
+      "source_doc": "doc_35.txt",
+      "source": "Tesla",
+      "target": "Electric Vehicles",
+      "key": 4
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_36.txt",
+      "source": "Tesla",
+      "target": "Electric Vehicles",
+      "key": 5
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_61.txt",
+      "source": "Tesla",
+      "target": "Electric Vehicles",
+      "key": 6
+    },
+    {
+      "relation": "PARTNERED_WITH",
+      "source_doc": "doc_15.txt",
+      "source": "Tesla",
+      "target": "LG",
+      "key": 0
+    },
+    {
+      "relation": "PARTNERED_WITH",
+      "source_doc": "doc_15.txt",
+      "source": "Tesla",
+      "target": "SK",
+      "key": 0
+    },
+    {
+      "relation": "RECEIVED",
+      "source_doc": "doc_24.txt",
+      "source": "Tesla",
+      "target": "Government Subsidies",
+      "key": 0
+    },
+    {
+      "relation": "DEVELOPED",
+      "source_doc": "doc_24.txt",
+      "source": "Tesla",
+      "target": "Batteries",
+      "key": 0
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_26.txt",
+      "source": "Tesla",
+      "target": "Li Auto",
+      "key": 0
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_26.txt",
+      "source": "Tesla",
+      "target": "Xpeng",
+      "key": 0
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_26.txt",
+      "source": "Tesla",
+      "target": "GM",
+      "key": 0
+    },
+    {
+      "relation": "HAS_MARKET_SHARE",
+      "source_doc": "doc_30.txt",
+      "source": "Tesla",
+      "target": "55%",
+      "key": 0
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_30.txt",
+      "source": "Tesla",
+      "target": "BMW",
+      "key": 0
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_30.txt",
+      "source": "Tesla",
+      "target": "Mercedes-Benz",
+      "key": 0
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_30.txt",
+      "source": "Tesla",
+      "target": "Audi",
+      "key": 0
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_30.txt",
+      "source": "Tesla",
+      "target": "Volkswagen",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_30.txt",
+      "source": "Tesla",
+      "target": "Model Y",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_30.txt",
+      "source": "Tesla",
+      "target": "Model 3",
+      "key": 0
+    },
+    {
+      "relation": "FOUNDED_BY",
+      "source_doc": "doc_38.txt",
+      "source": "Tesla",
+      "target": "Elon Musk",
+      "key": 0
+    },
+    {
+      "relation": "OPERATES_IN",
+      "source_doc": "doc_43.txt",
+      "source": "Tesla",
+      "target": "China",
+      "key": 0
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_56.txt",
+      "source": "Tesla",
+      "target": "China",
+      "key": 1
+    },
+    {
+      "relation": "OPERATES_IN",
+      "source_doc": "doc_66.txt",
+      "source": "Tesla",
+      "target": "China",
+      "key": 2
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_56.txt",
+      "source": "Tesla",
+      "target": "Chinese Auto Manufacturers",
+      "key": 0
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_61.txt",
+      "source": "Tesla",
+      "target": "BYD",
+      "key": 0
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_64.txt",
+      "source": "Tesla",
+      "target": "BYD",
+      "key": 1
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_61.txt",
+      "source": "Tesla",
+      "target": "Silicon Valley",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_61.txt",
+      "source": "Tesla",
+      "target": "Market Capitalization",
+      "key": 0
+    },
+    {
+      "relation": "DEVELOPED",
+      "source_doc": "doc_63.txt",
+      "source": "Tesla",
+      "target": "Roadster",
+      "key": 0
+    },
+    {
+      "relation": "HAS_MARKET_SHARE",
+      "source_doc": "doc_69.txt",
+      "source": "Tesla",
+      "target": "US",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_2.txt",
+      "source": "Cadillac",
+      "target": "499.2%",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_2.txt",
+      "source": "Mercedes",
+      "target": "66.9%",
+      "key": 0
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_56.txt",
+      "source": "Mercedes",
+      "target": "Chinese Auto Manufacturers",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_2.txt",
+      "source": "Bmw",
+      "target": "62.6%",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_2.txt",
+      "source": "Ford",
+      "target": "86.1%",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_30.txt",
+      "source": "Ford",
+      "target": "Mustang Mach-E",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_30.txt",
+      "source": "Ford",
+      "target": "F-150 Lightning",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_35.txt",
+      "source": "Ford",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "DEVELOPED",
+      "source_doc": "doc_36.txt",
+      "source": "Ford",
+      "target": "Electric Vehicles",
+      "key": 1
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_64.txt",
+      "source": "Ford",
+      "target": "Electric Vehicles",
+      "key": 2
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_68.txt",
+      "source": "Ford",
+      "target": "Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_2.txt",
+      "source": "Chevy",
+      "target": "Negative",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_30.txt",
+      "source": "Rivian",
+      "target": "100%",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_64.txt",
+      "source": "Rivian",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_3.txt",
+      "source": "Toyota",
+      "target": "Hybrid Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_17.txt",
+      "source": "Toyota",
+      "target": "Corolla Hybrid",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_36.txt",
+      "source": "Toyota",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "DEVELOPED",
+      "source_doc": "doc_3.txt",
+      "source": "National Renewable Energy Laboratory",
+      "target": "Predictive Modeling",
+      "key": 0
+    },
+    {
+      "relation": "PUBLISHES",
+      "source_doc": "doc_4.txt",
+      "source": "EIA",
+      "target": "ELECTRIC POWER MONTHLY",
+      "key": 0
+    },
+    {
+      "relation": "PROVIDES",
+      "source_doc": "doc_4.txt",
+      "source": "EIA",
+      "target": "API",
+      "key": 0
+    },
+    {
+      "relation": "HOSTS_CODE_ON",
+      "source_doc": "doc_4.txt",
+      "source": "EIA",
+      "target": "GITHUB",
+      "key": 0
+    },
+    {
+      "relation": "PRODUCES",
+      "source_doc": "doc_4.txt",
+      "source": "EIA",
+      "target": "TODAY IN ENERGY",
+      "key": 0
+    },
+    {
+      "relation": "PRODUCES",
+      "source_doc": "doc_4.txt",
+      "source": "EIA",
+      "target": "WHAT'S NEW",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_5.txt",
+      "source": "China",
+      "target": "6%",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_7.txt",
+      "source": "China",
+      "target": "ELECTRIC VEHICLES",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_7.txt",
+      "source": "China",
+      "target": "LITHIUM BATTERIES",
+      "key": 0
+    },
+    {
+      "relation": "PRODUCES",
+      "source_doc": "doc_7.txt",
+      "source": "China",
+      "target": "CATHODE",
+      "key": 0
+    },
+    {
+      "relation": "HAS_SECTOR",
+      "source_doc": "doc_7.txt",
+      "source": "China",
+      "target": "HYDROGEN FUEL CELL VEHICLE INDUSTRY",
+      "key": 0
+    },
+    {
+      "relation": "HAS_SECTOR",
+      "source_doc": "doc_7.txt",
+      "source": "China",
+      "target": "AI",
+      "key": 0
+    },
+    {
+      "relation": "HAS_SECTOR",
+      "source_doc": "doc_7.txt",
+      "source": "China",
+      "target": "ADVANCED COMPUTING",
+      "key": 0
+    },
+    {
+      "relation": "HAS_SECTOR",
+      "source_doc": "doc_7.txt",
+      "source": "China",
+      "target": "BIOTECH",
+      "key": 0
+    },
+    {
+      "relation": "LEADS_MARKET",
+      "source_doc": "doc_18.txt",
+      "source": "China",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "HAS_MARKET_SHARE",
+      "source_doc": "doc_32.txt",
+      "source": "China",
+      "target": "Electric Vehicles",
+      "key": 1
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_33.txt",
+      "source": "China",
+      "target": "Electric Vehicles",
+      "key": 2
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_40.txt",
+      "source": "China",
+      "target": "Electric Vehicles",
+      "key": 3
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_42.txt",
+      "source": "China",
+      "target": "Electric Vehicles",
+      "key": 4
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_43.txt",
+      "source": "China",
+      "target": "Electric Vehicles",
+      "key": 5
+    },
+    {
+      "relation": "HAS_MARKET_SHARE",
+      "source_doc": "doc_56.txt",
+      "source": "China",
+      "target": "Electric Vehicles",
+      "key": 6
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_57.txt",
+      "source": "China",
+      "target": "Electric Vehicles",
+      "key": 7
+    },
+    {
+      "relation": "DEVELOPED",
+      "source_doc": "doc_59.txt",
+      "source": "China",
+      "target": "Electric Vehicles",
+      "key": 8
+    },
+    {
+      "relation": "LEADS_MARKET",
+      "source_doc": "doc_63.txt",
+      "source": "China",
+      "target": "Electric Vehicles",
+      "key": 9
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_43.txt",
+      "source": "China",
+      "target": "Batteries",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_51.txt",
+      "source": "China",
+      "target": "30%",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_57.txt",
+      "source": "China",
+      "target": "GDP",
+      "key": 0
+    },
+    {
+      "relation": "LEADS_PRODUCTION",
+      "source_doc": "doc_65.txt",
+      "source": "China",
+      "target": "Lithium Batteries",
+      "key": 0
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_65.txt",
+      "source": "China",
+      "target": "Asia",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_67.txt",
+      "source": "China",
+      "target": "PHEV Sales",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_5.txt",
+      "source": "Europe",
+      "target": "Negative",
+      "key": 0
+    },
+    {
+      "relation": "LEADS_MARKET",
+      "source_doc": "doc_18.txt",
+      "source": "Europe",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "HAS_MARKET_SHARE",
+      "source_doc": "doc_32.txt",
+      "source": "Europe",
+      "target": "Electric Vehicles",
+      "key": 1
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_33.txt",
+      "source": "Europe",
+      "target": "Electric Vehicles",
+      "key": 2
+    },
+    {
+      "relation": "DEVELOPED",
+      "source_doc": "doc_5.txt",
+      "source": "Citigroup",
+      "target": "EV Penetration Matrix",
+      "key": 0
+    },
+    {
+      "relation": "DEVELOPED",
+      "source_doc": "doc_32.txt",
+      "source": "Citigroup",
+      "target": "EV Penetration Matrix",
+      "key": 1
+    },
+    {
+      "relation": "AUTHORED",
+      "source_doc": "doc_6.txt",
+      "source": "Environmental Defense Fund",
+      "target": "U.S. Electric Vehicle Manufacturing Investments And Jobs Report",
+      "key": 0
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_6.txt",
+      "source": "Environmental Defense Fund",
+      "target": "United States",
+      "key": 0
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_6.txt",
+      "source": "Environmental Defense Fund",
+      "target": "China",
+      "key": 0
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_6.txt",
+      "source": "Environmental Defense Fund",
+      "target": "Mexico",
+      "key": 0
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_6.txt",
+      "source": "Environmental Defense Fund",
+      "target": "Indonesia",
+      "key": 0
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_6.txt",
+      "source": "Environmental Defense Fund",
+      "target": "European Union",
+      "key": 0
+    },
+    {
+      "relation": "AUTHORED",
+      "source_doc": "doc_6.txt",
+      "source": "WSP USA",
+      "target": "U.S. Electric Vehicle Manufacturing Investments And Jobs Report",
+      "key": 0
+    },
+    {
+      "relation": "EMPLOYED_BY",
+      "source_doc": "doc_6.txt",
+      "source": "Ellen Robo",
+      "target": "Environmental Defense Fund",
+      "key": 0
+    },
+    {
+      "relation": "REPORTED_METRIC",
+      "source_doc": "doc_6.txt",
+      "source": "Georgia",
+      "target": "31.2 Billion Dollars Investment",
+      "key": 0
+    },
+    {
+      "relation": "REPORTED_METRIC",
+      "source_doc": "doc_6.txt",
+      "source": "Georgia",
+      "target": "38700 Jobs",
+      "key": 0
+    },
+    {
+      "relation": "REPORTED_METRIC",
+      "source_doc": "doc_6.txt",
+      "source": "Michigan",
+      "target": "20 Billion Dollars Investment",
+      "key": 0
+    },
+    {
+      "relation": "REPORTED_METRIC",
+      "source_doc": "doc_6.txt",
+      "source": "North Carolina",
+      "target": "19 Billion Dollars Investment",
+      "key": 0
+    },
+    {
+      "relation": "IMPACTED",
+      "source_doc": "doc_6.txt",
+      "source": "Inflation Reduction Act",
+      "target": "Electric Vehicle Market",
+      "key": 0
+    },
+    {
+      "relation": "IMPACTED",
+      "source_doc": "doc_6.txt",
+      "source": "Inflation Reduction Act",
+      "target": "Battery Manufacturing",
+      "key": 0
+    },
+    {
+      "relation": "PROVIDED",
+      "source_doc": "doc_23.txt",
+      "source": "Inflation Reduction Act",
+      "target": "Tax Credits",
+      "key": 0
+    },
+    {
+      "relation": "PROVIDED",
+      "source_doc": "doc_25.txt",
+      "source": "Inflation Reduction Act",
+      "target": "Electric Vehicle Subsidies",
+      "key": 0
+    },
+    {
+      "relation": "TESTIFIED_BEFORE",
+      "source_doc": "doc_7.txt",
+      "source": "Ilaria Mazzocco",
+      "target": "U.S.-CHINA ECONOMIC AND SECURITY REVIEW COMMISSION",
+      "key": 0
+    },
+    {
+      "relation": "INCLUDES",
+      "source_doc": "doc_9.txt",
+      "source": "ELECTRIC VEHICLES",
+      "target": "BATTERY ELECTRIC VEHICLES",
+      "key": 0
+    },
+    {
+      "relation": "INCLUDES",
+      "source_doc": "doc_9.txt",
+      "source": "ELECTRIC VEHICLES",
+      "target": "PLUG-IN HYBRID ELECTRIC VEHICLES",
+      "key": 0
+    },
+    {
+      "relation": "GLOBAL_MARKET_SHARE_2019",
+      "source_doc": "doc_9.txt",
+      "source": "ELECTRIC VEHICLES",
+      "target": "2.5 PERCENT",
+      "key": 0
+    },
+    {
+      "relation": "DISPLACES",
+      "source_doc": "doc_10.txt",
+      "source": "ELECTRIC VEHICLES",
+      "target": "1.7 MILLION BARRELS PER DAY OF OIL",
+      "key": 0
+    },
+    {
+      "relation": "REPORTS_ON",
+      "source_doc": "doc_7.txt",
+      "source": "International Energy Agency",
+      "target": "CHINA",
+      "key": 0
+    },
+    {
+      "relation": "BEV_GROWTH_2019",
+      "source_doc": "doc_9.txt",
+      "source": "CHINA",
+      "target": "17 PERCENT",
+      "key": 0
+    },
+    {
+      "relation": "DOMINATES",
+      "source_doc": "doc_10.txt",
+      "source": "CHINA",
+      "target": "GLOBAL EV MARKET",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_10.txt",
+      "source": "CHINA",
+      "target": "BATTERY CELLS",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_10.txt",
+      "source": "CHINA",
+      "target": "BATTERY COMPONENTS",
+      "key": 0
+    },
+    {
+      "relation": "ESTIMATES_METRIC",
+      "source_doc": "doc_7.txt",
+      "source": "Department Of Energy",
+      "target": "BATTERY PRODUCTION",
+      "key": 0
+    },
+    {
+      "relation": "DEVELOPED",
+      "source_doc": "doc_8.txt",
+      "source": "Department Of Energy",
+      "target": "Beyond Tailpipe Emissions Calculator",
+      "key": 0
+    },
+    {
+      "relation": "OPERATES",
+      "source_doc": "doc_8.txt",
+      "source": "Department Of Energy",
+      "target": "Vehicle Technologies Office",
+      "key": 0
+    },
+    {
+      "relation": "PUBLISHED",
+      "source_doc": "doc_8.txt",
+      "source": "EPA",
+      "target": "Power Profiler",
+      "key": 0
+    },
+    {
+      "relation": "DEVELOPED",
+      "source_doc": "doc_8.txt",
+      "source": "EPA",
+      "target": "Beyond Tailpipe Emissions Calculator",
+      "key": 0
+    },
+    {
+      "relation": "DEVELOPED",
+      "source_doc": "doc_8.txt",
+      "source": "Argonne National Laboratory",
+      "target": "GREET 2 2021",
+      "key": 0
+    },
+    {
+      "relation": "PUBLISHED",
+      "source_doc": "doc_9.txt",
+      "source": "DELOITTE",
+      "target": "ELECTRIC VEHICLE TRENDS",
+      "key": 0
+    },
+    {
+      "relation": "HOSTS",
+      "source_doc": "doc_9.txt",
+      "source": "TANYA OTT",
+      "target": "DELOITTE INSIGHTS WEBCAST",
+      "key": 0
+    },
+    {
+      "relation": "SOLD_GLOBAL_SHARE_2019",
+      "source_doc": "doc_9.txt",
+      "source": "BATTERY ELECTRIC VEHICLES",
+      "target": "74 PERCENT",
+      "key": 0
+    },
+    {
+      "relation": "BEV_GROWTH_2019",
+      "source_doc": "doc_9.txt",
+      "source": "EUROPE",
+      "target": "93 PERCENT",
+      "key": 0
+    },
+    {
+      "relation": "BEV_GROWTH_2019",
+      "source_doc": "doc_9.txt",
+      "source": "UNITED STATES",
+      "target": "-2 PERCENT",
+      "key": 0
+    },
+    {
+      "relation": "EV_MARKET_SHARE",
+      "source_doc": "doc_9.txt",
+      "source": "NORWAY",
+      "target": "56 PERCENT",
+      "key": 0
+    },
+    {
+      "relation": "PUBLISHED",
+      "source_doc": "doc_10.txt",
+      "source": "BLOOMBERGNEF",
+      "target": "EVO REPORT 2024",
+      "key": 0
+    },
+    {
+      "relation": "ANALYZES",
+      "source_doc": "doc_10.txt",
+      "source": "BLOOMBERGNEF",
+      "target": "ELECTRIC VEHICLE MARKET",
+      "key": 0
+    },
+    {
+      "relation": "PARENT_COMPANY",
+      "source_doc": "doc_10.txt",
+      "source": "BLOOMBERG FINANCE LP",
+      "target": "BLOOMBERGNEF",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCES",
+      "source_doc": "doc_10.txt",
+      "source": "THAILAND",
+      "target": "RECORD EV SALES",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCES",
+      "source_doc": "doc_10.txt",
+      "source": "INDIA",
+      "target": "RECORD EV SALES",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCES",
+      "source_doc": "doc_10.txt",
+      "source": "TURKEY",
+      "target": "RECORD EV SALES",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCES",
+      "source_doc": "doc_10.txt",
+      "source": "BRAZIL",
+      "target": "RECORD EV SALES",
+      "key": 0
+    },
+    {
+      "relation": "DEVELOPED",
+      "source_doc": "doc_11.txt",
+      "source": "Nvidia",
+      "target": "Hopper",
+      "key": 0
+    },
+    {
+      "relation": "DEVELOPED",
+      "source_doc": "doc_11.txt",
+      "source": "Nvidia",
+      "target": "Blackwell",
+      "key": 0
+    },
+    {
+      "relation": "DEVELOPED",
+      "source_doc": "doc_11.txt",
+      "source": "Nvidia",
+      "target": "Spectrum-X",
+      "key": 0
+    },
+    {
+      "relation": "DEVELOPED",
+      "source_doc": "doc_11.txt",
+      "source": "Nvidia",
+      "target": "Nvidia NIM",
+      "key": 0
+    },
+    {
+      "relation": "PARTNERED_WITH",
+      "source_doc": "doc_54.txt",
+      "source": "Nvidia",
+      "target": "EY",
+      "key": 0
+    },
+    {
+      "relation": "FOUNDED",
+      "source_doc": "doc_11.txt",
+      "source": "Jensen Huang",
+      "target": "Nvidia",
+      "key": 0
+    },
+    {
+      "relation": "CEO_OF",
+      "source_doc": "doc_11.txt",
+      "source": "Jensen Huang",
+      "target": "Nvidia",
+      "key": 1
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_12.txt",
+      "source": "Polestar",
+      "target": "Sweden",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_12.txt",
+      "source": "Polestar",
+      "target": "Revenue",
+      "key": 0
+    },
+    {
+      "relation": "PARTNERED_WITH",
+      "source_doc": "doc_12.txt",
+      "source": "Polestar",
+      "target": "Volvo Cars",
+      "key": 0
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_15.txt",
+      "source": "Polestar",
+      "target": "Europe",
+      "key": 0
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_13.txt",
+      "source": "VinFast",
+      "target": "Vietnam",
+      "key": 0
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_15.txt",
+      "source": "VinFast",
+      "target": "Vietnam",
+      "key": 1
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_13.txt",
+      "source": "VinFast",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_13.txt",
+      "source": "VinFast",
+      "target": "Revenue",
+      "key": 0
+    },
+    {
+      "relation": "PARTNERED_WITH",
+      "source_doc": "doc_13.txt",
+      "source": "VinFast",
+      "target": "Vingroup",
+      "key": 0
+    },
+    {
+      "relation": "CHAIRWOMAN_OF",
+      "source_doc": "doc_13.txt",
+      "source": "Thuy Le",
+      "target": "VinFast",
+      "key": 0
+    },
+    {
+      "relation": "CFO_OF",
+      "source_doc": "doc_13.txt",
+      "source": "Lan Anh Nguyen",
+      "target": "VinFast",
+      "key": 0
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_14.txt",
+      "source": "Zeekr",
+      "target": "China",
+      "key": 0
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_22.txt",
+      "source": "Zeekr",
+      "target": "China",
+      "key": 1
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_14.txt",
+      "source": "Zeekr",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "OWNED_BY",
+      "source_doc": "doc_14.txt",
+      "source": "Zeekr",
+      "target": "Geely Group",
+      "key": 0
+    },
+    {
+      "relation": "CONDUCTED",
+      "source_doc": "doc_22.txt",
+      "source": "Zeekr",
+      "target": "IPO",
+      "key": 0
+    },
+    {
+      "relation": "CEO_OF",
+      "source_doc": "doc_14.txt",
+      "source": "Andy An",
+      "target": "Zeekr",
+      "key": 0
+    },
+    {
+      "relation": "CFO_OF",
+      "source_doc": "doc_14.txt",
+      "source": "Jing Yuan",
+      "target": "Zeekr",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_15.txt",
+      "source": "BYD",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_43.txt",
+      "source": "BYD",
+      "target": "Electric Vehicles",
+      "key": 1
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_26.txt",
+      "source": "BYD",
+      "target": "Tesla",
+      "key": 0
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_64.txt",
+      "source": "BYD",
+      "target": "Tesla",
+      "key": 1
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_26.txt",
+      "source": "BYD",
+      "target": "China",
+      "key": 0
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_61.txt",
+      "source": "BYD",
+      "target": "China",
+      "key": 1
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_66.txt",
+      "source": "BYD",
+      "target": "China",
+      "key": 2
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_15.txt",
+      "source": "Canoo",
+      "target": "US",
+      "key": 0
+    },
+    {
+      "relation": "HAS_EMISSIONS",
+      "source_doc": "doc_17.txt",
+      "source": "US",
+      "target": "Transportation Sector",
+      "key": 0
+    },
+    {
+      "relation": "LEADS_MARKET",
+      "source_doc": "doc_18.txt",
+      "source": "US",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "HAS_MARKET_SHARE",
+      "source_doc": "doc_32.txt",
+      "source": "US",
+      "target": "Electric Vehicles",
+      "key": 1
+    },
+    {
+      "relation": "HAS_MARKET_SHARE",
+      "source_doc": "doc_39.txt",
+      "source": "US",
+      "target": "Electric Vehicles",
+      "key": 2
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_67.txt",
+      "source": "US",
+      "target": "EV Sales",
+      "key": 0
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_15.txt",
+      "source": "Fisker",
+      "target": "US",
+      "key": 0
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_15.txt",
+      "source": "Lucid",
+      "target": "US",
+      "key": 0
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_15.txt",
+      "source": "Nikola",
+      "target": "US",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_20.txt",
+      "source": "Nikola",
+      "target": "Electric Trucks",
+      "key": 0
+    },
+    {
+      "relation": "DEVELOPED",
+      "source_doc": "doc_24.txt",
+      "source": "Nikola",
+      "target": "Electric Trucks",
+      "key": 1
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_20.txt",
+      "source": "Nikola",
+      "target": "Hydrogen Fuel Cell Trucks",
+      "key": 0
+    },
+    {
+      "relation": "PARTNERED_WITH",
+      "source_doc": "doc_20.txt",
+      "source": "Nikola",
+      "target": "Iveco Group",
+      "key": 0
+    },
+    {
+      "relation": "PARTNERED_WITH",
+      "source_doc": "doc_20.txt",
+      "source": "Nikola",
+      "target": "Voltera Power",
+      "key": 0
+    },
+    {
+      "relation": "PARTNERED_WITH",
+      "source_doc": "doc_20.txt",
+      "source": "Nikola",
+      "target": "Fortescue Future Industries",
+      "key": 0
+    },
+    {
+      "relation": "OPERATES_IN",
+      "source_doc": "doc_20.txt",
+      "source": "Nikola",
+      "target": "North America",
+      "key": 0
+    },
+    {
+      "relation": "PARTNERED_WITH",
+      "source_doc": "doc_15.txt",
+      "source": "Stellantis",
+      "target": "Argentina",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_36.txt",
+      "source": "Stellantis",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_16.txt",
+      "source": "Mercedes-Benz",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "TESTS_IN",
+      "source_doc": "doc_16.txt",
+      "source": "Mercedes-Benz",
+      "target": "Beijing",
+      "key": 0
+    },
+    {
+      "relation": "TESTS_IN",
+      "source_doc": "doc_16.txt",
+      "source": "Mercedes-Benz",
+      "target": "Nevada",
+      "key": 0
+    },
+    {
+      "relation": "TESTS_IN",
+      "source_doc": "doc_16.txt",
+      "source": "Mercedes-Benz",
+      "target": "California",
+      "key": 0
+    },
+    {
+      "relation": "OPERATES_IN",
+      "source_doc": "doc_16.txt",
+      "source": "Mercedes-Benz",
+      "target": "China",
+      "key": 0
+    },
+    {
+      "relation": "OPERATES_IN",
+      "source_doc": "doc_16.txt",
+      "source": "Mercedes-Benz",
+      "target": "US",
+      "key": 0
+    },
+    {
+      "relation": "HAS_MARKET_SHARE",
+      "source_doc": "doc_16.txt",
+      "source": "Mercedes-Benz",
+      "target": "US",
+      "key": 1
+    },
+    {
+      "relation": "OPERATES_IN",
+      "source_doc": "doc_16.txt",
+      "source": "Mercedes-Benz",
+      "target": "Germany",
+      "key": 0
+    },
+    {
+      "relation": "REGULATES",
+      "source_doc": "doc_20.txt",
+      "source": "California",
+      "target": "Drayage Trucks",
+      "key": 0
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_36.txt",
+      "source": "California",
+      "target": "US",
+      "key": 0
+    },
+    {
+      "relation": "REGULATES",
+      "source_doc": "doc_48.txt",
+      "source": "California",
+      "target": "Electric Vehicle",
+      "key": 0
+    },
+    {
+      "relation": "HAS_MARKET_SHARE",
+      "source_doc": "doc_39.txt",
+      "source": "Germany",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_19.txt",
+      "source": "REE Automotive",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "PARTNERED_WITH",
+      "source_doc": "doc_19.txt",
+      "source": "EAVX",
+      "target": "REE Automotive",
+      "key": 0
+    },
+    {
+      "relation": "OWNS",
+      "source_doc": "doc_19.txt",
+      "source": "JB Poindexter",
+      "target": "Morgan Olson",
+      "key": 0
+    },
+    {
+      "relation": "PUBLISHED",
+      "source_doc": "doc_21.txt",
+      "source": "Cox Automotive",
+      "target": "Dealer Sentiment Index",
+      "key": 0
+    },
+    {
+      "relation": "PUBLISHED",
+      "source_doc": "doc_23.txt",
+      "source": "Cox Automotive",
+      "target": "Dealer Sentiment Index",
+      "key": 1
+    },
+    {
+      "relation": "PUBLISHED",
+      "source_doc": "doc_47.txt",
+      "source": "Cox Automotive",
+      "target": "Dealer Sentiment Index",
+      "key": 2
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_25.txt",
+      "source": "Microvast",
+      "target": "United States",
+      "key": 0
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_66.txt",
+      "source": "Li Auto",
+      "target": "China",
+      "key": 0
+    },
+    {
+      "relation": "LOCATION",
+      "source_doc": "doc_27.txt",
+      "source": "JOINT OFFICE OF ENERGY AND TRANSPORTATION",
+      "target": "UNITED STATES",
+      "key": 0
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_29.txt",
+      "source": "JOINT OFFICE OF ENERGY AND TRANSPORTATION",
+      "target": "UNITED STATES",
+      "key": 1
+    },
+    {
+      "relation": "MANAGES",
+      "source_doc": "doc_27.txt",
+      "source": "JOINT OFFICE OF ENERGY AND TRANSPORTATION",
+      "target": "NATIONAL ELECTRIC VEHICLE INFRASTRUCTURE FORMULA PROGRAM",
+      "key": 0
+    },
+    {
+      "relation": "MANAGES",
+      "source_doc": "doc_29.txt",
+      "source": "JOINT OFFICE OF ENERGY AND TRANSPORTATION",
+      "target": "NATIONAL ELECTRIC VEHICLE INFRASTRUCTURE FORMULA PROGRAM",
+      "key": 1
+    },
+    {
+      "relation": "MANAGES",
+      "source_doc": "doc_27.txt",
+      "source": "JOINT OFFICE OF ENERGY AND TRANSPORTATION",
+      "target": "CHARGING AND FUELING INFRASTRUCTURE PROGRAM",
+      "key": 0
+    },
+    {
+      "relation": "MANAGES",
+      "source_doc": "doc_29.txt",
+      "source": "JOINT OFFICE OF ENERGY AND TRANSPORTATION",
+      "target": "CHARGING AND FUELING INFRASTRUCTURE PROGRAM",
+      "key": 1
+    },
+    {
+      "relation": "CONVENES",
+      "source_doc": "doc_27.txt",
+      "source": "JOINT OFFICE OF ENERGY AND TRANSPORTATION",
+      "target": "NATIONAL CHARGING EXPERIENCE CONSORTIUM",
+      "key": 0
+    },
+    {
+      "relation": "CONVENES",
+      "source_doc": "doc_27.txt",
+      "source": "JOINT OFFICE OF ENERGY AND TRANSPORTATION",
+      "target": "ELECTRIC VEHICLE WORKING GROUP",
+      "key": 0
+    },
+    {
+      "relation": "CONVENES",
+      "source_doc": "doc_29.txt",
+      "source": "JOINT OFFICE OF ENERGY AND TRANSPORTATION",
+      "target": "ELECTRIC VEHICLE WORKING GROUP",
+      "key": 1
+    },
+    {
+      "relation": "DEVELOPS",
+      "source_doc": "doc_27.txt",
+      "source": "JOINT OFFICE OF ENERGY AND TRANSPORTATION",
+      "target": "NATIONAL ZERO-EMISSION FREIGHT CORRIDOR STRATEGY",
+      "key": 0
+    },
+    {
+      "relation": "PUBLISHED",
+      "source_doc": "doc_29.txt",
+      "source": "JOINT OFFICE OF ENERGY AND TRANSPORTATION",
+      "target": "NATIONAL ZERO-EMISSION FREIGHT CORRIDOR STRATEGY",
+      "key": 1
+    },
+    {
+      "relation": "CONVENES",
+      "source_doc": "doc_29.txt",
+      "source": "JOINT OFFICE OF ENERGY AND TRANSPORTATION",
+      "target": "CHARGEX CONSORTIUM",
+      "key": 0
+    },
+    {
+      "relation": "TARGETS",
+      "source_doc": "doc_27.txt",
+      "source": "NATIONAL ELECTRIC VEHICLE INFRASTRUCTURE FORMULA PROGRAM",
+      "target": "ELECTRIC VEHICLE CHARGING INFRASTRUCTURE",
+      "key": 0
+    },
+    {
+      "relation": "TARGETS",
+      "source_doc": "doc_27.txt",
+      "source": "CHARGING AND FUELING INFRASTRUCTURE PROGRAM",
+      "target": "ELECTRIC VEHICLE CHARGING INFRASTRUCTURE",
+      "key": 0
+    },
+    {
+      "relation": "FOCUSES_ON",
+      "source_doc": "doc_27.txt",
+      "source": "NATIONAL CHARGING EXPERIENCE CONSORTIUM",
+      "target": "ZERO-EMISSION TECHNOLOGY",
+      "key": 0
+    },
+    {
+      "relation": "FOCUSES_ON",
+      "source_doc": "doc_27.txt",
+      "source": "ELECTRIC VEHICLE WORKING GROUP",
+      "target": "ZERO-EMISSION TECHNOLOGY",
+      "key": 0
+    },
+    {
+      "relation": "SUPPORTS",
+      "source_doc": "doc_29.txt",
+      "source": "ELECTRIC VEHICLE INFRASTRUCTURE TRAINING PROGRAM",
+      "target": "JOINT OFFICE OF ENERGY AND TRANSPORTATION",
+      "key": 0
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_56.txt",
+      "source": "BMW",
+      "target": "Chinese Auto Manufacturers",
+      "key": 0
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_56.txt",
+      "source": "Audi",
+      "target": "Chinese Auto Manufacturers",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_36.txt",
+      "source": "Volkswagen",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_31.txt",
+      "source": "Donald Trump",
+      "target": "US",
+      "key": 0
+    },
+    {
+      "relation": "PARTNERED_WITH",
+      "source_doc": "doc_38.txt",
+      "source": "Donald Trump",
+      "target": "Elon Musk",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_31.txt",
+      "source": "EcoPro BM",
+      "target": "Secondary Battery",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_31.txt",
+      "source": "LG Energy Solution",
+      "target": "Secondary Battery",
+      "key": 0
+    },
+    {
+      "relation": "DEVELOPED",
+      "source_doc": "doc_33.txt",
+      "source": "IDTechEx",
+      "target": "Battery Technologies",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_33.txt",
+      "source": "ACC",
+      "target": "Batteries",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_34.txt",
+      "source": "Longo Toyota",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_34.txt",
+      "source": "Hyundai",
+      "target": "Ioniq 5 N",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_36.txt",
+      "source": "Hyundai",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_38.txt",
+      "source": "Hyundai",
+      "target": "Electric Vehicles",
+      "key": 1
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_68.txt",
+      "source": "Hyundai",
+      "target": "Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "INVESTED_IN",
+      "source_doc": "doc_34.txt",
+      "source": "Japan",
+      "target": "EV Battery Production",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_51.txt",
+      "source": "Japan",
+      "target": "7%",
+      "key": 0
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_35.txt",
+      "source": "General Motors",
+      "target": "Honda",
+      "key": 0
+    },
+    {
+      "relation": "DEVELOPED",
+      "source_doc": "doc_36.txt",
+      "source": "General Motors",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_64.txt",
+      "source": "General Motors",
+      "target": "Electric Vehicles",
+      "key": 1
+    },
+    {
+      "relation": "PARTNERED_WITH",
+      "source_doc": "doc_37.txt",
+      "source": "United Automobile Workers",
+      "target": "Auto Industry",
+      "key": 0
+    },
+    {
+      "relation": "COMMENDED",
+      "source_doc": "doc_56.txt",
+      "source": "Elon Musk",
+      "target": "Chinese Auto Manufacturers",
+      "key": 0
+    },
+    {
+      "relation": "CEO_OF",
+      "source_doc": "doc_61.txt",
+      "source": "Elon Musk",
+      "target": "Tesla",
+      "key": 0
+    },
+    {
+      "relation": "HAS_MARKET_SHARE",
+      "source_doc": "doc_39.txt",
+      "source": "UK",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "HAS_MARKET_SHARE",
+      "source_doc": "doc_39.txt",
+      "source": "Singapore",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "ANALYZED",
+      "source_doc": "doc_40.txt",
+      "source": "Goldman Sachs",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_41.txt",
+      "source": "Solar Energy Industries Association",
+      "target": "Washington, D.C.",
+      "key": 0
+    },
+    {
+      "relation": "DEVELOPED",
+      "source_doc": "doc_41.txt",
+      "source": "Solar Energy Industries Association",
+      "target": "SolarAPP",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_41.txt",
+      "source": "Texas",
+      "target": "Solar Installations",
+      "key": 0
+    },
+    {
+      "relation": "PRESIDENT_OF",
+      "source_doc": "doc_42.txt",
+      "source": "Joe Biden",
+      "target": "United States",
+      "key": 0
+    },
+    {
+      "relation": "PROMOTES",
+      "source_doc": "doc_44.txt",
+      "source": "Joe Biden",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "PRESIDENT_OF",
+      "source_doc": "doc_42.txt",
+      "source": "Xi Jinping",
+      "target": "China",
+      "key": 0
+    },
+    {
+      "relation": "RESTRICTS",
+      "source_doc": "doc_42.txt",
+      "source": "Bureau of Industry and Security",
+      "target": "Semiconductors",
+      "key": 0
+    },
+    {
+      "relation": "PRODUCES",
+      "source_doc": "doc_43.txt",
+      "source": "CATL",
+      "target": "Batteries",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_66.txt",
+      "source": "CATL",
+      "target": "EV Batteries",
+      "key": 0
+    },
+    {
+      "relation": "PRODUCES",
+      "source_doc": "doc_43.txt",
+      "source": "FDB",
+      "target": "Batteries",
+      "key": 0
+    },
+    {
+      "relation": "EMPLOYER_OF",
+      "source_doc": "doc_45.txt",
+      "source": "American Airlines",
+      "target": "Robert Heppenstall",
+      "key": 0
+    },
+    {
+      "relation": "EMPLOYER_OF",
+      "source_doc": "doc_45.txt",
+      "source": "Delta Air Lines",
+      "target": "Robert Heppenstall",
+      "key": 0
+    },
+    {
+      "relation": "PUBLISHES",
+      "source_doc": "doc_46.txt",
+      "source": "U.S. ENERGY INFORMATION ADMINISTRATION",
+      "target": "MONTHLY ENERGY REVIEW",
+      "key": 0
+    },
+    {
+      "relation": "LOCATED_IN",
+      "source_doc": "doc_46.txt",
+      "source": "U.S. ENERGY INFORMATION ADMINISTRATION",
+      "target": "UNITED STATES",
+      "key": 0
+    },
+    {
+      "relation": "PROVIDES_DATA_ON",
+      "source_doc": "doc_46.txt",
+      "source": "U.S. ENERGY INFORMATION ADMINISTRATION",
+      "target": "ELECTRIC VEHICLE",
+      "key": 0
+    },
+    {
+      "relation": "PROVIDES_DATA_ON",
+      "source_doc": "doc_46.txt",
+      "source": "U.S. ENERGY INFORMATION ADMINISTRATION",
+      "target": "CRUDE OIL",
+      "key": 0
+    },
+    {
+      "relation": "PROVIDES_DATA_ON",
+      "source_doc": "doc_46.txt",
+      "source": "U.S. ENERGY INFORMATION ADMINISTRATION",
+      "target": "NATURAL GAS",
+      "key": 0
+    },
+    {
+      "relation": "PROVIDES_DATA_ON",
+      "source_doc": "doc_46.txt",
+      "source": "U.S. ENERGY INFORMATION ADMINISTRATION",
+      "target": "NUCLEAR ENERGY",
+      "key": 0
+    },
+    {
+      "relation": "PROVIDES_DATA_ON",
+      "source_doc": "doc_46.txt",
+      "source": "U.S. ENERGY INFORMATION ADMINISTRATION",
+      "target": "RENEWABLE ENERGY",
+      "key": 0
+    },
+    {
+      "relation": "HOSTS_CODE_ON",
+      "source_doc": "doc_46.txt",
+      "source": "U.S. ENERGY INFORMATION ADMINISTRATION",
+      "target": "GITHUB",
+      "key": 0
+    },
+    {
+      "relation": "CONTAINS",
+      "source_doc": "doc_46.txt",
+      "source": "MONTHLY ENERGY REVIEW",
+      "target": "ENERGY STATISTICS",
+      "key": 0
+    },
+    {
+      "relation": "HAS_SENTIMENT",
+      "source_doc": "doc_47.txt",
+      "source": "Electric Vehicle",
+      "target": "Weak",
+      "key": 0
+    },
+    {
+      "relation": "INFLUENCED_BY",
+      "source_doc": "doc_47.txt",
+      "source": "Electric Vehicle",
+      "target": "Tax Credits",
+      "key": 0
+    },
+    {
+      "relation": "GROWTH_FORECAST",
+      "source_doc": "doc_48.txt",
+      "source": "Electric Vehicle",
+      "target": "27 Million",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED",
+      "source_doc": "doc_47.txt",
+      "source": "Dealer",
+      "target": "Market Uncertainty",
+      "key": 0
+    },
+    {
+      "relation": "PUBLISHED",
+      "source_doc": "doc_48.txt",
+      "source": "PwC",
+      "target": "Market Analysis",
+      "key": 0
+    },
+    {
+      "relation": "FUNDED",
+      "source_doc": "doc_48.txt",
+      "source": "Infrastructure Investment and Jobs Act",
+      "target": "Electric Vehicle Charging Infrastructure",
+      "key": 0
+    },
+    {
+      "relation": "IMPACTED_BY",
+      "source_doc": "doc_49.txt",
+      "source": "United Kingdom",
+      "target": "Brexit",
+      "key": 0
+    },
+    {
+      "relation": "IMPACTED_BY",
+      "source_doc": "doc_49.txt",
+      "source": "United Kingdom",
+      "target": "COVID-19",
+      "key": 0
+    },
+    {
+      "relation": "AFFECTED_BY",
+      "source_doc": "doc_49.txt",
+      "source": "Wales",
+      "target": "Brexit",
+      "key": 0
+    },
+    {
+      "relation": "AFFECTED_BY",
+      "source_doc": "doc_49.txt",
+      "source": "Wales",
+      "target": "COVID-19",
+      "key": 0
+    },
+    {
+      "relation": "AFFECTED_BY",
+      "source_doc": "doc_49.txt",
+      "source": "Northern Ireland",
+      "target": "Brexit",
+      "key": 0
+    },
+    {
+      "relation": "AFFECTED_BY",
+      "source_doc": "doc_49.txt",
+      "source": "Northern Ireland",
+      "target": "COVID-19",
+      "key": 0
+    },
+    {
+      "relation": "PRODUCED",
+      "source_doc": "doc_49.txt",
+      "source": "Google",
+      "target": "Google Trend",
+      "key": 0
+    },
+    {
+      "relation": "USED_FOR",
+      "source_doc": "doc_49.txt",
+      "source": "Twitter",
+      "target": "Sentiment Analysis",
+      "key": 0
+    },
+    {
+      "relation": "IMPACTS",
+      "source_doc": "doc_50.txt",
+      "source": "INFLATION REDUCTION ACT",
+      "target": "US ELECTRIC VEHICLE INDUSTRY",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_51.txt",
+      "source": "India",
+      "target": "13%",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_51.txt",
+      "source": "Taiwan",
+      "target": "33%",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_52.txt",
+      "source": "BlackRock",
+      "target": "BlackRock Flexible Income ETF",
+      "key": 0
+    },
+    {
+      "relation": "EXPERIENCED_GROWTH",
+      "source_doc": "doc_53.txt",
+      "source": "S&P 500",
+      "target": "25%",
+      "key": 0
+    },
+    {
+      "relation": "COMPETES_WITH",
+      "source_doc": "doc_53.txt",
+      "source": "OPEC+",
+      "target": "United States",
+      "key": 0
+    },
+    {
+      "relation": "PARTNERED_WITH",
+      "source_doc": "doc_55.txt",
+      "source": "AllianceBernstein",
+      "target": "Columbia University",
+      "key": 0
+    },
+    {
+      "relation": "ACQUIRED",
+      "source_doc": "doc_56.txt",
+      "source": "GCL Technology",
+      "target": "SunEdison",
+      "key": 0
+    },
+    {
+      "relation": "PARTNERED_WITH",
+      "source_doc": "doc_57.txt",
+      "source": "KPMG",
+      "target": "Global Economy",
+      "key": 0
+    },
+    {
+      "relation": "ANALYZES",
+      "source_doc": "doc_58.txt",
+      "source": "Capital Group",
+      "target": "Auto Sales",
+      "key": 0
+    },
+    {
+      "relation": "ANALYZES",
+      "source_doc": "doc_58.txt",
+      "source": "Capital Group",
+      "target": "Luxury Goods",
+      "key": 0
+    },
+    {
+      "relation": "OWNED_BY",
+      "source_doc": "doc_59.txt",
+      "source": "Russell Investments",
+      "target": "TA Associates Management",
+      "key": 0
+    },
+    {
+      "relation": "OWNED_BY",
+      "source_doc": "doc_59.txt",
+      "source": "Russell Investments",
+      "target": "Reverence Capital Partners",
+      "key": 0
+    },
+    {
+      "relation": "TOPIC_OF",
+      "source_doc": "doc_60.txt",
+      "source": "GLOBAL ECONOMY",
+      "target": "MRI",
+      "key": 0
+    },
+    {
+      "relation": "TOPIC_OF",
+      "source_doc": "doc_60.txt",
+      "source": "JAPANESE ECONOMY",
+      "target": "MRI",
+      "key": 0
+    },
+    {
+      "relation": "HAS_SENTIMENT",
+      "source_doc": "doc_60.txt",
+      "source": "FINANCIAL MARKETS",
+      "target": "BULLISH",
+      "key": 0
+    },
+    {
+      "relation": "WORKED_FOR",
+      "source_doc": "doc_63.txt",
+      "source": "Wan Gang",
+      "target": "Audi",
+      "key": 0
+    },
+    {
+      "relation": "MINISTER_OF",
+      "source_doc": "doc_63.txt",
+      "source": "Wan Gang",
+      "target": "China",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_64.txt",
+      "source": "Volkswagen AG",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_64.txt",
+      "source": "Lucid Motors",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_64.txt",
+      "source": "Nio",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "MANUFACTURES",
+      "source_doc": "doc_64.txt",
+      "source": "XPeng",
+      "target": "Electric Vehicles",
+      "key": 0
+    },
+    {
+      "relation": "ANALYZED",
+      "source_doc": "doc_70.txt",
+      "source": "McKinsey",
+      "target": "EV Industry",
+      "key": 0
+    }
+  ]
+}
