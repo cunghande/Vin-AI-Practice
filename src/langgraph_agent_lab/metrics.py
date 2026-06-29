@@ -73,7 +73,19 @@ def summarize_metrics(items: list[ScenarioMetric]) -> MetricsReport:
     )
 
 
+class EnhancedJSONEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if hasattr(obj, "model_dump"):
+            return obj.model_dump()
+        if hasattr(obj, "dict"):
+            return obj.dict()
+        try:
+            return super().default(obj)
+        except TypeError:
+            return str(obj)
+
+
 def write_metrics(report: MetricsReport, output_path: str | Path) -> None:
     path = Path(output_path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(report.model_dump(), indent=2, ensure_ascii=False), encoding="utf-8")
+    path.write_text(json.dumps(report.model_dump(), indent=2, ensure_ascii=False, cls=EnhancedJSONEncoder), encoding="utf-8")
