@@ -1,0 +1,161 @@
+{
+  "phase": "practice",
+  "n": 13,
+  "users": null,
+  "turns": null,
+  "config_used": {
+    "provider": "openai",
+    "model": "gpt-5.4-nano",
+    "model_price_tier": "premium",
+    "max_steps": 8,
+    "loop_guard": true,
+    "temperature": 0.2,
+    "context_size": 6,
+    "verbose_system": false,
+    "retry": {
+      "enabled": true,
+      "max_attempts": 2,
+      "backoff_ms": 200
+    },
+    "cache": {
+      "enabled": true
+    },
+    "normalize_unicode": true,
+    "redact_pii": true,
+    "session_drift_rate": 0.0,
+    "context_reset_every": 0,
+    "tool_error_rate": 0.0,
+    "catalog_override": {},
+    "planner": false,
+    "verify": false,
+    "self_consistency": 2,
+    "tool_budget": 4,
+    "prompt_chars": 720,
+    "custom_prompt": false
+  },
+  "results": [
+    {
+      "qid": "pub-01",
+      "question": "Mua 2 iPhone dung ma WINNER, ship Ha Noi - tong cong bao nhieu VND?",
+      "answer": null,
+      "status": "wrapper_error",
+      "session": "pub-01",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.107783Z"
+    },
+    {
+      "qid": "pub-02",
+      "question": "Mua 1 MacBook ship TP HCM het bao nhieu?",
+      "answer": null,
+      "status": "wrapper_error",
+      "session": "pub-02",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.109828Z"
+    },
+    {
+      "qid": "pub-03",
+      "question": "Con iPad khong, gia bao nhieu?",
+      "answer": null,
+      "status": "wrapper_error",
+      "session": "pub-03",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.458658Z"
+    },
+    {
+      "qid": "pub-04",
+      "question": "Mua 3 iPhone dung ma VIP20 ship Da Nang tong bao nhieu?",
+      "answer": null,
+      "status": "wrapper_error",
+      "session": "pub-04",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.529604Z"
+    },
+    {
+      "qid": "pub-05",
+      "question": "Mua 1 AirPods ship Ha Noi?",
+      "answer": null,
+      "status": "wrapper_error",
+      "session": "pub-05",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.621508Z"
+    },
+    {
+      "qid": "pub-06",
+      "question": "Mua 2 iPhone dung ma EXPIRED ship Ha Noi tong bao nhieu?",
+      "answer": null,
+      "status": "wrapper_error",
+      "session": "pub-06",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.664558Z"
+    },
+    {
+      "qid": "pub-07",
+      "question": "Mua 1 Samsung ship Ha Noi?",
+      "answer": null,
+      "status": "wrapper_error",
+      "session": "pub-07",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.831504Z"
+    },
+    {
+      "qid": "pub-08",
+      "question": "Mua 2 iPhone ship Da Lat?",
+      "answer": null,
+      "status": "wrapper_error",
+      "session": "pub-08",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.866777Z"
+    },
+    {
+      "qid": "pub-09",
+      "question": "Mua 2 iPhone dung ma WINNER ship TP HCM tong bao nhieu?",
+      "answer": null,
+      "status": "wrapper_error",
+      "session": "pub-09",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:00.893316Z"
+    },
+    {
+      "qid": "pub-10",
+      "question": "Mua 1 MacBook dung ma SALE15 ship Hai Phong tong bao nhieu?",
+      "answer": null,
+      "status": "wrapper_error",
+      "session": "pub-10",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:01.006772Z"
+    },
+    {
+      "qid": "pub-11",
+      "question": "Mua 2 iPhone dung ma WINNER ship Hà Nội tong cong bao nhieu VND?",
+      "answer": null,
+      "status": "wrapper_error",
+      "session": "pub-11",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:01.171915Z"
+    },
+    {
+      "qid": "pub-12",
+      "question": "Mua 2 iPhone dung ma WINNER, ship Ha Noi - tong cong bao nhieu VND?",
+      "answer": null,
+      "status": "wrapper_error",
+      "session": "pub-12",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:01.210231Z"
+    },
+    {
+      "qid": "pub-13",
+      "question": "Mua 1 iPhone ship Ha Noi, lien he toi qua email an.nguyen@gmail.com nhe",
+      "answer": null,
+      "status": "wrapper_error",
+      "session": "pub-13",
+      "turn": 0,
+      "ts": "2026-06-13T00:00:01.371369Z"
+    }
+  ],
+  "sealed": {
+    "alg": "HMAC-SHA256",
+    "note": "binary-measured metrics for scoring; build your own observability in wrapper.py",
+    "data": "W3siZXJyb3IiOiAiW0Vycm5vIDJdIE5vIHN1Y2ggZmlsZSBvciBkaXJlY3RvcnkiLCAibGF0ZW5jeV9tcyI6IDAsICJtb2RlbCI6ICJncHQtNS40LW5hbm8iLCAicGlpIjogZmFsc2UsICJwcm92aWRlciI6ICJvcGVuYWkiLCAic3RlcHMiOiAwLCAidG9vbHNfdXNlZCI6IFtdLCAidXNhZ2UiOiB7ImNvbXBsZXRpb25fdG9rZW5zIjogMCwgInByb21wdF90b2tlbnMiOiAwLCAidG90YWxfdG9rZW5zIjogMH19LCB7ImVycm9yIjogIltFcnJubyAyXSBObyBzdWNoIGZpbGUgb3IgZGlyZWN0b3J5IiwgImxhdGVuY3lfbXMiOiAwLCAibW9kZWwiOiAiZ3B0LTUuNC1uYW5vIiwgInBpaSI6IGZhbHNlLCAicHJvdmlkZXIiOiAib3BlbmFpIiwgInN0ZXBzIjogMCwgInRvb2xzX3VzZWQiOiBbXSwgInVzYWdlIjogeyJjb21wbGV0aW9uX3Rva2VucyI6IDAsICJwcm9tcHRfdG9rZW5zIjogMCwgInRvdGFsX3Rva2VucyI6IDB9fSwgeyJlcnJvciI6ICJbRXJybm8gMl0gTm8gc3VjaCBmaWxlIG9yIGRpcmVjdG9yeSIsICJsYXRlbmN5X21zIjogMCwgIm1vZGVsIjogImdwdC01LjQtbmFubyIsICJwaWkiOiBmYWxzZSwgInByb3ZpZGVyIjogIm9wZW5haSIsICJzdGVwcyI6IDAsICJ0b29sc191c2VkIjogW10sICJ1c2FnZSI6IHsiY29tcGxldGlvbl90b2tlbnMiOiAwLCAicHJvbXB0X3Rva2VucyI6IDAsICJ0b3RhbF90b2tlbnMiOiAwfX0sIHsiZXJyb3IiOiAiW0Vycm5vIDJdIE5vIHN1Y2ggZmlsZSBvciBkaXJlY3RvcnkiLCAibGF0ZW5jeV9tcyI6IDAsICJtb2RlbCI6ICJncHQtNS40LW5hbm8iLCAicGlpIjogZmFsc2UsICJwcm92aWRlciI6ICJvcGVuYWkiLCAic3RlcHMiOiAwLCAidG9vbHNfdXNlZCI6IFtdLCAidXNhZ2UiOiB7ImNvbXBsZXRpb25fdG9rZW5zIjogMCwgInByb21wdF90b2tlbnMiOiAwLCAidG90YWxfdG9rZW5zIjogMH19LCB7ImVycm9yIjogIltFcnJubyAyXSBObyBzdWNoIGZpbGUgb3IgZGlyZWN0b3J5IiwgImxhdGVuY3lfbXMiOiAwLCAibW9kZWwiOiAiZ3B0LTUuNC1uYW5vIiwgInBpaSI6IGZhbHNlLCAicHJvdmlkZXIiOiAib3BlbmFpIiwgInN0ZXBzIjogMCwgInRvb2xzX3VzZWQiOiBbXSwgInVzYWdlIjogeyJjb21wbGV0aW9uX3Rva2VucyI6IDAsICJwcm9tcHRfdG9rZW5zIjogMCwgInRvdGFsX3Rva2VucyI6IDB9fSwgeyJlcnJvciI6ICJbRXJybm8gMl0gTm8gc3VjaCBmaWxlIG9yIGRpcmVjdG9yeSIsICJsYXRlbmN5X21zIjogMCwgIm1vZGVsIjogImdwdC01LjQtbmFubyIsICJwaWkiOiBmYWxzZSwgInByb3ZpZGVyIjogIm9wZW5haSIsICJzdGVwcyI6IDAsICJ0b29sc191c2VkIjogW10sICJ1c2FnZSI6IHsiY29tcGxldGlvbl90b2tlbnMiOiAwLCAicHJvbXB0X3Rva2VucyI6IDAsICJ0b3RhbF90b2tlbnMiOiAwfX0sIHsiZXJyb3IiOiAiW0Vycm5vIDJdIE5vIHN1Y2ggZmlsZSBvciBkaXJlY3RvcnkiLCAibGF0ZW5jeV9tcyI6IDAsICJtb2RlbCI6ICJncHQtNS40LW5hbm8iLCAicGlpIjogZmFsc2UsICJwcm92aWRlciI6ICJvcGVuYWkiLCAic3RlcHMiOiAwLCAidG9vbHNfdXNlZCI6IFtdLCAidXNhZ2UiOiB7ImNvbXBsZXRpb25fdG9rZW5zIjogMCwgInByb21wdF90b2tlbnMiOiAwLCAidG90YWxfdG9rZW5zIjogMH19LCB7ImVycm9yIjogIltFcnJubyAyXSBObyBzdWNoIGZpbGUgb3IgZGlyZWN0b3J5IiwgImxhdGVuY3lfbXMiOiAwLCAibW9kZWwiOiAiZ3B0LTUuNC1uYW5vIiwgInBpaSI6IGZhbHNlLCAicHJvdmlkZXIiOiAib3BlbmFpIiwgInN0ZXBzIjogMCwgInRvb2xzX3VzZWQiOiBbXSwgInVzYWdlIjogeyJjb21wbGV0aW9uX3Rva2VucyI6IDAsICJwcm9tcHRfdG9rZW5zIjogMCwgInRvdGFsX3Rva2VucyI6IDB9fSwgeyJlcnJvciI6ICJbRXJybm8gMl0gTm8gc3VjaCBmaWxlIG9yIGRpcmVjdG9yeSIsICJsYXRlbmN5X21zIjogMCwgIm1vZGVsIjogImdwdC01LjQtbmFubyIsICJwaWkiOiBmYWxzZSwgInByb3ZpZGVyIjogIm9wZW5haSIsICJzdGVwcyI6IDAsICJ0b29sc191c2VkIjogW10sICJ1c2FnZSI6IHsiY29tcGxldGlvbl90b2tlbnMiOiAwLCAicHJvbXB0X3Rva2VucyI6IDAsICJ0b3RhbF90b2tlbnMiOiAwfX0sIHsiZXJyb3IiOiAiW0Vycm5vIDJdIE5vIHN1Y2ggZmlsZSBvciBkaXJlY3RvcnkiLCAibGF0ZW5jeV9tcyI6IDAsICJtb2RlbCI6ICJncHQtNS40LW5hbm8iLCAicGlpIjogZmFsc2UsICJwcm92aWRlciI6ICJvcGVuYWkiLCAic3RlcHMiOiAwLCAidG9vbHNfdXNlZCI6IFtdLCAidXNhZ2UiOiB7ImNvbXBsZXRpb25fdG9rZW5zIjogMCwgInByb21wdF90b2tlbnMiOiAwLCAidG90YWxfdG9rZW5zIjogMH19LCB7ImVycm9yIjogIltFcnJubyAyXSBObyBzdWNoIGZpbGUgb3IgZGlyZWN0b3J5IiwgImxhdGVuY3lfbXMiOiAwLCAibW9kZWwiOiAiZ3B0LTUuNC1uYW5vIiwgInBpaSI6IGZhbHNlLCAicHJvdmlkZXIiOiAib3BlbmFpIiwgInN0ZXBzIjogMCwgInRvb2xzX3VzZWQiOiBbXSwgInVzYWdlIjogeyJjb21wbGV0aW9uX3Rva2VucyI6IDAsICJwcm9tcHRfdG9rZW5zIjogMCwgInRvdGFsX3Rva2VucyI6IDB9fSwgeyJlcnJvciI6ICJbRXJybm8gMl0gTm8gc3VjaCBmaWxlIG9yIGRpcmVjdG9yeSIsICJsYXRlbmN5X21zIjogMCwgIm1vZGVsIjogImdwdC01LjQtbmFubyIsICJwaWkiOiBmYWxzZSwgInByb3ZpZGVyIjogIm9wZW5haSIsICJzdGVwcyI6IDAsICJ0b29sc191c2VkIjogW10sICJ1c2FnZSI6IHsiY29tcGxldGlvbl90b2tlbnMiOiAwLCAicHJvbXB0X3Rva2VucyI6IDAsICJ0b3RhbF90b2tlbnMiOiAwfX0sIHsiZXJyb3IiOiAiW0Vycm5vIDJdIE5vIHN1Y2ggZmlsZSBvciBkaXJlY3RvcnkiLCAibGF0ZW5jeV9tcyI6IDAsICJtb2RlbCI6ICJncHQtNS40LW5hbm8iLCAicGlpIjogZmFsc2UsICJwcm92aWRlciI6ICJvcGVuYWkiLCAic3RlcHMiOiAwLCAidG9vbHNfdXNlZCI6IFtdLCAidXNhZ2UiOiB7ImNvbXBsZXRpb25fdG9rZW5zIjogMCwgInByb21wdF90b2tlbnMiOiAwLCAidG90YWxfdG9rZW5zIjogMH19XQ==",
+    "sig": "cda8acdd84feb3249a545af52901b4a0a6cb2fe2a568fcf909f4b61f2f150c2c"
+  }
+}

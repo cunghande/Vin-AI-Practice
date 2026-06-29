@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "version": "Agent_V2_Optimized",
+    "total": 50,
+    "passed": 2,
+    "failed": 48,
+    "pass_rate": 0.04,
+    "elapsed_seconds": 9.66,
+    "timestamp": "2026-06-16 17:32:05",
+    "batch_size": 5
+  },
+  "metrics": {
+    "hit_rate": 0.78,
+    "mrr": 0.522,
+    "avg_score": 2.38,
+    "agreement_rate": 0.869,
+    "conflict_cases": 7
+  },
+  "difficulty_breakdown": {
+    "easy": {
+      "total": 15,
+      "passed": 2,
+      "avg_score": 2.536
+    },
+    "medium": {
+      "total": 20,
+      "passed": 0,
+      "avg_score": 2.3449999999999998
+    },
+    "hard": {
+      "total": 10,
+      "passed": 0,
+      "avg_score": 2.2939999999999996
+    },
+    "adversarial": {
+      "total": 5,
+      "passed": 0,
+      "avg_score": 2.178
+    }
+  },
+  "regression": {
+    "vs_v1": {
+      "score_delta": 0.02,
+      "hit_rate_delta": 0.0,
+      "decision": "❌ BLOCK - Address regressions before release"
+    }
+  }
+}

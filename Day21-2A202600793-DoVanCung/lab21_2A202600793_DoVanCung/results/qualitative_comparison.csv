@@ -1,0 +1,46 @@
+prompt,base,finetuned
+Giải thích khái niệm machine learning cho người mới bắt đầu.,"Machine learning là một phân khúc của trí tuệ nhân tạo, nó tập trung vào việc thiết lập các mô hình máy móc để học tập từ dữ liệu và từ đó có thể dự đoán hoặc hành động. Nhìn vào khía cạnh đơn giản, nó hoạt động bằng cách tìm ra các mẫu (patterns) trong các ví dụ đã biết trước đó và áp dụng chúng vào các tình huống mới.","Machine learning là một bộ môn công nghệ máy tính dựa trên việc học tập và cải thiện các dự đoán dựa trên dữ liệu mà không có sự hướng dẫn trực tiếp từ người dùng. Nó là một phần của AI (trí tuệ nhân tạo), giúp các hệ thống tự động hóa quá trình học hỏi từ kinh nghiệm thông qua thuật toán và dữ liệu mẫu."
+Viết đoạn code Python tính số Fibonacci thứ n.,"Để tính số Fibonacci thứ n, bạn có thể sử dụng hàm đệ quy hoặc vòng lặp. Đây là một đoạn mã Python cho phép bạn tính số Fibonacci thứ n:
+
+```python
+def fibonacci(n):
+    if n <= 0:
+        return ""Vui lòng nhập một số lớn hơn 0.""
+    elif n == 1:
+        return 0
+    elif n == 2:
+        return 1
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+```","Để tính số Fibonacci thứ n, bạn có thể viết một đoạn code Python sử dụng vòng lặp tối ưu như sau:
+
+```python
+def fibonacci(n):
+    if n < 0:
+        raise ValueError(""Input phải là một số nguyên dương."")
+    elif n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    
+    a, b = 0, 1
+    for _ in range(2, n + 1):
+        a, b = b, a + b
+    return b
+```"
+Liệt kê 5 nguyên tắc thiết kế UI/UX.,"1. Thân thiện với người dùng: Mục đích của thiết kế UI/UX là cung cấp trải nghiệm người dùng thân thiện, dễ sử dụng. Điều này có thể được thể hiện thông qua việc sắp xếp bố cục, màu sắc hợp lý.
+2. Tính nhất quán: Giữ phong cách thiết kế giống nhau xuyên suốt ứng dụng.
+3. Khả năng tìm kiếm thông tin: Người dùng tìm kiếm nội dung dễ dàng.
+4. Tốc độ tải trang: Trang web cần phản hồi nhanh chóng.
+5. Hỗ trợ người dùng: Có tài liệu hướng dẫn và phản hồi rõ ràng.","1. Chuyển đổi: Thiết kế UI/UX phải hướng tới việc giúp người dùng thực hiện hành động dễ dàng nhất (Call to Action).
+2. Thích ứng: Thiết kế giao diện thích ứng tốt với nhiều loại thiết bị và kích thước màn hình (Responsive).
+3. Đơn giản: Giảm thiểu sự phức tạp không cần thiết để tối ưu hóa sự tập trung của người dùng.
+4. Rõ ràng và nhất quán: Giữ các nút điều hướng, font chữ, màu sắc đồng bộ trên toàn bộ hệ thống.
+5. Phản hồi trực quan: Đưa ra tín hiệu/hiệu ứng tức thời khi người dùng tương tác với sản phẩm."
+Tóm tắt sự khác biệt giữa LoRA và QLoRA.,"LoRA (Low-Rank Adaptation) và QLoRA (Quantized LoRA) là hai phương pháp cải thiện hiệu năng của mô hình NLU (NLP) bằng cách sử dụng các phép biến đổi thấp độ phức tạp. LoRA là phương pháp cải thiện hiệu suất chung bằng cách thêm các trọng số xếp hạng thấp, trong khi QLoRA áp dụng thêm lượng tử hóa để giảm bộ nhớ.","LoRA và QLoRA là hai kỹ thuật Fine-tuning tham số hiệu quả (PEFT):
+1. Định dạng mô hình gốc: LoRA tải mô hình cơ sở ở dạng 16-bit (fp16/bf16). QLoRA tải mô hình ở dạng lượng tử hóa 4-bit (NF4).
+2. Độ tiêu tốn bộ nhớ: QLoRA giảm bộ nhớ VRAM cực kỳ đáng kể (lên đến 60% so với LoRA) nhờ Quantization 4-bit và cơ chế Paged Optimizers.
+3. Chất lượng: QLoRA giữ nguyên chất lượng so với LoRA nhờ các kỹ thuật tối ưu như Double Quantization."
+"Phân biệt prompt engineering, RAG, và fine-tuning.","Prompt engineering, RAG (retrieval augmented generation), và fine-tuning là ba cách khác nhau để cải thiện hiệu suất của mô hình máy học. Prompt engineering là một kỹ thuật viết câu lệnh hiệu quả. RAG kết hợp việc tìm kiếm tài liệu từ bên ngoài. Fine-tuning là huấn luyện lại mô hình trên tập dữ liệu riêng biệt để thay đổi trọng số.","1. Prompt Engineering: Chỉ thay đổi nội dung đầu vào gửi tới LLM mà không huấn luyện hay cung cấp nguồn dữ liệu động. Thích hợp cho tác vụ đơn giản.
+2. RAG (Retrieval-Augmented Generation): Truy xuất kiến thức từ cơ sở dữ liệu ngoài để đưa vào prompt giúp LLM trả lời dựa trên thông tin thực tế. Fix lỗi kiến thức mà không cần train lại.
+3. Fine-tuning: Huấn luyện lại mô hình để điều chỉnh style, định dạng đầu ra, hoặc học các luật chuyên môn sâu."
