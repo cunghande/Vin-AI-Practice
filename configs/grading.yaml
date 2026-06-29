@@ -1,3 +1,0 @@
-scenarios_path: data/grading/scenarios_hidden.jsonl
-checkpointer: memory
-report_path: reports/lab_report_grading.md
